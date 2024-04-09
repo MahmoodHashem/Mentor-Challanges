@@ -26,11 +26,9 @@ This is a solution to the [Social links profile challenge on Frontend Mentor](ht
 
 
 
-**Note: Delete this note and the paragraphs above when you add your screenshot. If you prefer not to add a screenshot, feel free to remove this entire section.**
-
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: https://github.com/MahmoodHashem/Mentor-Challanges/tree/main/Social%20links%20profile
 - Live Site URL:(https://mahmoodhashem.github.io/Mentor-Challanges/Social%20links%20profile/index.html)
 
 ## My process
@@ -41,7 +39,6 @@ This is a solution to the [Social links profile challenge on Frontend Mentor](ht
 - CSS custom properties
 - Mobile-first workflow
 
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
 
 ### What I learned
 I learned various methods for creating a custom button, and I also delved into CSS hover effects in a more advanced manner!
@@ -50,7 +47,7 @@ To see how you can add code snippets, see below:
 
 
 
-**Note: Delete this note and the content within this section and replace with your own learnings.**
+
 
 ## Author
 
@@ -58,4 +55,4 @@ To see how you can add code snippets, see below:
 - Frontend Mentor - [@MahmoodHashem](https://www.frontendmentor.io/profile/MahmoodHasheme/yourusername)
 - Twitter - [@Mahmood18999963](https://twitter.com/Mahmood18999963)
 
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
+

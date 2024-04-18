@@ -48,10 +48,7 @@ img{
 
 .card{
     width: 320px; 
-<<<<<<< HEAD
     height: 75%;
-=======
->>>>>>> 905291fb5a28b5644090e1984aea347173e1b2cb
     margin: 100px auto;
     padding: 10px;
     border-radius: 10px;
@@ -61,39 +58,23 @@ img{
     background-color: hsl(0, 0%, 12%);
 }
 
-ul{
-    list-style-type: none;
+
+.links{
+    display: flex;
+    flex-direction: column;
 }
 
-<<<<<<< HEAD
-.button{
-=======
-div[role]{
->>>>>>> 905291fb5a28b5644090e1984aea347173e1b2cb
-  cursor: pointer;
-  border-radius: 10px;
-  width: 75%;
-  padding: 0.7rem 2rem;
-  outline: none;
-  border: none;
-  font-size: 1rem;
-  background-color: hsl(0, 0%, 20%);
-  margin: 3px;
-}
-
-<<<<<<< HEAD
-.button:hover{
-=======
-div[role]:hover{
->>>>>>> 905291fb5a28b5644090e1984aea347173e1b2cb
-    background-color: hsl(75, 94%, 57%);
-    a{
-        color: black;
-    }
-}
 
 a{
-margin-top: 30px;
-   text-decoration: none;
-   color: white;
+    text-decoration: none;
+    color: white;
+    background-color:hsl(0, 0%, 20%);
+    padding: 15px;
+    margin: 5px;
+    border-radius: 10px;
+}
+
+a:hover{
+    background-color: hsl(75, 94%, 57%);
+    color: black;
 }

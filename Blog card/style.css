@@ -1,0 +1,100 @@
+@font-face {
+  font-family: Figtree;
+  src: url(./assets/fonts/Figtree-VariableFont_wght.ttf);
+}
+
+@font-face {
+  font-family: FigtreeBold;
+  src: url(./assets/fonts/static/Figtree-ExtraBold.ttf);
+}
+
+@font-face {
+    font-family: FigtreeSemiBold;
+    src: url(./assets/fonts/static/Figtree-SemiBold.ttf);
+}
+
+body {
+  background-color: hsl(47, 88%, 63%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 370px;
+  background-color: hsl(0, 0%, 100%);
+  padding-top: 20px;
+  border-radius: 20px;
+  box-shadow: rgb(0 0 0) 11px 11px; 
+  border: 1px solid black;
+}
+
+.title-image {
+  align-self: center;
+  max-width: auto;
+}
+
+.button {
+  text-decoration: none;
+  color: black;
+  background-color: hsl(47, 88%, 63%);
+  width: 60px;
+  padding: 10px;
+  margin-left: 25px;
+  margin-top: 20px;
+  border-radius: 5px;
+  font-family: Figree, sans-serif;
+}
+
+.date {
+  margin-top: 10px;
+  margin-left: 25px;
+  font-family: Figtree, sans-serif;
+}
+
+h1 {
+  margin-left: 25px;
+  margin-bottom: 0px;
+  font-size: 20px;
+  font-family: FigtreeBold, sans-serif;
+}
+
+h1:hover {
+  color: hsl(47, 88%, 63%);
+  cursor: pointer;
+}
+
+p {
+  margin-left: 25px;
+  margin-right: 20px;
+  font-family: Figtree, sans-serif;
+}
+
+.title-image img {
+  border-radius: 20px;
+}
+
+.avatar {
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+}
+
+.info {
+  margin-left: 25px;
+  margin-bottom: 30px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  font-family: FigtreeSemiBold, sans-serif;
+}
+
+footer {
+  position: fixed;
+  bottom: 0px;
+  text-align: center;
+}

@@ -12,17 +12,69 @@ This repository is a collection of my solutions to various Frontend Mentor chall
 Below is a list of Frontend Mentor challenges I have completed. 
 
 ### Challenge 1: [QR Code](https://github.com/MahmoodHashem/Mentor-Challanges/tree/main/QR%20code)
-- **Description**: Brief description of the project.
 - **Technologies Used**: HTML and CSS.
 
 ### Challenge 2: [Social Links](https://github.com/MahmoodHashem/Mentor-Challanges/tree/main/Social%20links%20profile)
-- **Description**: Brief description of the project.
 - **Technologies Used**: HTML and CSS.
 
 ### Challenge 3: [Blog Card](https://github.com/MahmoodHashem/Mentor-Challanges/tree/main/Blog%20card)
-- **Description**: Brief description of the project.
 - **Technologies Used**: HTML, CSS, Flexbox.
 
+... (continue listing other challenges)
 
-# Check All Challanges Live Site
- > [Live Site](https://mahmoodhashem.github.io/Mentor-Challanges/)
+### Check All Challanges:[Live Site](https://mahmoodhashem.github.io/Mentor-Challanges/)
+
+## Contributing
+
+Feel free to fork this repository and submit pull requests to contribute to these challenges. You can also open issues to discuss potential improvements or any bugs you find.
+
+## Contact
+If you have any questions, feel free to [contact me](mailto:shmahmoodham143@gmail.com).
+---
+
+*Copy this and Get my message*
+
+```HTML 
+    <div class="container"><h1 id="message">Happy Coding!</h1></div>
+```
+
+```CSS
+body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #282c34;
+    color: #61dafb;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    text-align: center;
+    animation: fadeIn 5s ease-in-out infinite;
+}
+
+@keyframes fadeIn {
+    0%,100% { opacity: 0; }
+    50% { opacity: 1; }
+}
+```
+
+```JavaScript 
+
+document.addEventListener('DOMContentLoaded', function() {
+    const message = document.getElementById('message');
+    let opacity = 0;
+    let direction = 1;
+
+    setInterval(() => {
+        if (opacity >= 1) direction = -1;
+        else if (opacity <= 0) direction = 1;
+
+        opacity += direction * 0.01;
+        message.style.opacity = opacity;
+    }, 50);
+});
+
+```

@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Coding</title>
+    <style>
+        body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #282c34;
+    color: #61dafb;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    text-align: center;
+    animation: fadeIn 5s ease-in-out infinite;
+}
+
+@keyframes fadeIn {
+    0%,100% { opacity: 0; }
+    50% { opacity: 1; }
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 id="message">Happy Coding!</h1>
+    </div>
+    <script src="script.js"></script>
+</body>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+    const message = document.getElementById('message');
+    let opacity = 0;
+    let direction = 1;
+
+    setInterval(() => {
+        if (opacity >= 1) direction = -1;
+        else if (opacity <= 0) direction = 1;
+
+        opacity += direction * 0.01;
+        message.style.opacity = opacity;
+    }, 50);
+});
+</script>
+</html>

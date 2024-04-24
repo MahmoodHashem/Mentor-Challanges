@@ -35,10 +35,23 @@ If you have any questions, feel free to [contact me](mailto:shmahmoodham143@gmai
 *Copy this and Get my message*
 
 ```HTML 
+    <h1 class="info">Mahmood Hashemi <br> Mobile and Web Developer</h1>
     <div class="container"><h1 id="message">Happy Coding!</h1></div>
 ```
 
 ```CSS
+
+ .info{
+            position: fixed;
+            color: rgb(255, 255, 255);
+            font-family: sans-serif;
+            letter-spacing: 5px;
+            bottom: 20%;
+            line-height: 2;
+            opacity: 0.4;
+            text-align: center;
+        }
+
 body, html {
     height: 100%;
     margin: 0;
@@ -48,6 +61,7 @@ body, html {
     background-color: #282c34;
     color: #61dafb;
     font-family: Arial, sans-serif;
+    background-image: 
 }
 
 .container {

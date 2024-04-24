@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+
+  </style>
+</head>
+
+<body>
+
+  <!-- <span class="overlay"></span> -->
+
+
+  
+  <div class="box-modal">
+    <img class="icon" src="./assets/images/icon-success.svg" alt="icon">
+    <h1>Thanks for subscribing!</h1>
+    <p>A confirmation email has been sent to ash@loremcompany.com.
+        Please open it and click the button inside to confirm your subscription.</p>
+    <button class="dismiss" type="button">Dismiss message</button>
+</div>
+
+  <img class="mobile-image" media="(max-width:600px)" srcset="./assets/images/illustration-sign-up-mobile.svg">
+
+  <div class="contents">
+
+    <img class="desktop-image" media="(min-width:601px)" srcset="./assets/images/illustration-sign-up-desktop.svg">
+
+    <div class="login-info">
+
+      <h1>
+        Stay updated!
+      </h1>
+
+      <p>
+        Join 60,000+ product managers receiving monthly updates on:
+      </p>
+
+      <div class="options">
+        <div class="item">
+          <img class="icon" src="./assets/images/icon-success.svg" alt="icon-success">
+          <div class="option-items">Product discovery and building what matters</div>
+        </div>
+        <div class="item">
+          <img class="icon" src="./assets/images/icon-success.svg" alt="icon-success">
+          <div class="option-items">Measuring to ensure updates are a success</div>
+        </div>
+        <div class="item">
+          <img class="icon" src="./assets/images/icon-success.svg" alt="icon-success">
+          <div class="option-items">And much more!</div>
+        </div>
+      </div>
+
+      <form action="">
+        <label for="email">Email address</label>
+        <input required type="email" placeholder="email@company.com">
+        <button class="showbtn" type="submit"> Subscribe to monthly newsletter</button>
+      </form>
+    </div>
+
+
+  </div>
+ 
+
+  <!-- <footer>
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Your Name Here</a>.
+  </footer> -->
+</body>
+
+ <script>
+        const boxmodal = document.querySelector(".box-modal"), 
+          showbtn = document.getElementsByClassName("showbtn"), 
+          closebtn = document.getElementsByClassName("dismiss");
+          
+          
+          boxmodal.addEventListener('click', function(){
+            console.log("Hi"); 
+          })
+  </script>
+
+</html>

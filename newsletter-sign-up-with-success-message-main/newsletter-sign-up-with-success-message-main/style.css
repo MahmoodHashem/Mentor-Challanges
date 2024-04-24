@@ -1,0 +1,239 @@
+
+
+
+*{
+    font-family: sans-serif;
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+
+@media only screen and (min-width: 601px) {
+    .mobile-image{
+        display: none; 
+       }
+     .desktop-image{
+        display: block;
+        order: 1;
+     }  
+
+     body{
+        background-color: hsl(235, 18%, 26%) ;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+     }
+
+     .contents{
+        padding: 15px 15px 15px 40px;
+        max-width:900px;
+        height: 500px;
+        border-radius: 10px;
+        background-color: rgb(255, 255, 255);
+        display: flex;
+        justify-content: center;
+        gap: 50px;
+     }
+
+     .login-info{
+        margin-top: 16px;
+        display: flex;
+        flex-direction: column;
+        max-width: 300px;
+     }
+
+
+    .box-modal {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        max-width: 275px;
+        padding: 35px;
+        border-radius: 18px;
+        opacity: 0;
+    }
+
+    .box-modal h1{
+        margin-bottom: 0px;
+        font-family: Roboto-Bold, sans-serif;
+    }
+
+    .box-modal p{
+        margin-bottom: 20px;
+        font-family: Roboto, sans-serif;
+    }
+
+    .box-modal button {
+        background-color: hsl(234, 29%, 20%);
+        padding: 16px;
+        margin-top: 16px;
+        border: none;
+        width: 100%;
+        color: white;
+        text-align: center;
+        border-radius: 8px;
+        align-self: center;
+        font-family: Roboto, sans-serif;  
+    }
+    .box-modal button:hover {
+        background-image: linear-gradient(to right, rgb(253, 89, 98), rgb(255, 146, 71));
+        cursor: pointer;
+        box-shadow: rgba(253, 89, 98, 0.25) 0px 30px 30px, rgba(253, 89, 98, 0.12) 0px -6px 15px, rgba(255, 146, 71, 0.12) 0px 4px 6px, rgba(255, 146, 71, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    }
+
+    .box-modal .icon {
+        width: 50px;
+        height: 50px;
+    }
+
+}
+
+
+@media only screen and (max-width: 600px) {
+    .mobile-image{
+        display: block; 
+         width: 100%;
+       }
+     .desktop-image{
+        display: none;
+     }  
+  .contents{
+    margin-right: 20px;
+    margin-left: 6px;
+    padding: 15px;
+    overflow: hidden;
+  }
+
+
+.box-modal{
+   
+    height: 100vh;
+    pointer-events: none;
+    position: absolute;
+    background-color: white;
+    pointer-events: none;
+    opacity: 0;
+    
+}
+.box-modal .icon {
+        padding-top: 40%;
+        width: 50px;
+        height: 50px;
+        margin-bottom: 35px;
+        padding-left: 30px;
+    }
+
+    .box-modal button {
+        background-color: hsl(234, 29%, 20%);
+        padding: 16px;
+        padding-left: 30px;
+        margin-top: 30%px;
+        border: none;
+        width: 100%;
+        color: white;
+        text-align: center;
+        border-radius: 8px;
+        align-self: center;
+        font-family: Roboto, sans-serif;  
+        align-self: self-end;
+    }
+    .box-modal button:hover {
+        background-image: linear-gradient(to right, rgb(253, 89, 98), rgb(255, 146, 71));
+        cursor: pointer;
+        box-shadow: rgba(253, 89, 98, 0.25) 0px 30px 30px, rgba(253, 89, 98, 0.12) 0px -6px 15px, rgba(255, 146, 71, 0.12) 0px 4px 6px, rgba(255, 146, 71, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    }
+
+    
+    .box-modal h1{
+        margin-bottom: 0px;
+        font-family: Roboto-Bold, sans-serif;
+        padding-left: 30px;
+    }
+
+    .box-modal p{
+        margin-bottom: 45vh;
+        font-family: Roboto, sans-serif;
+        padding-left: 30px;
+    }
+
+}
+
+
+.item{
+    display: flex;
+    align-items: start;
+    margin-top: 10px;
+    box-sizing: border-box;
+  }
+  
+.icon{
+width: 18px;
+height: 18px;
+margin-right: 15px;
+}
+
+.option-items{
+margin-top: 2px;
+}
+
+
+label{
+display: block;
+margin-bottom: 8px;
+}
+
+form{
+margin-top: 30px;
+display: flex; 
+flex-direction: column;
+}
+
+input{
+padding: 15px;
+max-width: 100%;
+height: 16px;
+border: 0.5px solid rgba(0, 0, 0, 0.305);
+border-radius: 6px;
+
+}
+
+button{
+background-color: hsl(234, 29%, 20%);
+padding: 16px;
+margin-top: 16px;
+border: none;
+width: 100%;
+color: white;
+text-align: center;
+border-radius: 6px;
+align-self: center;
+}
+
+button:hover{
+    background-image: linear-gradient(to right, #fd5962, #ff9247);
+    cursor: pointer;
+}
+
+.overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #00000094;
+    opacity: 0;
+}
+
+
+footer {
+    font-size: 11px;
+    text-align: center;
+    position: relative;
+    bottom: 0px;
+    z-index: -1;
+  }
+

@@ -1,8 +1,17 @@
 
+@font-face {
+    font-family: Roboto;
+    src: url(./assets/fonts/Roboto-Regular.ttf);
+}
+
+@font-face {
+    font-family: Roboto-Bold;
+    src: url(./assets/fonts/Roboto-Bold.ttf);
+}
 
 
 *{
-    font-family: sans-serif;
+    font-family:Roboto,sans-serif;
 }
 
 body{
@@ -56,8 +65,10 @@ body{
         max-width: 275px;
         padding: 35px;
         border-radius: 18px;
-        opacity: 0;
+        display:none;
+        z-index: 1;
     }
+  
 
     .box-modal h1{
         margin-bottom: 0px;
@@ -112,13 +123,11 @@ body{
 
 
 .box-modal{
-   
-    height: 100vh;
-    pointer-events: none;
+    height: 100%;
     position: absolute;
     background-color: white;
-    pointer-events: none;
-    opacity: 0;
+    bottom: 0x;
+   display: 'none';
     
 }
 .box-modal .icon {
@@ -133,7 +142,7 @@ body{
         background-color: hsl(234, 29%, 20%);
         padding: 16px;
         padding-left: 30px;
-        margin-top: 30%px;
+        margin-top: 30%;
         border: none;
         width: 100%;
         color: white;
@@ -141,11 +150,10 @@ body{
         border-radius: 8px;
         align-self: center;
         font-family: Roboto, sans-serif;  
-        align-self: self-end;
+
     }
     .box-modal button:hover {
         background-image: linear-gradient(to right, rgb(253, 89, 98), rgb(255, 146, 71));
-        cursor: pointer;
         box-shadow: rgba(253, 89, 98, 0.25) 0px 30px 30px, rgba(253, 89, 98, 0.12) 0px -6px 15px, rgba(255, 146, 71, 0.12) 0px 4px 6px, rgba(255, 146, 71, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
     }
 
@@ -184,7 +192,8 @@ margin-top: 2px;
 
 
 label{
-display: block;
+display: flex; 
+justify-content: space-between;
 margin-bottom: 8px;
 }
 
@@ -225,9 +234,11 @@ button:hover{
     width: 100%;
     height: 100%;
     background-color: #00000094;
-    opacity: 0;
 }
 
+.invalid{
+   display: none;
+}
 
 footer {
     font-size: 11px;
@@ -236,4 +247,6 @@ footer {
     bottom: 0px;
     z-index: -1;
   }
+
+
 

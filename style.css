@@ -1,4 +1,13 @@
 
+@font-face {
+    font-family: Roboto;
+    src: url(./newsletter-sign-up-with-success-message-main/newsletter-sign-up-with-success-message-main/assets/fonts/Roboto-Regular.ttf);
+}
+
+
+*{
+    font-family: Roboto, sans-serit;
+}
 
 
 body{

@@ -103,6 +103,13 @@ body{
         height: 50px;
     }
 
+    .overlay{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: #00000094;
+    }
+
 }
 
 
@@ -127,7 +134,7 @@ body{
     position: absolute;
     background-color: white;
     bottom: 0x;
-   display: 'none';
+    display: 'none';
     
 }
 .box-modal .icon {
@@ -142,7 +149,6 @@ body{
         background-color: hsl(234, 29%, 20%);
         padding: 16px;
         padding-left: 30px;
-        margin-top: 30%;
         border: none;
         width: 100%;
         color: white;
@@ -229,12 +235,7 @@ button:hover{
     cursor: pointer;
 }
 
-.overlay{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-color: #00000094;
-}
+
 
 .invalid{
    display: none;

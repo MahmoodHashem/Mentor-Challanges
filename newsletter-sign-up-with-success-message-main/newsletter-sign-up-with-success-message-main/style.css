@@ -134,8 +134,8 @@ body{
     position: absolute;
     background-color: white;
     bottom: 0x;
-    display: 'none';
-    
+    display: none; 
+    z-index: 1;
 }
 .box-modal .icon {
         padding-top: 40%;

@@ -16,7 +16,7 @@ function showMessage(){
     console.log("inner")
       overlayLayer.classList.add('overlay'); 
       box.style.display = 'block';  
-      gmail.textContent = emailInput;  
+      gmail.textContent = emailInput.value;  
       console.log(emailInput); 
       invalid.style.display = 'none'; 
       emailInput.style.border = "0.5px solid rgba(0, 0, 0, 0.305)";

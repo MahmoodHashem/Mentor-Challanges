@@ -11,9 +11,8 @@
 
   <link rel="stylesheet" href="style.css">
 
-  <style>
+  <script src="main.js" defer></script>
 
-  </style>
 </head>
 
 <body>
@@ -21,10 +20,12 @@
   <div class="box-modal">
     <img class="icon" src="./assets/images/icon-success.svg" alt="icon">
     <h1>Thanks for subscribing!</h1>
-    <p>A confirmation email has been sent to ash@loremcompany.com.
+    <p>A confirmation email has been sent to <strong id="gmail"></strong>
         Please open it and click the button inside to confirm your subscription.</p>
-    <button class="dismiss" type="button">Dismiss message</button>
+    <button class="dismiss" onclick="dismissMessage()" type="button">Dismiss message</button>
 </div>
+
+  <span></span>
 
   <img class="mobile-image" media="(max-width:600px)" srcset="./assets/images/illustration-sign-up-mobile.svg">
 
@@ -57,10 +58,10 @@
         </div>
       </div>
 
-      <form action="">
-        <label for="email">Email address</label>
-        <input required type="email" placeholder="email@company.com">
-        <button class="showbtn" type="submit"> Subscribe to monthly newsletter</button>
+      <form >
+        <label for="email">Email address <span class="invalid" style="color: red; font-family: Roboto, sans-serif;">Invalid email</span> </label>
+        <input id="input-email" type="text" placeholder="email@company.com">
+        <button class="showbtn" onclick="showMessage()" type="button"> Subscribe to monthly newsletter</button>
       </form>
     </div>
   </div>

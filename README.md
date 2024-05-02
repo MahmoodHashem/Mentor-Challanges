@@ -19,7 +19,11 @@ Below is a list of Frontend Mentor challenges I have completed.
 
 ### Challenge 3: [Blog Card](https://github.com/MahmoodHashem/Mentor-Challanges/tree/main/Blog%20card)
 - **Technologies Used**: HTML, CSS, Flexbox.
-### Challenge 4: [Newsletter Subscription](https://github.com/MahmoodHashem/Mentor-Challanges/tree/main/Blog%20card)
+### Challenge 4: [Newsletter Subscription](https://github.com/MahmoodHashem/Mentor-Challanges/tree/main/newsletter-sign-up-with-success-message-main)
+- **Technologies Used**: HTML, CSS,JavaScript, Flexbox.
+
+### Challenge 4: [Newsletter Subscription](https://github.com/MahmoodHashem/Mentor-Challanges/tree/main/age-calculator)
+- **[Live Demo](./age-calculator/index.html)**
 - **Technologies Used**: HTML, CSS,JavaScript, Flexbox.
 
 

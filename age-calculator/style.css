@@ -1,82 +1,156 @@
-
-
 @font-face {
-    font-family: Poppins;
-    src: url(assets/fonts/Poppins-ExtraBold.ttf);
+  font-family: Poppins;
+  src: url(assets/fonts/Poppins-ExtraBold.ttf);
 }
 
-body{
-    background-color: hsl(0, 0%, 94%);
-    font-family: Poppins, sans-serif;
+body {
+  background-color: hsl(0, 0%, 94%);
+  font-family: Poppins, sans-serif;
+
 }
 
+@media only screen and (min-width: 651px) {
 
-
-@media only screen and (max-width: 650px) {
-    .arrow{
- background-color:hsl(259, 100%, 65%) ;
- border-radius: 50%;
- width: 46px;
- height: 44px;
- padding: 20px;
- position: relative;
- top: 50px;
-}
-
-hr{
+    body{
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        align-items: center;
+        justify-content: center;
+    }
+    
+  .row {
+    display: flex;
+    justify-content: start;
+    gap: 8px;
     width: 100%;
-}
+    padding-left: 60px;
+    margin-top: 15px;
+  }
 
-.card{
+  .card {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: auto;
-    background-color: white; 
-    max-width: 300px;
+    background-color: white;
+    max-width: 800px;
     padding: 20px 40px;
+   
     border-radius: 30px;
     border-bottom-right-radius: 100px;
-   
-}
-.row{
-    display: flex;
-    justify-content: space-around;
-    width: 100%;
-    padding: 10px;
-}
-input{
-    width: 50px;
+  }
+  .arrow {
+    background-color: hsl(259, 100%, 65%);
+    border-radius: 50%;
+    width: 46px;
+    height: 44px;
     padding: 20px;
+    float: right;
+    position: relative;
+    top: 40px;
+  }
+  hr {
+    width: 90%;
+  }
+  .btn{
+    width: 100%;
+  }
+
+  input {
+    max-width: 150px;
+    padding: 15px;
     border-radius: 14px;
     border: 1px solid hsl(0, 0%, 86%);
     font-size: 30px;
     font-weight: bold;
-}
+    margin-top: 10px;
+  }
 
-.hint{
+  .hint {
     font-size: 20px;
     margin-left: 5px;
-    color: hsl(0, 1%, 44%) ;
+    color: hsl(0, 1%, 44%);
+    letter-spacing: 2px;
+  }
+
+  .result {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 70px;
+    font-size: 80px;
+    margin-left: 40px;
+  }
+  .number {
+    color: hsl(259, 100%, 65%);
+  }
+
+
 }
 
-.result{
+@media only screen and (max-width: 650px) {
+    .arrow {
+        background-color: hsl(259, 100%, 65%);
+        border-radius: 50%;
+        width: 46px;
+        height: 44px;
+        padding: 20px;
+        position: relative;
+        top: 50px;
+        left: 38%; 
+        right: 70%;
+      }
+
+      .btn{
+        width: 100%;
+      }
+
+  hr {
+    width: 100%;
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    background-color: white;
+    max-width: 300px;
+    padding: 20px 40px;
+    border-radius: 30px;
+    border-bottom-right-radius: 100px;
+  }
+  .row {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    padding: 10px;
+  }
+  input {
+    width: 50px;
+    padding: 10px;
+    border-radius: 14px;
+    border: 1px solid hsl(0, 0%, 86%);
+    font-size: 15px;
+    font-weight: bold;
+  }
+
+  .hint {
+    font-size: 20px;
+    margin-left: 5px;
+    color: hsl(0, 1%, 44%);
+    letter-spacing: 2px;
+  }
+
+  .result {
     display: flex;
     flex-direction: column;
     width: 100%;
     margin-top: 70px;
     font-size: 50px;
+  }
+  .number {
+    color: hsl(259, 100%, 65%);
+  }
 }
-.number{
-    color: hsl(259, 100%, 65%) ;
-}
-
-}
-
-
-
-
-
-
-
-

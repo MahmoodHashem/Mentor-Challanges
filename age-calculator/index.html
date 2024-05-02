@@ -1,37 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
+
   <title>Frontend Mentor | Age calculator app</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <link rel="stylesheet" href="style.css">
+
 </head>
+
 <body>
 
-  Day
-  DD
 
-  Month
-  MM
+  <div class="card">
+    <div class="row">
+      <div class="column">
+        <label for="#day" class="hint">DAY</label>
+        <div class="text-field"><input type="number" id="day" placeholder="DD"></div>
+      </div>
+      <div class="column">
+        <label for="#month" class="hint">MONTH</label>
+        <div class="text-field"><input type="number" id="month" placeholder="MM"></div>
+      </div>
+      <div class="column">
+        <label for="#year" class="hint">YEAR</label>
+        <div class="text-field"><input type="number" id="year" placeholder="YYYY"></div>
+      </div>
+    </div>
+    <img class="arrow"  src="assets/images/icon-arrow.svg" alt="">
+    <hr>
+    <div class="result">
+      <div class="years"><span class="number">36 </span>years</div>
+      <div class="months"><span class="number">3 </span>months</div>
+      <div class="days"><span class="number">26 </span>days</div>
+    </div>
+  </div>
 
-  Year
-  YYYY
 
-  -- years
-  -- months
-  -- days
-  
-  <div class="attribution">
+  <!-- <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
-  </div>
+  </div> -->
 </body>
+
 </html>

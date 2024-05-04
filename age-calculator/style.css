@@ -131,7 +131,7 @@ body {
     width: 50px;
     padding: 10px;
     border-radius: 14px;
-    border: 1px solid hsl(0, 0%, 86%);
+    border: 1px solid #dbdbdb;
     font-size: 15px;
     font-weight: bold;
   }
@@ -153,4 +153,19 @@ body {
   .number {
     color: hsl(259, 100%, 65%);
   }
+}
+
+
+input:focus{
+  border-color: hsl(259, 100%, 65%);;
+  outline: none;
+} 
+
+.empty{
+    color: red;
+    margin-left: 10px;
+    margin-top: 10px;
+    font-family: sans-serif;
+    display: none;
+
 }

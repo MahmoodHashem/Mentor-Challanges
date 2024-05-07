@@ -13,18 +13,27 @@ Below is a list of Frontend Mentor challenges I have completed.
 
 ### Challenge 1: [QR Code](https://github.com/MahmoodHashem/Mentor-Challanges/tree/main/QR%20code)
 - **Technologies Used**: HTML and CSS.
-
+- **[Live Site](https://mahmoodhashem.github.io/Mentor-Challanges/QR%20code/index.html)**
 ### Challenge 2: [Social Links](https://github.com/MahmoodHashem/Mentor-Challanges/tree/main/Social%20links%20profile)
 - **Technologies Used**: HTML and CSS.
+- **[Live Site](https://mahmoodhashem.github.io/Mentor-Challanges/Social%20links%20profile/index.html)**
 
 ### Challenge 3: [Blog Card](https://github.com/MahmoodHashem/Mentor-Challanges/tree/main/Blog%20card)
 - **Technologies Used**: HTML, CSS, Flexbox.
+- **[fdf](https://mahmoodhashem.github.io/Mentor-Challanges/Social%20links%20profile/index.html)**
+
 ### Challenge 4: [Newsletter Subscription](https://github.com/MahmoodHashem/Mentor-Challanges/tree/main/newsletter-sign-up-with-success-message-main)
 - **Technologies Used**: HTML, CSS,JavaScript, Flexbox.
+- **[Live Site](https://mahmoodhashem.github.io/Mentor-Challanges/newsletter-sign-up-with-success-message-main/newsletter-sign-up-with-success-message-main/index.html)**
 
 ### Challenge 5: [Age Calculator](https://github.com/MahmoodHashem/Mentor-Challanges/tree/main/age-calculator)
-- **[Live Demo](https://mahmoodhashem.github.io/Mentor-Challanges/age-calculator/index.html)**
+- **[Live Site](https://mahmoodhashem.github.io/Mentor-Challanges/age-calculator/index.html)**
 - **Technologies Used**: HTML, CSS,JavaScript, Flexbox.
+
+### Challenge 6: [Reuslt Summary](https://github.com/MahmoodHashem/Mentor-Challanges/tree/main/result-summary)
+- **Technologies Used**: HTML, CSS, Flexbox. 
+- [Live Site](https://mahmoodhashem.github.io/Mentor-Challanges/result-summary/index.html)
+
 
 
 ... (continue listing other challenges)

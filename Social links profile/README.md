@@ -28,8 +28,8 @@ This is a solution to the [Social links profile challenge on Frontend Mentor](ht
 
 ### Links
 
-- Solution URL: https://github.com/MahmoodHashem/Mentor-Challanges/tree/main/Social%20links%20profile
-- Live Site URL:(https://mahmoodhashem.github.io/Mentor-Challanges/Social%20links%20profile/index.html)
+- [Solution URL](https://github.com/MahmoodHashem/Mentor-Challanges/tree/main/Social%20links%20profile)
+- [Live Site URL](https://mahmoodhashem.github.io/Mentor-Challanges/Social%20links%20profile/index.html)
 
 ## My process
 

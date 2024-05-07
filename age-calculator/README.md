@@ -40,8 +40,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/MahmoodHashem/Mentor-Challanges/tree/main/age-calculator)
-- Live Site URL: [Add live site URL here](https://mahmoodhashem.github.io/Mentor-Challanges/age-calculator/index.html)
+- [Solution URL](https://github.com/MahmoodHashem/Mentor-Challanges/tree/main/age-calculator)
+- [Live Site URL](https://mahmoodhashem.github.io/Mentor-Challanges/age-calculator/index.html)
 
 ## My process
 

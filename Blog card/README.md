@@ -27,8 +27,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [Add solution URL here](https://mahmoodhashem.github.io/Mentor-Challanges/Blog%20card/index.html)
-- Soulution URL: [Add live site URL here]()
+- [Live Site URL](https://mahmoodhashem.github.io/Mentor-Challanges/Blog%20card/index.html)
 
 ## My process
 

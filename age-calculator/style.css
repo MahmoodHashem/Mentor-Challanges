@@ -106,8 +106,9 @@ body {
         height: 44px;
         padding: 20px;
         position: relative;
-        top: 50px;
+        z-index: 1; 
         left: 38%; 
+        top: 20px;
         right: 70%;
       }
 
@@ -116,6 +117,9 @@ body {
       }
 
   hr {
+    position: relative;
+    bottom: 30px;
+    z-index: 0;
     width: 100%;
   }
 
@@ -132,16 +136,15 @@ body {
   }
   .row {
     display: flex;
-    justify-content: space-around;
-    width: 100%;
-    padding: 10px;
+    justify-content: space-evenly;
+   
   }
   input {
-    width: 50px;
+    width: 70%;
     padding: 10px;
     border-radius: 14px;
     border: 1px solid #dbdbdb;
-    font-size: 15px;
+    font-size: 18px;
     font-weight: bold;
   }
 
@@ -162,6 +165,12 @@ body {
   .number {
     color: hsl(259, 100%, 65%);
   }
+
+  .empty{
+    font-size: 10px;
+    width: 80%;
+    text-align: center;
+  }
 }
 
 
@@ -172,8 +181,12 @@ input:focus{
 
 .empty{
     color: red;
-    margin-left: 10px;
-    margin-top: 10px;
     font-family: sans-serif;
     font-style: italic;
+}
+
+
+p{
+  margin: 0;
+  padding: 0;
 }

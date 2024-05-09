@@ -85,16 +85,22 @@ function checkIndividualInputs() {
 function checkValidityOfDateValues() {
     if (day.value > 31) {
         empties[0].textContent = 'Must be a valid day';
+        hints[0].style.color = 'red';
+        inputs[0].style.borderColor = 'red';
         isValid = false;
     }
 
     if (month.value > 12) {
         empties[1].textContent = 'Must be a valid month';
+        hints[1].style.color = 'red';
+        inputs[1].style.borderColor = 'red';
         isValid = false;
     }
 
-    if (year.value > 2024 || year.value < 1950) {
+    if (year.value > 2024 || (year.value < 1950 && year.value > 0)) {
         empties[2].textContent = 'Must be a valid past';
+        hints[2].style.color = 'red';
+        inputs[2].style.borderColor = 'red';
         isValid = false;
     }
 }

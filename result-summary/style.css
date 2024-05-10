@@ -10,6 +10,19 @@ body {
   font-family: Hanken;
 }
 
+
+ .item{
+            --s: 20px;
+            /* size of the corners */
+            border: 2px solid #b3818444;
+            background: #f2f2f2 content-box;
+            mask:
+                conic-gradient(#000 0 0) content-box,
+                conic-gradient(at var(--s) var(--s), #0000 75%, #000 0)
+                 0 0/calc(100% - var(--s)) calc(100% - var(--s));
+        }
+
+
 @media only screen and (min-width: 651px) {
   .header {
     border-radius: 30px;
@@ -48,6 +61,7 @@ body {
 
   .item {
     font-size: 20px;
+	height: 70px; 
   }
   .score {
     font-size: 65px;
@@ -149,8 +163,8 @@ h1{
 }
 
 .item {
+	
   display: flex;
-  padding: 18px 15px;
   align-items: center;
   justify-content: space-between;
   border-radius: 12px;
@@ -175,7 +189,7 @@ h1{
 }
 
 .item-inner {
-  padding: 0;
+  padding: 15px 10px;
   margin: 0;
   display: flex;
   justify-content: center;

@@ -22,26 +22,26 @@
 
 
 
-  @media screen and(max-width: 650x) {
+  @media screen and (max-width: 650px) {
 
     header {
         color: white;
         margin-top: 60px;
-        margin-bottom: 20px;
         padding: 20px 20px;
       }
 
     .heading {
-        font-size: 35px;
-        text-align: center;
+      color: white;
+      text-align: center;
+      padding: 10px 25px;
       }
 
-      .description {
+      .description{
+        color: white;
         text-align: center;
-        font-size: 18px;
-        opacity: 0.7;
+        font-size: 17px;
         font-weight: lighter;
-    
+        padding: 0 20px;
       }
     
   }
@@ -129,23 +129,29 @@
     flex-direction: column;
     padding: 20px;
     border-radius: 10px;
-    gap: 12px;
+    gap: 5px;
     margin-top: 20px;
     box-shadow: 0px 5px rgba(0, 0, 0, 0.323);
   }
 
   input{
-    padding: 15px;
+    padding:15px;
     border-radius: 7px;
     outline: none;
     border: 0.4px solid rgba(0, 0, 0, 0.309); 
     font-weight: bold;
   }
 
-  input:invalid{
-    border-color: red;
+  .error{
+    color: red;
+    font-size: 12px;
+    margin-left: 10px;
+    display: none;
   }
 
+  input:user-invalid{
+    border-color: red;
+}
   button{
     padding: 15px;
     outline:none;

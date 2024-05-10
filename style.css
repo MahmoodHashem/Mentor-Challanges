@@ -20,10 +20,13 @@ body{
 
 
 .card{
-    background-color: burlywood;
-    height: 400px;  
-    width:400px; 
+    display: grid;
+    grid-template-columns: 400px 400px ;
+    grid-template-rows: auto auto auto;
+    background-color: burlywood; 
+    min-width:400px; 
     border-radius: 15px;
+    padding: 15px;
 }
 
 .number {

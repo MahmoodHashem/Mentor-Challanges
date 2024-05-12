@@ -8,6 +8,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
 
   <title>Frontend Mentor | Intro component with sign up form</title>
+
   <link rel="stylesheet" href="style.css">
 
 
@@ -30,17 +31,32 @@
         <div class="then">$20/mo. thereafter</div>
       </div>
       <form action="">
-        <input type="text" id="name" required placeholder="First Name" autocomplete="off"   
-        onchange=""
-        >
-        <label for="name" class="error">Empty</label>
-        <input type="text" id="last-name" required placeholder="Last Name" autocomplete="off">
-        <label for="last-name" class="error">Empty</label>
-        <input type="email" id="email" required placeholder="Email Adress" autocomplete="off">
-        <label for="email" class="error">Invalid Email</label>
-        <input type="password" id="password" placeholder="Password" autocomplete="off">
-        <label for="password" class="error">Empty</label>
-        <button type="submit">
+        <div class="input name">
+          <img class="icon" src="./images/error.png" alt="error">
+          <input type="text" id="name" placeholder="First Name" autocomplete="off" onchange="">
+        </div>
+        <div class="error">First name cannot be empty</div>
+        <div class="input last-name">
+          <img class="icon" src="./images/error.png" alt="error">
+          <input type="text" id="last-name" placeholder="Last Name" autocomplete="off">
+        </div>
+        <div class="error">Last Name cannot be empty</div>
+
+        <div class="input email">
+          <img class="icon" src="./images/error.png" alt="error">
+          <input type="email" id="email" placeholder="Email Adress" autocomplete="off">
+
+        </div>
+        <div class="error">Looks like this is not an email</div>
+
+        <div class="input password">
+          <img class="icon" src="./images/error.png" alt="error">
+          <input type="password" id="password" placeholder="Password" autocomplete="off">
+        </div>
+        <div class="error">Password cannot be empty</div>
+
+
+        <button id="btn" type="button">
           Claim your free trial </button>
         <p>
           By clicking the button, you are agreeing to our <a href="#" class="terms">Terms and Services</a>
@@ -54,6 +70,9 @@
       Coded by <a href="#">Mahmood Hashemi</a>.
     </p>
   </footer>
+
+
+  <script src="script.js"></script>
 </body>
 
 </html>

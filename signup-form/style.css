@@ -1,3 +1,15 @@
+
+
+
+:root{
+  --error-disply: none; 
+  --name-error-dispay: none; 
+  --last-name-error-display: none; 
+  --email-error-disply: none; 
+  --password-error-display: none; 
+}
+
+
 .attribution {
     font-size: 11px;
     text-align: center;
@@ -124,34 +136,65 @@
   }
 
   form{
+    position: relative;
     background-color:white; 
     display: flex;
     flex-direction: column;
     padding: 20px;
     border-radius: 10px;
-    gap: 5px;
+    gap: 10px;
     margin-top: 20px;
     box-shadow: 0px 5px rgba(0, 0, 0, 0.323);
   }
 
   input{
+    position: relative;
     padding:15px;
     border-radius: 7px;
     outline: none;
     border: 0.4px solid rgba(0, 0, 0, 0.309); 
     font-weight: bold;
+    width: 100%;
   }
 
-  .error{
-    color: red;
-    font-size: 12px;
-    margin-left: 10px;
-    display: none;
+  .icon{
+    position: absolute;
+    top: 20%;
+    right: 10px;
+    z-index: 2;
+  
   }
 
-  input:user-invalid{
-    border-color: red;
-}
+  .name .icon{
+    display: var(--name-error-dispay);
+  }
+
+  .last-name .icon{
+    display: var(--last-name-error-display);
+  }
+
+  .email .icon{
+    display: var(--email-error-disply);
+  }
+
+  .password .icon{
+    display: var(--password-error-display);
+  }
+
+ .error{
+  font-size: 12px;
+  text-align: end;
+  color: red;
+  font-style: italic;
+  font-family: sans-serif;
+  display: none;
+ }
+
+  .input{
+    display: flex;
+    position: relative;
+  }
+
   button{
     padding: 15px;
     outline:none;

@@ -1,0 +1,306 @@
+@font-face {
+  font-family: Inter;
+  src: url(./assets/fonts/static/Inter-Regular.ttf);
+}
+
+@font-face {
+  font-family: InterBold;
+  src: url(./assets/fonts/static/Inter-ExtraBold.ttf);
+}
+
+
+body{
+    overflow-y: auto;
+}
+
+
+:root {
+  --inter: Inter;
+  --inter-bold: InterBold;
+}
+
+nav ul li {
+  list-style-type: none;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: inherit;
+  transition: 0.2s;
+}
+
+nav ul li a:hover {
+  color: hsl(35, 77%, 62%);
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 20px;
+  font-family: var(--inter);
+  color: rgba(0, 0, 0, 0.413);
+  font-weight: 650;
+}
+
+nav ul li:first-child {
+  position: absolute;
+  left: 0;
+}
+
+.grid-container {
+  display: grid;
+  gap: 15px;
+  justify-content: center;
+}
+
+@media screen and (min-width: 750px) {
+  .brand-logo {
+    margin-left: 100px;
+  }
+
+  nav ul {
+    padding: 20px 100px;
+  }
+
+  .grid-container {
+    grid-template-columns: repeat(3, 25%);
+  }
+
+  .image {
+    grid-column: span 2;
+    background-image: url(assets/images/image-web-3-desktop.jpg);
+    background-size: cover;
+    height: 200px;
+  }
+
+  .new {
+    grid-column: 3;
+    grid-row: 1 / span 2;
+  }
+
+  .more-image {
+    grid-row: span 2;
+  }
+
+  .more-title {
+    font-size: 18px;
+  }
+
+  .more {
+    display: inline-grid;
+    grid-template-columns: auto minmax(100px, 1fr);
+    grid-auto-rows: max-content;
+    column-gap: 15px;
+    font-family: var(--inter);
+  }
+
+  .sidebar {
+    display: none;
+  }
+
+  .menu {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .nav-bar li:not(.brand-logo, .menu) {
+    display: none;
+  }
+
+  nav ul {
+    padding: 20px 0;
+  }
+
+  .menu {
+    width: 50px;
+    height: 30px;
+  }
+
+  .brand-logo {
+    margin-left: 25px;
+  }
+
+  .sidebar {
+    display: none;
+    position: fixed;
+    background-color: white;
+    height: 100vh;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 70vw;
+    z-index: 2;
+  }
+
+  .overlay {
+    display: none;
+    background-color: rgba(0, 0, 0, 0.594);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+
+  .sidebar ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: start;
+  }
+
+  .sidebar ul li a {
+    color: black;
+    font-family: var(--inter);
+    font-size: 30px;
+  }
+
+  .sidebar ul li {
+    list-style: none;
+  }
+
+  .sidebar ul li:first-child {
+    align-self: flex-end;
+    padding: 10px 20px;
+  }
+
+  .sidebar li img {
+    width: 50px;
+    align-self: end;
+  }
+
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
+
+  .image {
+    background-image: url(assets/images/image-web-3-mobile.jpg);
+    background-size: cover;
+    height: 200px;
+  }
+
+  .p {
+    grid-row: 3;
+  }
+
+  .more-title a {
+    font-size: 12px;
+  }
+
+  .number {
+    font-size: 10px;
+  }
+
+  .more {
+    display: inline-grid;
+    grid-template-columns: 25% 50%;
+    grid-auto-rows: max-content;
+    column-gap: 15px;
+    font-family: var(--inter);
+  }
+
+  .more-image {
+    grid-row: span 2;
+  }
+}
+
+.title {
+  font-family: var(--inter-bold);
+  align-self: center;
+  margin: 0;
+}
+
+.p p {
+  font-size: 15px;
+  font-family: var(--inter);
+  opacity: 0.7;
+  margin-bottom: 15px;
+}
+
+.p button {
+  border: none;
+  outline: none;
+  padding: 10px 15px;
+  background-color: hsl(5, 85%, 63%);
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: white;
+  font-weight: 600;
+  transition: 0.4s;
+}
+
+.p button:hover {
+  background-color: hsl(240, 100%, 5%);
+  cursor: pointer;
+}
+
+.new {
+  background-color: hsl(240, 100%, 5%);
+  color: white;
+  padding: 10px;
+  font-family: var(--inter);
+}
+
+.new p {
+  font-size: 12px;
+  opacity: 0.7;
+  font-family: var(--inter);
+}
+
+.new-title {
+  color: hsl(35, 77%, 62%);
+}
+a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  font-family: var(--inter-bold);
+  transition: 0.4s;
+}
+
+a:hover {
+  color: hsl(35, 77%, 62%);
+}
+
+.more a {
+  color: black;
+}
+
+.more a:hover {
+  color: hsl(35, 77%, 62%);
+}
+
+.new-contents {
+  margin: 16px 0;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+.more-image {
+  width: 80px;
+}
+
+article {
+  display: grid;
+  align-items: end;
+}
+
+article p {
+  font-size: 13px;
+}
+
+p,
+h2,
+h3 {
+  margin: 0;
+  padding: 0;
+}
+
+.number {
+  opacity: 0.5;
+  font-size: 30px;
+  font-weight: bold;
+}

@@ -38,6 +38,10 @@ Below is a list of Frontend Mentor challenges I have completed.
 - **Technologies Used**: HTML, CSS, Flexbox, JavaScript. 
 - [Live Site](https://mahmoodhashem.github.io/Mentor-Challanges/signup-form/index.html)
 
+### Challenge 8: [News Homepage](https://github.com/MahmoodHashem/Mentor-Challanges/tree/main/news-homepage-main)
+- **Technologies Used**: HTML, CSS, Grid, JavaScript. 
+- [Live Site](https://mahmoodhashem.github.io/Mentor-Challanges/news-homepage-main/index.html); 
+
 
 ... (continue listing other challenges)
 

@@ -1,158 +1,161 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
     <link rel="stylesheet" href="style.css">
-  <title>Frontend Mentor | Time tracking dashboard</title>
-  <link rel="svg" href="images/icon-ellipsis.svg">
+    <title>Frontend Mentor | Time tracking dashboard</title>
+    <link rel="svg" href="images/icon-ellipsis.svg">
 </head>
+
 <body>
 
 
-  <div class="grid-container">
+    <div class="grid-container">
 
 
-    <div class="profile-container">
-      <div class="profile">
-        <div class="profile-image">
-            <img src="images/image.jpg" alt="">
-        </div>
-        <div class="report-for">Report for</div>
-        <h1 class="proile-name">Mahmood Hashemi</h1>
-      </div>
-      <div class="state">
-        <ul>
-            <li>Daily</li>
-            <li>Weekly</li>
-            <li>Monthly</li>
-        </ul>
-      </div>
-    </div>
-    
-    <div class="card work_card">
-      <div class="back"></div>
-        <div class="top">
-            <div class="title">
-                <div class="category">Work</div>
-                <div class="more-icon"><img src="images/icon-ellipsis.svg" alt="">
+        <div class="profile-container">
+            <div class="profile">
+                <div class="profile-image">
+                    <img src="images/image.jpg" alt="">
                 </div>
+                <div class="report-for">Report for</div>
+                <h1 class="proile-name">Mahmood Hashemi</h1>
             </div>
-            <div class="report">
-                <h1 class="hour">
-                    32hrs
-                </h1>
-                <div class="last-week">
-                    Last Week - 36hrs
-                </div>
+            <div class="state">
+                <ul>
+                    <li id="daily">Daily</li>
+                    <li id="weekly">Weekly</li>
+                    <li id="monthly">Monthly</li>
+                </ul>
             </div>
         </div>
-    </div>
 
-    <div class="card play_card">
-      <div class="back"></div>
-        <div class="top">
-            <div class="title">
-                <div class="category">Play</div>
-                <div class="more-icon"><img src="images/icon-ellipsis.svg" alt="">
+        <div class="card work_card">
+            <div class="back"></div>
+            <div class="top">
+                <div class="title">
+                    <div class="category">Work</div>
+                    <div class="more-icon"><img src="images/icon-ellipsis.svg" alt="">
+                    </div>
                 </div>
-            </div>
-            <div class="report">
-                <h1 class="hour">
-                    32hrs
-                </h1>
-                <div class="last-week">
-                    Last Week - 36hrs
+                <div class="report">
+                    <h1 class="hour">
+                        32hrs
+                    </h1>
+                    <div class="last-week" id="last">
+                        Last Week - 36hrs
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
 
-    <div class="card study_card">
-      <div class="back"></div>
-        <div class="top">
-            <div class="title">
-                <div class="category">Study</div>
-                <div class="more-icon"><img src="images/icon-ellipsis.svg" alt="">
+        <div class="card play_card">
+            <div class="back"></div>
+            <div class="top">
+                <div class="title">
+                    <div class="category">Play</div>
+                    <div class="more-icon"><img src="images/icon-ellipsis.svg" alt="">
+                    </div>
+                </div>
+                <div class="report">
+                    <h1 class="hour">
+                        10hrs
+                    </h1>
+                    <div class="last-week" id="last">
+                        Last Week - 8hrs
+                    </div>
                 </div>
             </div>
-            <div class="report">
-                <h1 class="hour">
-                    32hrs
-                </h1>
-                <div class="last-week">
-                    Last Week - 36hrs
+        </div>
+
+        <div class="card study_card">
+            <div class="back"></div>
+            <div class="top">
+                <div class="title">
+                    <div class="category">Study</div>
+                    <div class="more-icon"><img src="images/icon-ellipsis.svg" alt="">
+                    </div>
+                </div>
+                <div class="report">
+                    <h1 class="hour">
+                        4hrs
+                    </h1>
+                    <div class="last-week" id="last">
+                        Last Week - 7hrs
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="card exercise_card">
+            <div class="back"></div>
+            <div class="top">
+                <div class="title">
+                    <div class="category">Exercise</div>
+                    <div class="more-icon"><img src="images/icon-ellipsis.svg" alt="">
+                    </div>
+                </div>
+                <div class="report">
+                    <h1 class="hour">
+                        4hrs
+                    </h1>
+                    <div class="last-week" id="last">
+                        Last Week - 6hrs
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="card social_card">
+            <div class="back"></div>
+            <div class="top">
+                <div class="title">
+                    <div class="category">Social</div>
+                    <div class="more-icon"><img src="images/icon-ellipsis.svg" alt="">
+                    </div>
+                </div>
+                <div class="report">
+                    <h1 class="hour">
+                        5hrs
+                    </h1>
+                    <div class="last-week" id="last">
+                        Last Week - 10hrs
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="card selfcare_card">
+            <div class="back"></div>
+            <div class="top">
+                <div class="title">
+                    <div class="category">Self Care</div>
+                    <div class="more-icon"><img src="images/icon-ellipsis.svg" alt="">
+                    </div>
+                </div>
+                <div class="report">
+                    <h1 class="hour">
+                        2hrs
+                    </h1>
+                    <div class="last-week" id="last">
+                        Last Week - 2hrs
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 
+    <script src="script.js" defer>
+     
+    </script>
 
-    <div class="card exercise_card">
-      <div class="back"></div>
-        <div class="top">
-            <div class="title">
-                <div class="category">Exercise</div>
-                <div class="more-icon"><img src="images/icon-ellipsis.svg" alt="">
-                </div>
-            </div>
-            <div class="report">
-                <h1 class="hour">
-                    32hrs
-                </h1>
-                <div class="last-week">
-                    Last Week - 36hrs
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-    <div class="card social_card">
-      <div class="back"></div>
-        <div class="top">
-            <div class="title">
-                <div class="category">Social</div>
-                <div class="more-icon"><img src="images/icon-ellipsis.svg" alt="">
-                </div>
-            </div>
-            <div class="report">
-                <h1 class="hour">
-                    32hrs
-                </h1>
-                <div class="last-week">
-                    Last Week - 36hrs
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-    <div class="card selfcare_card">
-      <div class="back"></div>
-        <div class="top">
-            <div class="title">
-                <div class="category">Self Care</div>
-                <div class="more-icon"><img src="images/icon-ellipsis.svg" alt="">
-                </div>
-            </div>
-            <div class="report">
-                <h1 class="hour">
-                    32hrs
-                </h1>
-                <div class="last-week">
-                    Last Week - 36hrs
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-
-  </div>
-
-  
 </body>
+
 </html>

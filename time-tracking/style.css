@@ -125,6 +125,7 @@ body {
   .card div {
     align-self: center;
     margin-right: 2px;
+    text-align: center;
   }
 
   .profile-container {
@@ -166,7 +167,7 @@ body {
 
   .profile-container h1 {
     margin-top: 0;
-    font-size: 15px;
+    font-size: 12px;
     font-weight: lighter;
     padding-left: 5px;
     grid-column: 2;
@@ -174,8 +175,8 @@ body {
   }
 
   .report-for {
-    font-size: 12px;
-    align-self: center;
+    font-size: 8px;
+    align-self: end;
     padding-left: 5px;
   }
 
@@ -193,7 +194,13 @@ body {
 .state ul li {
   cursor: pointer;
   padding: 2px;
+  transition: 0.2s;
 }
+
+.state ul li:hover{
+    scale: 1.08;
+}
+
 
 .state li:nth-child(odd) {
   opacity: 0.5;
@@ -254,6 +261,7 @@ body {
   height: 80%;
   transform: translateY(40px);
   border-radius: 15px;
+  transition: 0.3s;
 }
 
 .title {
@@ -274,4 +282,5 @@ body {
   margin-bottom: 5px;
   font-size: 35px;
   font-weight: lighter;
+  
 }

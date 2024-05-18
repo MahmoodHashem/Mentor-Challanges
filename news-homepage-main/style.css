@@ -9,6 +9,11 @@
 }
 
 
+
+
+/* The CSS rule `body { overflow-y: auto; }` is setting the vertical overflow behavior for the body
+element. */
+
 body{
     overflow-y: auto;
 }
@@ -54,6 +59,8 @@ nav ul li:first-child {
   justify-content: center;
 }
 
+
+/* Desktop design Grid style */
 @media screen and (min-width: 750px) {
   .brand-logo {
     margin-left: 100px;
@@ -104,6 +111,8 @@ nav ul li:first-child {
   }
 }
 
+
+/* Mobile Grid style*/
 @media screen and (max-width: 750px) {
   .nav-bar li:not(.brand-logo, .menu) {
     display: none;

@@ -31,6 +31,12 @@
     background-color: hsl(0, 100%, 74%);
     font-family: sans-serif;
   }
+  
+  *{
+	
+	box-sizing: border-box;
+  
+  }
 
 
 
@@ -190,10 +196,7 @@
   display: none;
  }
 
-  .input{
-    display: flex;
-    position: relative;
-  }
+
 
   button{
     padding: 15px;

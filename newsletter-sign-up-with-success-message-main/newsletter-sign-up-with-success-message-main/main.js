@@ -9,6 +9,9 @@ let invalid = document.querySelector(".invalid");
 
 
 // btn.addEventListener('click', showMessage()); 
+/**
+ * The function `showMessage` validates an email input and displays a message accordingly on a webpage.
+ */
 function showMessage(){
      let emailInput = document.getElementById('input-email');
     if(isValidEmail(emailInput.value)){

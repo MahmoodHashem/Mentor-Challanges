@@ -1,0 +1,86 @@
+
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: hsl(218, 23%, 16%);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+@media all and (min-width:601px ) {
+    .card{
+        max-width: 500px;
+    }
+
+    .divider-mobile{
+        display: none;
+    }
+}
+
+@media all and (max-width: 600px) {
+
+    .card{
+        max-width: 300px; 
+    }
+
+    .divider-desktop{
+        display: none;
+    }
+    
+}
+
+
+.card{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 20px;
+    text-align: center;
+    background-color: hsl(217, 19%, 24%);
+  
+    font-family: Manrope, serif;
+    border-radius: 10px;
+}
+
+.card h4{
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+    color: hsl(150, 100%, 66%);
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 3px;
+  
+}
+
+.quote{
+    padding: 20px;
+    margin: 20px;
+    font-size: 30px;
+    font-family:  Manrope, serif;
+    font-weight: 800;
+    color: white;
+}
+
+.dice{
+    position: absolute;
+    background-color: hsl(150, 100%, 66%);
+    width: 24px;
+    height: 24px;
+    padding: 15px;
+    border-radius: 50%;
+    bottom: -30px;
+    transition: .3s;
+    user-select: none;
+}
+
+.dice:hover{
+    cursor: pointer;
+    box-shadow: 0px 0px 20px 10px hsla(150, 100%, 66%, 0.398) ;
+}

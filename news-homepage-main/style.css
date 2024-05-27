@@ -135,11 +135,11 @@ nav ul li:first-child {
     display: none;
     position: fixed;
     background-color: white;
-    height: 100vh;
+    height: 100%;
     right: 0;
     top: 0;
     bottom: 0;
-    width: 70vw;
+    width: 70%;
     z-index: 2;
   }
 

@@ -34,7 +34,7 @@ Users should be able to:
 ### Links
 
 - [Solution Repository](https://github.com/MahmoodHashem/Mentor-Challanges/tree/main/news-homepage-main)
-- [Live Site URL](https://mahmoodhashem.github.io/Mentor-Challanges/Blog%20card/index.html)
+- [Live Site URL](https://mahmoodhashem.github.io/Mentor-Challanges/news-homepage-main/index.html)
 
 ## My process
 

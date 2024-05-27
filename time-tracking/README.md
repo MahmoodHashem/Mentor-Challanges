@@ -35,8 +35,8 @@ Users should be able to:
 
 ### Links
 
-- [Solution URL](https://github.com/MahmoodHashem/Mentor-Challanges/tree/main/signup-form)
-- [Live Site](https://mahmoodhashem.github.io/Mentor-Challanges/signup-form/index.html)
+- [Solution URL](https://github.com/MahmoodHashem/Mentor-Challanges/tree/main/time-tracking)
+- [Live Site](https://mahmoodhashem.github.io/Mentor-Challanges/time-tracking/index.html)
 
 ## My process
 
@@ -51,8 +51,6 @@ Users should be able to:
 
 ### What I learned
 In this challenge, I have significantly deepened my understanding of CSS Grid and Flexbox through extensive practice.
-
-To see how you can add code snippets, see below:
 
 
 

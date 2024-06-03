@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header>
+    <nav>
+      <ul>
+        <div class="links">
+
+
+          <li><img src="images/logo.svg" alt=""></li>
+          <li>
+            <div class="feature">Features <img src="./images/icon-arrow-down.svg" alt="">
+              <div class="description feature-items hide">
+                <ul>
+                  <li><img src="./images/icon-todo.svg" alt=""><a href="#">Todo List</a></li>
+                  <li><img src="./images/icon-calendar.svg" alt=""><a href="#">Calender</a></li>
+                  <li><img src="./images/icon-reminders.svg" alt=""><a href="#">Reminder</a></li>
+                  <li><img src="./images/icon-planning.svg" alt=""><a href="#">Planning</a></li>
+                </ul>
+              </div>
+            </div>
+
+          </li>
+          <li>
+            <div class="company">Company <img src="./images/icon-arrow-down.svg" alt="">
+              <div class="description company-items hide">
+                <ul class="options">
+                  <li>History</li>
+                  <li>Our Team</li>
+                  <li>Blog</li>
+                </ul>
+              </div>
+            </div>
+
+          </li>
+          <li> <a href="#">Careers</a></li>
+          <li><a href="#">About</a></li>
+        </div>
+        <div class="login">
+          <li><a href="#">Login</a></li>
+          <li><a href="#">Register</a></li>
+        </div>
+
+      </ul>
+    </nav>
+  </header>
+
+
+  <main>
+    <section class="main-title">
+      <h1>Make remote work</h1>
+      <p>
+        Get your team in sync, no matter your location. Streamline processes,
+        create team rituals, and watch productivity soar.</p>
+      <a href="#">Learn more</a>
+
+      <ul>
+        <li><img src="./images/client-databiz.svg" alt=""></li>
+        <li><img src="./images/client-audiophile.svg" alt=""></li>
+        <li><img src="./images/client-meet.svg" alt=""></li>
+        <li><img src="./images/client-maker.svg" alt=""></li>
+      </ul>
+    </section>
+    <section class="image">
+      <img src="./images/image-hero-desktop.png" alt="">
+    </section>
+  </main>
+
+  <footer>
+
+  </footer>
+  <script>
+
+    const features = document.querySelector('.feature');
+    const company = document.querySelector('.company');
+
+    const featureItems = document.querySelector('.feature-items');
+    const companyItems = document.querySelector('.company-items');
+
+
+
+    features.addEventListener("click", function () {
+      featureItems.classList.toggle('hide');
+      companyItems.classList.add('hide'); 
+    })
+
+    company.addEventListener('click', function () {
+      companyItems.classList.toggle('hide');
+      featureItems.classList.add('hide'); 
+    })
+
+
+  </script>
+
+
+
+
+</body>
+
+</html>

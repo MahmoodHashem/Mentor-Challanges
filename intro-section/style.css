@@ -1,0 +1,135 @@
+
+
+header nav>ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+    margin-left: 0;
+}
+
+.title{
+    color: hsl(0, 0%, 41%);
+}
+
+.title:hover{
+    cursor: pointer;
+    color: black;
+}
+
+.links{
+    display: flex;
+    gap: 30px;
+}
+
+.links a, .login a{
+    color: hsl(0, 0%, 41%); 
+    text-decoration: none;
+}
+
+.links a:hover, .login a:hover{
+    color: black;
+}
+
+.login{
+    display: flex;
+    gap: 20px;
+    
+}
+
+.login li:last-child a{
+    border: 2px solid;
+    border-radius: 10px;
+    padding: 5px 10px;
+    text-decoration: none;
+}
+
+.feature, .company{
+    position: relative;
+    cursor: pointer;
+    user-select: none;
+}
+
+.description ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.description ul li{
+    cursor: pointer;
+    justify-content: space-between;
+    text-align: start;
+}
+
+
+.description ul li a{
+    margin-left: 10px;
+}
+
+
+
+
+.description{
+    background-color: white;
+    box-shadow: -1px 0px 10px 5px rgba(0, 0, 0, 0.383);
+    padding:20px;
+    margin-top: 10px;
+    position: absolute;
+    border-radius: 5px; 
+   width: 70px;
+}
+
+.feature .description{
+    left: -50px;
+    width: 90px;
+}
+
+
+main{
+    display: flex;
+    justify-content: space-around;
+    gap: 40px;
+    height: 500px;
+    margin: 20px;
+}
+
+section.main-title{
+    width: 30%;
+   
+}
+
+section.main-title h1{
+    font-size: 50px;
+}
+
+section.main-title p{
+    font-size: 25px;
+}
+
+section.main-title a{
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: black;
+}
+
+.image img{
+  height: 100%;
+}
+
+section.main-title ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    padding: 0;
+}
+
+.hide{
+    display: none;
+}

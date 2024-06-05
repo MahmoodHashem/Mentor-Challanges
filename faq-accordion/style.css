@@ -1,0 +1,65 @@
+
+@font-face {
+    font-family: WorkSans;
+    src: url(./assets/fonts/static/WorkSans-Regular.ttf);
+}
+
+@font-face {
+    font-family: WorkSansBold;
+    src: url(./assets/fonts/static/WorkSans-Bold.ttf);
+}
+
+body{
+    background-color: hsl(275, 100%, 97%);
+    background-image: url(./assets/images/background-pattern-desktop.svg);
+    background-repeat: no-repeat;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.card{
+    background-color: white; 
+    width: 500px;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0px 2px 15px 10px rgba(0, 0, 0, 0.226);
+}
+
+.heading, .q{
+    display: flex;
+}
+
+.heading{
+    gap: 30px;
+    align-items: center;
+}
+
+h1, h4{
+    font-family: WorkSansBold, sans-serif;
+    font-weight: bold;
+}
+
+.q{
+    justify-content: space-between;
+    align-items: center;
+}
+
+p{
+    opacity: 0.6;
+  margin: 0;
+  font-family: WorkSans, sans-serif;
+}
+
+
+.hide{
+    display: none;
+}
+
+img{
+    cursor: pointer;
+    height: 30px;
+}

@@ -96,17 +96,19 @@ h1{
 
 p{
     font-family:Montserrat, sans-serif; 
+    margin: 0;
+    padding: 0;
 }
 
 .price{
     display: flex;
     align-items: center;
     gap: 1vw;
+    margin: 10px;
 }
 
 
 h3{
-   
     margin: 0;
     padding: 0;
     font-family: Fraunces, serif;
@@ -118,6 +120,12 @@ h3{
     font-family:Fraunces, serif;
     opacity: 0.7;
     font-size: 15px;
+}
+
+.contents{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 button{

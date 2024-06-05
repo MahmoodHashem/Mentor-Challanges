@@ -1,0 +1,112 @@
+
+
+
+@font-face {
+    font-family: YoungSerif;
+    src: url(./assets/fonts/young-serif/YoungSerif-Regular.ttf);
+}
+
+@font-face {
+    font-family: outfit;
+    src: url(./assets/fonts/outfit/static/Outfit-Light.ttf);
+}
+
+@font-face {
+    font-family: OutfitBold;
+    src: url(./assets/fonts/outfit/static/Outfit-Bold.ttf);
+}
+
+
+@media screen and (max-width: 600px) {
+    .card{
+        width: 80%;
+    }
+}
+
+@media screen and (min-width: 601px) {
+    .card{
+        width: 40%;
+    }
+    
+}
+
+body{
+    background-color:hsl(30, 54%, 90%) ;
+    font-family: outfit, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100;
+    margin: 0;
+    padding: 0;
+    
+}
+
+img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+
+h1, h2{
+    font-family: YoungSerif, sans-serif;
+    font-weight: 400;
+    color: hsl(24, 5%, 18%);
+}
+
+h2, table tr td:nth-child(2){
+    color: hsl(14, 45%, 36%);
+    font-weight: bold;
+}
+
+
+h4{
+    font-family: OutfitBold, sans-serif;
+    margin: 0;
+    color: hsl(332, 51%, 32%);
+}
+
+.card{
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+ul:not(.prepare-time ul) li::marker, ol li::marker{
+    color: hsl(14, 45%, 36%);
+}
+
+
+.prepare-time ul li::marker{
+    color: hsl(332, 51%, 32%);
+
+}
+
+
+.prepare-time{
+    background-color:hsl(30, 54%, 90%);
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+
+ul, ol{
+    line-height: 30px;
+}
+
+
+
+
+table, td{
+    
+    margin: 0;
+    border-collapse: collapse;
+}
+
+table td{
+    padding-right: 150px;
+    text-align: start;
+}
+
+

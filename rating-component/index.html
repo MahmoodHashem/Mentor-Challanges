@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="/bootstrap-5.3.3-dist/css/bootstrap.min.css">
+  <title>Frontend Mentor | Interactive rating component</title>
+
+  <style>
+
+    body{
+      background-color: hsl(216, 12%, 8%);
+    }
+
+    .card {
+      width: 25rem;
+      background-color: #1D242E
+    }
+
+    .number {
+      background-color: #272E38;
+      padding: 10px 18px;
+    }
+
+    .number:hover {
+      background-color: hsl(216, 12%, 54%);
+      cursor: pointer;
+    }
+
+    a.btn {
+      background-color: hsl(25, 97%, 53%);
+      color: white;
+    }
+
+    a.btn:hover {
+      background-color: white;
+      color: black;
+    }
+
+    .image{
+      background-color: #272E38;
+      width: 50px;
+      height: 50px;
+      padding: 15px;
+      border-radius: 50%;
+    }
+
+    .card-body {
+      padding-left: 0;
+    }
+
+    /*------  Thank you card ----*/
+    .container{
+      background-color: hsl(213, 19%, 18%); 
+      color: hsl(25, 97%, 53%);
+    }
+
+    
+  </style>
+</head>
+
+<body class="d-flex justify-content-center align-items-center vh-100 ">
+  <div class="card text-light p-4 pb-2 rounded-4">
+    <img src="./images/icon-star.svg" alt="star" class="image">
+    <div class="card-body">
+      <div class="card-title h3">
+        How did we do?
+      </div>
+      <p class="opacity-50">Please let us know how we did with your support request. All feedback is appreciated
+        to help us improve our offering!</p>
+      <div class="numbers d-flex justify-content-between">
+        <div class="number rounded-circle">1</div>
+        <div class="number rounded-circle">2</div>
+        <div class="number rounded-circle">3</div>
+        <div class="number rounded-circle">4</div>
+        <div class="number rounded-circle">5</div>
+      </div>
+      <a href="#" class="btn rounded-pill d-grid mt-3 text-uppercase">Submit</a>
+    </div>
+  </div>
+
+
+  <div class="card text-light text-center p-4 d-none rounded-4">
+    <div class="card-body">
+      <img src="./images/illustration-thank-you.svg" alt="thanks" class="card-img-top">
+      <div class="container p-1 my-2  col-8 rounded-4">
+        You selected <span id="rate">0</span> out of 5
+      </div>
+      <div class="card-title h3">
+        Thank you!
+      </div>
+      <p class="opacity-50">
+        We appreciate you taking the time to give a rating. If you ever need more support,
+        don’t hesitate to get in touch!
+      </p>
+    </div>
+
+  </div>
+  </nav>
+
+  <script src="./script.js"></script>
+</body>
+
+</html>

@@ -6,17 +6,13 @@ This is a solution to the [Order summary card challenge on Frontend Mentor](http
 
 - [Overview](#overview)
   - [The challenge](#the-challenge)
-  - [Screenshot](#screenshot)
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
   - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
 - [Author](#author)
 - [Acknowledgments](#acknowledgments)
-
-**Note: Delete this note and update the table of contents based on what sections you keep.**
 
 ## Overview
 
@@ -28,8 +24,8 @@ Users should be able to:
 
 ### Links
 
-- [Solution URL](https://github.com/MahmoodHashem/Mentor-Challanges/tree/main/order-summary)
-- [Live Site URL](https://mahmoodhashem.github.io/Mentor-Challanges/order-summary/index.html)
+- [Solution URL](https://github.com/MahmoodHashem/Mentor-Challanges/tree/main/order-summary-component)
+- [Live Site URL](https://mahmoodhashem.github.io/Mentor-Challanges/order-summary-component/index.html)
 
 ## My process
 

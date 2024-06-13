@@ -43,7 +43,6 @@ Users should be able to:
 Some utilites of bootsrap
 
 ## Author
-
 - Contact - [Mahmood Hashemi](https://t.me/shahmahmood)
 - Frontend Mentor - [@MahmoodHashem](https://www.frontendmentor.io/profile/MahmoodHasheme)
 - Twitter - [@Mahmood18999963](https://twitter.com/Mahmood18999963)

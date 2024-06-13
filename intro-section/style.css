@@ -1,5 +1,112 @@
 
 
+
+
+body{
+    overflow-y: auto;
+}
+
+
+@media screen and (max-width: 650px) {
+
+    .links li:not(:first-child), .login li:not(:last-child){
+        display: none;
+    }
+
+    main{
+        flex-direction: column;
+    }
+    
+    .main-title{
+        order: 1;
+        width: 100%;
+        text-align: center;
+    }
+
+    .desktop-image{
+        display: none;
+    }
+
+    .mobile-image img{
+        width: 100%;
+    }
+
+    .menu {
+        display: block;
+      }
+
+      .sidebar {
+        display: none;
+        position: fixed;
+        background-color: white;
+        height: 100%;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        width: 70%;
+        z-index: 2;
+      }
+      
+.overlay {
+    display: none;
+    background-color: rgba(0, 0, 0, 0.594);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+
+  .sidebar ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: start;
+  }
+
+  .sidebar ul li a {
+    color: black;
+    font-family: var(--inter);
+    font-size: 30px;
+  }
+
+  .sidebar ul li {
+    list-style: none;
+  }
+
+  .sidebar ul li:first-child {
+    align-self: flex-end;
+    padding: 10px 20px;
+  }
+
+  .sidebar li img {
+    width: 50px;
+    align-self: end;
+  }
+
+        
+}
+
+
+@media  screen  and (min-width: 651px){
+
+    section.main-title{
+        width: 30%;
+    }
+
+    .mobile-image{
+        display: none;
+    }
+
+    .sidebar {
+        display: none;
+      }
+
+      .menu {
+        display: none;
+      }
+    
+}
+
+
 header nav>ul{
     list-style: none;
     display: flex;
@@ -37,7 +144,7 @@ header nav>ul{
     
 }
 
-.login li:last-child a{
+.login li:nth-child(2) a{
     border: 2px solid;
     border-radius: 10px;
     padding: 5px 10px;
@@ -75,7 +182,7 @@ header nav>ul{
 
 .description{
     background-color: white;
-    box-shadow: -1px 0px 10px 5px rgba(0, 0, 0, 0.383);
+    box-shadow: -1px 10px 20px 0px rgba(0, 0, 0, 0.383);
     padding:20px;
     margin-top: 10px;
     position: absolute;
@@ -97,10 +204,7 @@ main{
     margin: 20px;
 }
 
-section.main-title{
-    width: 30%;
-   
-}
+
 
 section.main-title h1{
     font-size: 50px;
@@ -118,7 +222,7 @@ section.main-title a{
     background-color: black;
 }
 
-.image img{
+.desktop-image img{
   height: 100%;
 }
 
@@ -133,3 +237,4 @@ section.main-title ul{
 .hide{
     display: none;
 }
+

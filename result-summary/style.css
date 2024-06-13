@@ -10,18 +10,15 @@ body {
   font-family: Hanken;
 }
 
-
- .item{
-            --s: 20px;
-            /* size of the corners */
-            border: 2px solid #b3818444;
-            background: #f2f2f2 content-box;
-            mask:
-                conic-gradient(#000 0 0) content-box,
-                conic-gradient(at var(--s) var(--s), #0000 75%, #000 0)
-                 0 0/calc(100% - var(--s)) calc(100% - var(--s));
-        }
-
+.item {
+  --size: 20px;
+  /* size of the corners */
+  border: 2px solid #b3818444;
+  background: #f2f2f2 content-box;
+  mask: conic-gradient(#000 0 0) content-box,
+    conic-gradient(at var(--size) var(--size), #0000 75%, #000 0) 0 0 /
+      calc(100% - var(--size)) calc(100% - var(--size));
+}
 
 @media only screen and (min-width: 651px) {
   .header {
@@ -61,22 +58,19 @@ body {
 
   .item {
     font-size: 20px;
-	height: 70px; 
+    height: 70px;
   }
   .score {
     font-size: 65px;
     margin-bottom: 10px;
   }
 
-  
-h1{
+  h1 {
     margin: 20px;
     padding: 0;
     font-size: 30px;
-    font-family: Hanken, sans-serif
+    font-family: Hanken, sans-serif;
   }
-  
-
 }
 
 @media only screen and (max-width: 650px) {
@@ -90,7 +84,7 @@ h1{
     font-size: 18px;
   }
 
-  .summary{
+  .summary {
     padding: 10px;
   }
 
@@ -163,7 +157,6 @@ h1{
 }
 
 .item {
-	
   display: flex;
   align-items: center;
   justify-content: space-between;

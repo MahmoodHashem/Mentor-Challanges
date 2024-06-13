@@ -37,7 +37,7 @@ Users should be able to:
 ### Links
 
 - [Solution URL](https://github.com/MahmoodHashem/Mentor-Challanges/tree/main/intro-section)
-- [Live Site URL](https://mahmoodhashem.github.io/Mentor-Challanges/intro-section.html)
+- [Live Site URL](https://mahmoodhashem.github.io/Mentor-Challanges/intro-section/index.html)
 
 ## My process
 

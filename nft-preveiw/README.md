@@ -12,7 +12,8 @@ This is a solution to the [NFT preview card component challenge on Frontend Ment
   - [What I learned](#what-i-learned)
   - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
-- [Author](#author)[Acknowledgments](#acknowledgments)
+- [Author](#author)
+- [Acknowledgments](#acknowledgments)
 
 ## Overview
 
@@ -25,8 +26,8 @@ Users should be able to:
 
 ### Links
 
-- [Solution URL](https://github.com/MahmoodHashem/Mentor-Challanges/tree/main/nft-preview)
-- [Live Site URL](https://mahmoodhashem.github.io/Mentor-Challanges/nft-preview)
+- [Solution URL](https://github.com/MahmoodHashem/Mentor-Challanges/tree/main/nft-preveiw)
+- [Live Site URL](https://mahmoodhashem.github.io/Mentor-Challanges/nft-preveiw/index.html)
 
 ## My process
 

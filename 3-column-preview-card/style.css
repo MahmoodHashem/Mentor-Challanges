@@ -1,0 +1,75 @@
+
+:root{
+    --clr-orange: hsl(31, 77%, 52%); 
+    --clr-cyan: hsl(184, 100%, 22%); 
+    --clr-dark-cyan: hsl(179, 100%, 13%); 
+    --clr-white: hsla(0, 0%, 100%, 0.75); 
+    --clr-light-gray: hsl(0, 0%, 95%); 
+  }
+
+
+  @media screen and (min-width: 772px) {
+    .sedans{
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+    }
+
+    .luxury{
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+  }
+
+
+  body{
+    height: 100vh;
+  }
+
+  .sedans{
+    background-color: var(--clr-orange);
+  }
+
+  .sedans a{
+    color: var(--clr-orange);
+  }
+
+  .suv{
+    background-color: var(--clr-cyan);
+  }
+
+  .suv a{
+    color: var(--clr-cyan);
+  }
+
+  .luxury{
+    background-color: var(--clr-dark-cyan);
+  }
+
+  .luxury a{
+    color: var(--clr-dark-cyan);
+  }
+
+  p{
+    color: var(--clr-white);
+  }
+
+  h2{
+    font-family: Big Shoulders Display, sans-serif; 
+    font-size: 3rem;
+    color: white;
+    margin-top: 40px;
+    text-transform: uppercase;
+  }
+
+  .btn{
+    background-color: white;
+    font-family: Lexend Deca, sans-serif;
+    font-size: 0.8rem;
+  }
+
+  .btn:hover{
+    color: white;
+    background-color: transparent;
+    border: 1px solid white;
+    box-sizing: border-box;
+  }

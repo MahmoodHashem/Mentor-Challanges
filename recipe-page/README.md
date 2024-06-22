@@ -1,6 +1,6 @@
 # Frontend Mentor - News homepage solution
 
-This is a solution to the [News homepage challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/news-homepage-H6SWTa1MFl). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+This is a solution to the [Recipe page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/recipe-page-KiTsR8QQKm). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
 ## Table of contents
 
@@ -15,9 +15,7 @@ This is a solution to the [News homepage challenge on Frontend Mentor](https://w
 - [Author](#author)
 - [Acknowledgments](#acknowledgments)
 
-
 ## Overview
-
 
 ### Links
 
@@ -32,18 +30,9 @@ This is a solution to the [News homepage challenge on Frontend Mentor](https://w
 - CSS custom properties
 - Flexbox
 
-
-
 ### What I learned
 
 This challenge seemed very easy, so I wanted to just practice the previous lessons. However, I learned something new, which was the `::marker `pseudo-element of list style.
-
-
-
-
-
-
-
 
 ## Author
 
@@ -51,7 +40,6 @@ This challenge seemed very easy, so I wanted to just practice the previous lesso
 - Frontend Mentor - [@MahmoodHashem](https://www.frontendmentor.io/profile/MahmoodHasheme/yourusername)
 - Twitter - [@Mahmood18999963](https://twitter.com/Mahmood18999963)
 
-
 ## Acknowledgments
 
-I would like to express my gratitude to all content creators, bloggers, and senior developers who have generously made learning web development accessible and free for us. 
+I would like to express my gratitude to all content creators, bloggers, and senior developers who have generously made learning web development accessible and free for us.

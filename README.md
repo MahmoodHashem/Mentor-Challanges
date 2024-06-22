@@ -10,7 +10,7 @@ This repository is a collection of my solutions to various Frontend Mentor chall
 
 Below is a list of Frontend Mentor challenges I have completed.
 
-##### QR code component
+##### QR Code Component
 
 * [Live](https://mahmoodhashem.github.io/Mentor-Challanges/QR%20code/index.html) |[ Repo ](https://github.com/MahmoodHashem/Mentor-Challanges/tree/main/QR%20code)| [Try out](https://www.frontendmentor.io/challenges/qr-code-component-iux_sIO_H)
 
@@ -18,58 +18,96 @@ Below is a list of Frontend Mentor challenges I have completed.
 
 ##### Social Links Profile
 
-- [Live](https://mahmoodhashem.github.io/Mentor-Challanges/Social%20links%20profile/index.html) |[ Repo ](https://github.com/MahmoodHashem/Mentor-Challanges/tree/main/Social%20links%20profile)| [Try out](https://www.frontendmentor.io/challenges/social-links-profile-UG32l9m6dQ)
+* [Live](https://mahmoodhashem.github.io/Mentor-Challanges/Social%20links%20profile/index.html) |[ Repo ](https://github.com/MahmoodHashem/Mentor-Challanges/tree/main/Social%20links%20profile)| [Try out](https://www.frontendmentor.io/challenges/social-links-profile-UG32l9m6dQ)
 
   - ![img](./Social%20links%20profile/assets/images/Screenshot_9-4-2024_2197_127.0.0.1.jpeg)
 
 ##### Blog Card
 
-[Live](https://github.com/MahmoodHashem/Mentor-Challanges/tree/main/Blog%20card) | Repo | Try out
+* [Live](https://github.com/MahmoodHashem/Mentor-Challanges/tree/main/Blog%20card) | [Repo](https://github.com/MahmoodHashem/Mentor-Challanges/tree/main/Blog%20card) | [Try out](https://www.frontendmentor.io/challenges/blog-preview-card-ckPaj01IcS)
+  * ![img](./Blog%20card/assets/images/Screenshot_23-4-2024_183449_127.0.0.1.jpeg)
 
-### Challenge 4: [Newsletter Subscription](https://github.com/MahmoodHashem/Mentor-Challanges/tree/main/newsletter-sign-up-with-success-message-main)
+##### NFT Preview Card
 
-- **Technologies Used**: HTML, CSS,JavaScript, Flexbox.
-- **[Live Site](https://mahmoodhashem.github.io/Mentor-Challanges/newsletter-sign-up-with-success-message-main/newsletter-sign-up-with-success-message-main/index.html)**
+* [Live](https://mahmoodhashem.github.io/Mentor-Challanges/nft-preveiw/index.html) | [Repo](https://github.com/MahmoodHashem/Mentor-Challanges/tree/main/nft-preveiw) | [Try out](https://www.frontendmentor.io/challenges/nft-preview-card-component-SbdUL_w0U)
+  * ![img](./nft-preveiw/images/screenshot.png)
 
-### Challenge 5: [Age Calculator](https://github.com/MahmoodHashem/Mentor-Challanges/tree/main/age-calculator)
+##### Order Summary Component
 
-- **[Live Site](https://mahmoodhashem.github.io/Mentor-Challanges/age-calculator/index.html)**
-- **Technologies Used**: HTML, CSS,JavaScript, Flexbox.
+* [Live](https://mahmoodhashem.github.io/Mentor-Challanges/order-summary-component/index.html) | [Repo](https://github.com/MahmoodHashem/Mentor-Challanges/tree/main/order-summary-component) | [Try out](https://www.frontendmentor.io/challenges/order-summary-component-QlPmajDUj)
+  * ![img](./order-summary-component/images/screenshot.png)
 
-### Challenge 6: [Reuslt Summary](https://github.com/MahmoodHashem/Mentor-Challanges/tree/main/result-summary)
+##### Product Preview Card
 
-- **Technologies Used**: HTML, CSS, Flexbox.
-- [Live Site](https://mahmoodhashem.github.io/Mentor-Challanges/result-summary/index.html)
+* [Live](https://mahmoodhashem.github.io/Mentor-Challanges/product-preview-card/index.html) | [Repo](https://github.com/MahmoodHashem/Mentor-Challanges/tree/main/product-preview-card) | [Try out](https://www.frontendmentor.io/challenges/product-preview-card-component-GO7UmttRfa)
+  * ![img](./product-preview-card/images/screenshot.png)
 
-### Challenge 7: [Sign Up Form](https://github.com/MahmoodHashem/Mentor-Challanges/tree/main/signup-form)
+##### Rating Component
 
-- **Technologies Used**: HTML, CSS, Flexbox, JavaScript.
-- [Live Site](https://mahmoodhashem.github.io/Mentor-Challanges/signup-form/index.html)
+* [Live](https://mahmoodhashem.github.io/Mentor-Challanges/rating-component/index.html) | [Repo](https://github.com/MahmoodHashem/Mentor-Challanges/tree/main/rating-component) | [Try out](https://www.frontendmentor.io/challenges/interactive-rating-component-koxpeBUmI)
+  * ![img](./rating-component/images/screenshot.png)
 
-### Challenge 8: [News Homepage](https://github.com/MahmoodHashem/Mentor-Challanges/tree/main/news-homepage-main)
+##### Recipe Page
 
-- **Technologies Used**: HTML, CSS, Grid, JavaScript.
-- [Live Site](https://mahmoodhashem.github.io/Mentor-Challanges/news-homepage-main/index.html);
+* [Live](https://mahmoodhashem.github.io/Mentor-Challanges/recipe-page/index.html) | [Repo](https://github.com/MahmoodHashem/Mentor-Challanges/tree/main/recipe-page) | [Try out](https://www.frontendmentor.io/challenges/recipe-page-KiTsR8QQKm)
+  * ![img](./recipe-page/assets/images/screenshot.png)
 
-### Challenge 9: [Time Tracking ](https://github.com/MahmoodHashem/Mentor-Challanges/tree/main/time-tracking)
+##### Newsletter Subscription
 
-- **Technologies Used**: HTML, CSS, Grid,Flexbox, JavaScript.
-- [Live Site](https://mahmoodhashem.github.io/Mentor-Challanges/time-tracking/index.html);
-- 
+* [Live](https://mahmoodhashem.github.io/Mentor-Challanges/newsletter-sign-up-with-success-message-main/newsletter-sign-up-with-success-message-main/index.html) | [Repo](https://github.com/MahmoodHashem/Mentor-Challanges/tree/main/newsletter-sign-up-with-success-message-main) | [Try out](https://www.frontendmentor.io/challenges/newsletter-signup-form-with-success-message-3FC1AZbNrv)
+  * ![img](./newsletter-sign-up-with-success-message-main/newsletter-sign-up-with-success-message-main/assets/screenshots/desktop-subscribe.jpeg)
 
-### Challenge 10: [Advice Generator](https://github.com/MahmoodHashem/Mentor-Challanges/tree/main/advice-generator)
+##### Age Calculator
 
-- **Technologies Used**: HTML, CSS, Grid,Flexbox, JavaScript.
-- [Live Site](https://mahmoodhashem.github.io/Mentor-Challanges/advice-generator/index.html);
+* [Live](https://mahmoodhashem.github.io/Mentor-Challanges/age-calculator/index.html) | [Repo](https://github.com/MahmoodHashem/Mentor-Challanges/tree/main/age-calculator) | [Try out](https://www.frontendmentor.io/challenges/blog-preview-card-ckPaj01IcS)
+  * ![img](./age-calculator/assets/images/desktop.jpeg)
 
-### Challenge 11: [FAQ Accordian](https://github.com/MahmoodHashem/Mentor-Challanges/tree/main/faq-accordion)
+##### Reuslt Summary
 
-- **Technologies Used**: HTML, CSS, Grid,Flexbox, JavaScript.
-- [Live Site](https://mahmoodhashem.github.io/Mentor-Challanges/faq-accordion/index.html);
+* [Live](https://mahmoodhashem.github.io/Mentor-Challanges/result-summary/index.html) | [Repo](https://github.com/MahmoodHashem/Mentor-Challanges/tree/main/result-summary) | [Try out](https://www.frontendmentor.io/challenges/results-summary-component-CE_K6s0maV)
+  * ![img](./result-summary/assets/images/desktop.jpeg)
 
-... (continue listing other challenges)
+##### Sign Up Form
 
-### Check All Challanges:[Live Site](https://mahmoodhashem.github.io/Mentor-Challanges/)
+* [Live](https://mahmoodhashem.github.io/Mentor-Challanges/signup-form/index.html) | [Repo](https://github.com/MahmoodHashem/Mentor-Challanges/tree/main/signup-form) | [Try out](https://www.frontendmentor.io/challenges/intro-component-with-signup-form-5cf91bd49edda32581d28fd1)
+  * ![img](./signup-form/images/screenshot.png)
+
+##### News Homepage
+
+* [Live](https://mahmoodhashem.github.io/Mentor-Challanges/news-homepage-main/index.html) | [Repo](https://github.com/MahmoodHashem/Mentor-Challanges/tree/main/news-homepage-main) | [Try out](https://www.frontendmentor.io/challenges/news-homepage-H6SWTa1MFl)
+  * ![img](./news-homepage-main/assets/images/desktop.jpeg)
+
+##### Time Tracking
+
+* [Live](https://mahmoodhashem.github.io/Mentor-Challanges/time-tracking/index.html) | [Repo](https://github.com/MahmoodHashem/Mentor-Challanges/tree/main/time-tracking) | [Try out](https://www.frontendmentor.io/challenges/time-tracking-dashboard-UIQ7167Jw)
+  * ![img](./time-tracking/images/desktop.jpeg)
+
+##### Advice Generator
+
+* [Live](https://mahmoodhashem.github.io/Mentor-Challanges/advice-generator/index.html) | [Repo](https://github.com/MahmoodHashem/Mentor-Challanges/tree/main/advice-generator) | [Try out](https://www.frontendmentor.io/challenges/advice-generator-app-QdUG-13db)
+  * ![img](./advice-generator/images/desktop.jpeg)
+
+##### FAQ Accordian
+
+* [Live](https://mahmoodhashem.github.io/Mentor-Challanges/faq-accordion/index.html) | [Repo](https://github.com/MahmoodHashem/Mentor-Challanges/tree/main/faq-accordion) | [Try out](https://www.frontendmentor.io/challenges/faq-accordion-wyfFdeBwBz)
+  * ![img](./faq-accordion/assets/images/screenshot.png)
+
+##### Social Proof Section
+
+* [Live](https://mahmoodhashem.github.io/Mentor-Challanges/social-proof-section/index.html) | [Repo](https://github.com/MahmoodHashem/Mentor-Challanges/tree/main/social-proof-section) | [Try out](https://www.frontendmentor.io/challenges/social-proof-section-6e0qTv_bA)
+  * ![img](./social-proof-section/images/desktop.png)
+
+##### 3 Column Preview
+
+* [Live](https://mahmoodhashem.github.io/Mentor-Challanges/3-column-preview-card/index.html) | [Repo](https://github.com/MahmoodHashem/Mentor-Challanges/tree/main/3-column-preview-card) | [Try out](https://www.frontendmentor.io/challenges/3column-preview-card-component-pH92eAR2-)
+  * ![img](./3-column-preview-card/images/desktop.png)
+
+##### Intro Section
+
+* [Live](https://mahmoodhashem.github.io/Mentor-Challanges/intro-section/index.html) | [Repo](https://github.com/MahmoodHashem/Mentor-Challanges/tree/main/intro-section) | [Try out](https://www.frontendmentor.io/challenges/intro-section-with-dropdown-navigation-ryaPetHE5)
+  * ![img](./intro-section/images/desktop.png)
+
+### [All Challanges Live Site](https://mahmoodhashem.github.io/Mentor-Challanges/)
 
 ## Contributing
 

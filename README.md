@@ -10,20 +10,21 @@ This repository is a collection of my solutions to various Frontend Mentor chall
 
 Below is a list of Frontend Mentor challenges I have completed.
 
-### Challenge 1: [QR Code](https://github.com/MahmoodHashem/Mentor-Challanges/tree/main/QR%20code)
+##### QR code component
 
-- **Technologies Used**: HTML and CSS.
-- **[Live Site](https://mahmoodhashem.github.io/Mentor-Challanges/QR%20code/index.html)**
+* [Live](https://mahmoodhashem.github.io/Mentor-Challanges/QR%20code/index.html) |[ Repo ](https://github.com/MahmoodHashem/Mentor-Challanges/tree/main/QR%20code)| [Try out](https://www.frontendmentor.io/challenges/qr-code-component-iux_sIO_H)
 
-### Challenge 2: [Social Links](https://github.com/MahmoodHashem/Mentor-Challanges/tree/main/Social%20links%20profile)
+  - ![img](./QR%20code/images/screenshot.png)
 
-- **Technologies Used**: HTML and CSS.
-- **[Live Site](https://mahmoodhashem.github.io/Mentor-Challanges/Social%20links%20profile/index.html)**
+##### Social Links Profile
 
-### Challenge 3: [Blog Card](https://github.com/MahmoodHashem/Mentor-Challanges/tree/main/Blog%20card)
+- [Live](https://mahmoodhashem.github.io/Mentor-Challanges/Social%20links%20profile/index.html) |[ Repo ](https://github.com/MahmoodHashem/Mentor-Challanges/tree/main/Social%20links%20profile)| [Try out](https://www.frontendmentor.io/challenges/social-links-profile-UG32l9m6dQ)
 
-- **Technologies Used**: HTML, CSS, Flexbox.
-- **[fdf](https://mahmoodhashem.github.io/Mentor-Challanges/Social%20links%20profile/index.html)**
+  - ![img](./Social%20links%20profile/assets/images/Screenshot_9-4-2024_2197_127.0.0.1.jpeg)
+
+##### Blog Card
+
+[Live](https://github.com/MahmoodHashem/Mentor-Challanges/tree/main/Blog%20card) | Repo | Try out
 
 ### Challenge 4: [Newsletter Subscription](https://github.com/MahmoodHashem/Mentor-Challanges/tree/main/newsletter-sign-up-with-success-message-main)
 

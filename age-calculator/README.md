@@ -1,6 +1,6 @@
 # Frontend Mentor - Age calculator app solution
 
-This is a solution to the [Age calculator app challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/age-calculator-app-dF9DFFpj-Q). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+This is a solution to the [Age calculator app challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/age-calculator-app-dF9DFFpj-Q). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
 ## Table of contents
 
@@ -37,7 +37,6 @@ Users should be able to:
 ![](./assets/images/desktop.jpeg)
 ![](./assets/images/mobile.jpeg)
 
-
 ### Links
 
 - [Solution URL](https://github.com/MahmoodHashem/Mentor-Challanges/tree/main/age-calculator)
@@ -54,15 +53,13 @@ Users should be able to:
 - Mobile-first workflow
 - JavaScript
 
-
 ### What I learned
 
-I gained a substantial amount of knowledge from this challenge, particularly in the areas of JavaScript validation and modularity. The experience was not only challenging but also immensely beneficial. It allowed me to deepen my understanding of JavaScript and apply practical skills in a real-world scenario, enhancing both my problem-solving abilities and my coding techniques. This challenge has definitely been a significant milestone in my learning journey. 
-
+I gained a substantial amount of knowledge from this challenge, particularly in the areas of JavaScript validation and modularity. The experience was not only challenging but also immensely beneficial. It allowed me to deepen my understanding of JavaScript and apply practical skills in a real-world scenario, enhancing both my problem-solving abilities and my coding techniques. This challenge has definitely been a significant milestone in my learning journey.
 
 ## Author
 
-- Website - [Mahmood Hashemi](https://t.me/shahmahmood)
-- Frontend Mentor - [@MahmoodHashem](https://www.frontendmentor.io/profile/MahmoodHasheme/yourusername)
-- Twitter - [@Mahmood18999963](https://twitter.com/Mahmood18999963)
-
+- [My Portfolio](https://main--mahmood-hashemi.netlify.app/)
+- [Fronted Mentor](https://www.frontendmentor.io/profile/MahmoodHasheme/yourusername)
+- [Twitter](https://twitter.com/Mahmood18999963)
+- [LinkedIn](https://www.linkedin.com/in/shah-mahmood-hashemi-55172a276/)

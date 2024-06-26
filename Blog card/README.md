@@ -24,7 +24,6 @@ Users should be able to:
 
 ![](./assets/images/Screenshot_23-4-2024_183449_127.0.0.1.jpeg)
 
-
 ### Links
 
 - [Live Site URL](https://mahmoodhashem.github.io/Mentor-Challanges/Blog%20card/index.html)
@@ -40,8 +39,8 @@ Users should be able to:
 - Mobile-first workflow
 
 ### What I learned
-    I am thrilled to have had the opportunity to work with Flexbox and item alignment in this project. 
 
+    I am thrilled to have had the opportunity to work with Flexbox and item alignment in this project.
 
 ```css
 .body {
@@ -57,12 +56,13 @@ Users should be able to:
   }
 ```
 
-
 ### Continued development
-    In the Future Inshallah I will work on Grid and make dynamic pages with JavaScript
 
+    In the Future Inshallah I will work on Grid and make dynamic pages with JavaScript
 
 ## Author
 
-- Frontend Mentor - [@MahmoodHashem](https://www.frontendmentor.io/profile/MahmoodHashem)
-- Twitter - [@Mahmood18999963](https://twitter.com/Mahmood18999963)
+- [My Portfolio](https://main--mahmood-hashemi.netlify.app/)
+- [Fronted Mentor](https://www.frontendmentor.io/profile/MahmoodHasheme/yourusername)
+- [Twitter](https://twitter.com/Mahmood18999963)
+- [LinkedIn](https://www.linkedin.com/in/shah-mahmood-hashemi-55172a276/)

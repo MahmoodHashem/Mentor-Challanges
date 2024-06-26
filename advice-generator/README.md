@@ -45,15 +45,13 @@ Users should be able to:
 - Flexbox
 - Mobile-first workflow
 
-
-
 ## Author
 
-- Website - [Mahmood Hashemi](https://t.me/shahmahmood)
-- Frontend Mentor - [@MahmoodHashem](https://www.frontendmentor.io/profile/MahmoodHasheme/yourusername)
-- Twitter - [@Mahmood18999963](https://twitter.com/Mahmood18999963)
-
+- [My Portfolio](https://main--mahmood-hashemi.netlify.app/)
+- [Fronted Mentor](https://www.frontendmentor.io/profile/MahmoodHasheme/yourusername)
+- [Twitter](https://twitter.com/Mahmood18999963)
+- [LinkedIn](https://www.linkedin.com/in/shah-mahmood-hashemi-55172a276/)
 
 ## Acknowledgments
 
-I would like to express my gratitude to all content creators, bloggers, and senior developers who have generously made learning web development accessible and free for us. 
+I would like to express my gratitude to all content creators, bloggers, and senior developers who have generously made learning web development accessible and free for us.

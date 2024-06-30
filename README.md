@@ -2,10 +2,43 @@
 
 Welcome to my repository where I tackle challenges from [Frontend Mentor](https://www.frontendmentor.io). Frontend Mentor provides real-world coding challenges that help developers improve their coding skills by building realistic projects.
 
-
 ## Introduction
 
 This repository is a collection of my solutions to various Frontend Mentor challenges. Each challenge is an opportunity to practice and refine my web development skills including HTML, CSS, JavaScript, and various frameworks and libraries.
+
+### Repositories
+
+<details>
+    <summary>NEWBIE</summary>
+    <ol>
+      <li><a href="https://github.com/MahmoodHashem/Mentor-Challanges/tree/main/QR%20code">QR Code</a></li>
+      <li><a href="https://github.com/MahmoodHashem/Mentor-Challanges/tree/main/Social%20links%20profile" >Social Links Profile</a></li>
+      <li><a href="https://github.com/MahmoodHashem/Mentor-Challanges/tree/main/Blog%20card">Blog Card</a></li>
+      <li><a href="https://github.com/MahmoodHashem/Mentor-Challanges/tree/main/nft-preveiw">NFT Preview Card</a></li>
+      <li><a href="https://github.com/MahmoodHashem/Mentor-Challanges/tree/main/order-summary-component">Order Summary Component</a></li>
+      <li> <a href="https://github.com/MahmoodHashem/Mentor-Challanges/tree/main/product-preview-card">Product Preview Card</a></li>
+      <li><a href="https://github.com/MahmoodHashem/Mentor-Challanges/tree/main/rating-component">Rating Card Componen</a></li>
+      <li><a href="https://github.com/MahmoodHashem/Mentor-Challanges/tree/main/recipe-page">Recipe Page</a></li>
+      <li><a href="https://github.com/MahmoodHashem/Mentor-Challanges/tree/main/result-summary">Result Summary</a></li>
+      <li><a href="https://github.com/MahmoodHashem/Mentor-Challanges/tree/main/faq-accordion">FAQ Accordion</a></li>
+      <li><a href="https://github.com/MahmoodHashem/Mentor-Challanges/tree/main/3-column-preview-card">3 Column Preview Card</a></li>
+      <li><a href="https://github.com/MahmoodHashem/Mentor-Challanges/tree/main/social-proof-section">Social Proof Section </a></li>
+      <li><a href="https://github.com/MahmoodHashem/Mentor-Challanges/tree/main/signup-form">Intro Component with Sign-up Form</a></li>
+      <li><a href="https://github.com/MahmoodHashem/Mentor-Challanges/tree/main/result-summary">Result Summary Component</a></li>
+    </ol>
+  </details>
+
+<details>
+    <summary>JUNIOR</summary>
+    <ol>
+      <li><a href="https://github.com/MahmoodHashem/Mentor-Challanges/tree/main/newsletter-sign-up-with-success-message-main">Newsletter Subscription</a></li>
+      <li><a href="https://github.com/MahmoodHashem/Mentor-Challanges/tree/main/age-calculator">Age Calculator</a></li>
+      <li><a href="https://github.com/MahmoodHashem/Mentor-Challanges/tree/main/news-homepage-main">News Homepage</a></li>
+      <li><a href="https://github.com/MahmoodHashem/Mentor-Challanges/tree/main/intro-section">Intro Section with Dropdown Menue</a></li>
+      <li><a href="https://github.com/MahmoodHashem/Mentor-Challanges/tree/main/time-tracking">Time Tracking Dashboard</a></li>
+      <li><a href="https://github.com/MahmoodHashem/Mentor-Challanges/tree/main/advice-generator">Advice Generator</a></li>
+    </ol>
+  </details>
 
 ## Challenges
 
@@ -107,6 +140,11 @@ Below is a list of Frontend Mentor challenges I have completed.
 
 * [Live](https://mahmoodhashem.github.io/Mentor-Challanges/intro-section/index.html) | [Repo](https://github.com/MahmoodHashem/Mentor-Challanges/tree/main/intro-section) | [Try out](https://www.frontendmentor.io/challenges/intro-section-with-dropdown-navigation-ryaPetHE5)
   * ![img](./intro-section/images/desktop.png)
+
+##### Coding Bootcamp Testimonial Slider
+
+* [Live](https://mahmoodhashem.github.io/Mentor-Challanges/testimonial-slider/index.html) | [Repo](https://github.com/MahmoodHashem/Mentor-Challanges/tree/main/testimonial-slider) | [Try out](https://www.frontendmentor.io/challenges/coding-bootcamp-testimonials-slider-4FNyLA8JL)
+  * ![img](./testemonial-slider/images/desktop.png)
 
 ### [All Challanges Live Site](https://mahmoodhashem.github.io/Mentor-Challanges/)
 

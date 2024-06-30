@@ -1,0 +1,42 @@
+body {
+    height: 100vh;
+    background-color: hsl(233, 47%, 7%);
+
+  }
+
+  .card {
+    width: 80%;
+    background-color: hsl(244, 38%, 16%);
+
+  }
+
+  .card-text {
+    padding-right: 30px;
+  }
+
+  .card-img{
+    position: relative;
+    order: 1;
+  }
+
+  .card-img-top{
+    height: 100%;
+  }
+  .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: hsla(277, 64%, 61%, 0.584); /* Black color with 50% opacity */
+  z-index: 2;
+ }
+
+
+  .card-title span {
+    color: hsl(277, 64%, 61%);
+  }
+
+  p{
+   color:  hsla(0, 0%, 100%, 0.75)
+  }

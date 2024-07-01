@@ -24,7 +24,9 @@ This repository is a collection of my solutions to various Frontend Mentor chall
       <li><a href="https://github.com/MahmoodHashem/Mentor-Challanges/tree/main/3-column-preview-card">3 Column Preview Card</a></li>
       <li><a href="https://github.com/MahmoodHashem/Mentor-Challanges/tree/main/social-proof-section">Social Proof Section </a></li>
       <li><a href="https://github.com/MahmoodHashem/Mentor-Challanges/tree/main/signup-form">Intro Component with Sign-up Form</a></li>
-      <li><a href="https://github.com/MahmoodHashem/Mentor-Challanges/tree/main/result-summary">Result Summary Component</a></li>
+      <li><a href="https://github.com/MahmoodHashem/Mentor-Challanges/tree/main/stats-preview-card">Stats Preview Card</a></li>
+       <li><a href="https://github.com/MahmoodHashem/Mentor-Challanges/tree/main/ping-coming-soon">Ping Coming Soon</a></li>
+        <li><a href="https://github.com/MahmoodHashem/Mentor-Challanges/tree/main/signle-price-grid">Single Price Grid Component</a></li>
     </ol>
   </details>
 
@@ -145,6 +147,21 @@ Below is a list of Frontend Mentor challenges I have completed.
 
 * [Live](https://mahmoodhashem.github.io/Mentor-Challanges/testimonial-slider/index.html) | [Repo](https://github.com/MahmoodHashem/Mentor-Challanges/tree/main/testimonial-slider) | [Try out](https://www.frontendmentor.io/challenges/coding-bootcamp-testimonials-slider-4FNyLA8JL)
   * ![img](./testemonial-slider/images/desktop.png)
+
+##### Ping Coming Soon 
+
+* [Live](https://mahmoodhashem.github.io/Mentor-Challanges/ping-coming-soon/index.html) | [Repo](https://github.com/MahmoodHashem/Mentor-Challanges/tree/main/ping-coming-soon) | [Try out](https://www.frontendmentor.io/challenges/ping-single-column-coming-soon-page-5cadd051fec04111f7b848da)
+  * ![img](./ping-coming-soon/images/desktop.png)
+
+##### Single Price Grid Component
+
+* [Live](https://mahmoodhashem.github.io/Mentor-Challanges/signle-price-grid/index.html) | [Repo](https://github.com/MahmoodHashem/Mentor-Challanges/tree/main/signle-price-grid) | [Try out](https://www.frontendmentor.io/challenges/single-price-grid-component-5ce41129d0ff452fec5abbbc)
+  * ![img](./signle-price-grid/images/desktop.png)
+
+##### Stats Preview Card
+
+* [Live](https://mahmoodhashem.github.io/Mentor-Challanges/stats-preview-card/index.html) | [Repo](https://github.com/MahmoodHashem/Mentor-Challanges/tree/main/stats-preview-card) | [Try out](https://www.frontendmentor.io/challenges/stats-preview-card-component-8JqbgoU62)
+  * ![img](./stats-preview-card/images/desktop.png)
 
 ### [All Challanges Live Site](https://mahmoodhashem.github.io/Mentor-Challanges/)
 

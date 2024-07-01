@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap"
+    rel="stylesheet">
+  <title>Frontend Mentor | Single Price Grid Component</title>
+
+  <style>
+    :root {
+      --clr-cyan: hsl(179, 62%, 43%);
+      --clr-yellow: hsl(71, 73%, 54%);
+      --clr-gray: hsl(204, 43%, 93%);
+      --clr-gblue: hsl(218, 22%, 67%);
+      --clr-dark-cyan: hsl(179, 55%, 38%);
+    }
+
+    @media screen and (max-width: 701px) {
+
+      .card{
+        width: 20rem ;
+        grid-template-columns:  20rem;
+      }
+
+      
+    }
+
+    @media screen and (min-width: 700px) {
+
+
+
+      .card{
+        width: 40rem;
+        grid-template-columns: repeat(2, 20rem);
+      }
+      .join{
+        grid-column: span 2;
+      }
+
+      .sub{
+        grid-row: 2;
+      }
+
+      .us{
+        grid-column: 2;
+
+      }
+
+    }
+
+    body {
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: var(--clr-gray);
+      font-family: 'Karla', sans-serif;
+    }
+
+    .card {
+      display: grid;
+      color: white;
+      overflow: hidden;
+      border-radius: 5px;
+    }
+
+    .join {
+      background-color: white;
+      padding: 1rem 2rem;
+    }
+
+    .join h2 {
+      color: var(--clr-cyan);
+    }
+
+    .join h4 {
+      color: var(--clr-yellow);
+    }
+
+    .join p {
+      color: var(--clr-gblue);
+      padding-bottom: 0;
+    }
+
+    .sub {
+      padding: 1.8rem;
+      background-color: var(--clr-cyan);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .sub small {
+      font-size: 15px;
+      font-weight: 200;
+      opacity: 0.7;
+    }
+
+    .sub button {
+      padding: 0.8rem 1rem;
+      background-color: var(--clr-yellow);
+      color: white;
+      border: none;
+      border-radius: 5px;
+      width: 100%;
+      box-sizing: border-box;
+      font-family: 'Karla', sans-serif;
+      font-size: 1rem;
+      font-weight: bold;
+     
+    }
+
+    .us {
+      padding: 1.8rem;
+      background-color: var(--clr-dark-cyan);
+    
+    }
+
+    .us p {
+      color: var(--clr-gray);
+      line-height: 20px;
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <main>
+    <div class="card">
+      <div class="join">
+        <h2>Join our community</h3>
+          <h4>30-day, hassle-free money back guarantee</h4>
+          <p>
+            Gain access to our full library of tutorials along with expert code reviews.
+            Perfect for any developers who are serious about honing their skills.
+          </p>
+      </div>
+      <div class="sub">
+        <div>
+          <h4> Monthly Subscription
+          </h4>
+          <h2>
+            &dollar;29 <small>per month</small></h2>
+          <p> Full access for less than &dollar;1 a day</p>
+        </div>
+        <button>Sign Up</button>
+      </div>
+      <div class="us">
+        <h4> Why Us</h5>
+          <p>
+            Tutorials by industry experts <br>
+            Peer &amp; expert code review <br>
+            Coding exercises <br>
+            Access to our GitHub repos <br>
+            Community forum <br>
+            Flashcard decks <br>
+            New videos every week <br>
+          </p>
+      </div>
+    </div>
+  </main>
+</body>
+
+</html>

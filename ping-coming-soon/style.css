@@ -1,0 +1,176 @@
+main,
+footer {
+  text-align: center;
+  font-family: "Libre Franklin", sans-serif;
+}
+
+body{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 650px) {
+      
+  .input-container button{
+    margin-top: 20px;
+    width: 75%;
+  }
+
+  .input-container input{
+    width: 75%;
+  }
+
+  img[alt='dashboard']{
+    max-width: 300px;
+  }
+  
+}
+
+@media screen and (min-width: 651px) {
+  
+  .input-container button{
+    width: 150px;
+  }
+
+  .input-container input{
+    width: 280px;
+
+  }
+
+  img[alt='dashboard']{
+    max-width: 500px;
+  }
+  
+
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+main h1 span {
+  font-weight: lighter;
+  opacity: 0.5;
+}
+
+main h5 {
+  font-weight: 400;
+}
+
+
+
+.input-container input {
+  padding: 12px 20px;
+  outline: none;
+  border: 0.7px solid;
+  border-radius: 25px;
+  margin-right: 10px;
+  box-sizing: border-box;
+}
+
+.input-container button {
+  padding: 12px 20px;
+  border-radius: 25px;
+  font-size: 1rem;
+  border: none;
+  color: white;
+  background-color: hsl(223, 87%, 63%);
+  transition: 0.5s;
+}
+
+.input-container button:hover {
+  cursor: pointer;
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.59);
+}
+
+img[alt='dashboard'] {
+  margin-top: 30px;
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+footer i:not(:first-child) {
+  font-size: 20px;
+  color: hsl(223, 87%, 63%);
+  padding: 5px;
+  border-radius: 50%;
+  border: 0px solid;
+
+}
+
+footer i:first-child {
+  font-size: 25px;
+  color: white;
+  background-color: hsl(223, 87%, 63%);
+  border-radius: 100%;
+  border: 1px solid;
+  padding: 0;
+
+}
+
+footer i:first-child:hover {
+  color: hsl(223, 87%, 63%);
+  background-color: white;
+  cursor: pointer;
+}
+
+footer i:hover {
+  background-color: hsl(223, 87%, 63%);
+  color: white;
+  cursor: pointer;
+}
+
+footer p {
+  font-size: 12px;
+  opacity: 0.6;
+  font-weight: lighter;
+}
+
+
+#error {
+  position: relative;
+  border: 1px solid red;
+}
+
+.error-text {
+  position: relative;
+}
+
+
+.error-text::before {
+  display: block;
+  content: 'Please provide a valid email address';
+  color: red;
+  font-size: 12px;
+  position: absolute;
+  bottom: -20px;
+  left: 20px;
+  z-index: 10;
+}
+
+.empty-error{
+  position: relative; 
+}
+
+.empty-error::before{
+  display: block;
+  content: 'Whoops! It looks like you forgot to add your email';
+  color: red;
+  font-size: 12px;
+  position: absolute;
+  bottom: -20px;
+  left: 20px;
+  z-index: 10;
+}

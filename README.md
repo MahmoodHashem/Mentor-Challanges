@@ -27,6 +27,7 @@ This repository is a collection of my solutions to various Frontend Mentor chall
       <li><a href="https://github.com/MahmoodHashem/Mentor-Challanges/tree/main/stats-preview-card">Stats Preview Card</a></li>
        <li><a href="https://github.com/MahmoodHashem/Mentor-Challanges/tree/main/ping-coming-soon">Ping Coming Soon</a></li>
         <li><a href="https://github.com/MahmoodHashem/Mentor-Challanges/tree/main/signle-price-grid">Single Price Grid Component</a></li>
+         <li><a href="https://github.com/MahmoodHashem/Mentor-Challanges/tree/main/four-card-feature">Four Card Feature</a></li>
     </ol>
   </details>
 
@@ -162,6 +163,11 @@ Below is a list of Frontend Mentor challenges I have completed.
 
 * [Live](https://mahmoodhashem.github.io/Mentor-Challanges/stats-preview-card/index.html) | [Repo](https://github.com/MahmoodHashem/Mentor-Challanges/tree/main/stats-preview-card) | [Try out](https://www.frontendmentor.io/challenges/stats-preview-card-component-8JqbgoU62)
   * ![img](./stats-preview-card/images/desktop.png)
+
+##### Four Card Feature
+
+* [Live](https://mahmoodhashem.github.io/Mentor-Challanges/four-card-feature/index.html) | [Repo](https://github.com/MahmoodHashem/Mentor-Challanges/tree/main/four-card-feature) | [Try out](https://www.frontendmentor.io/challenges/four-card-feature-section-weK1eFYK)
+  * ![img](./four-card-feature/images/desktop.png)
 
 ### [All Challanges Live Site](https://mahmoodhashem.github.io/Mentor-Challanges/)
 

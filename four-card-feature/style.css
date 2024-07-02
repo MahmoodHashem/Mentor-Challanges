@@ -1,0 +1,144 @@
+:root {
+    --red: hsl(0, 78%, 62%);
+    --cyan: hsl(180, 62%, 55%);
+    --orange: hsl(34, 97%, 64%);
+    --blue: hsl(212, 86%, 64%);
+
+    --very-dark-blue: hsl(234, 12%, 34%);
+    --grayish-blue: hsl(229, 6%, 66%);
+    --very-light-gray: hsl(0, 0%, 98%);
+  }
+
+
+  @media screen and (min-width: 993px) {
+
+    body{
+      justify-items: center;
+    }
+
+    
+  main{
+    width: 70%;
+  }
+    
+  }
+
+
+  @media screen and (min-width: 772px) {
+    
+    .hero-container{
+      grid-template-columns: repeat(3, minmax(1fr,300px));
+      grid-template-rows: repeat(4,110px);
+    }
+
+    .calculator{
+      grid-column: 3;
+      grid-row: 2 /4;
+    }
+
+    .supervisor{
+      grid-row: 2 / 4;
+    }
+
+    .team{
+      grid-column: 2;
+      grid-row: 1 / 3 ;
+    }
+
+    .karma{
+      grid-row: 3 / 5;
+      grid-column: 2;
+    }
+
+  }
+
+  @media screen and (max-width: 771px) {
+    
+    main h1{
+      font-size: 1.5rem;
+    }
+
+  }
+
+  body {
+    background-color: var(--very-light-gray);
+    font-family: Poppins, sans-serif;
+    height: 100vh;
+    display: grid;
+  }
+
+
+
+  main header{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  header h1 span{
+    font-weight: lighter;
+    color: var(--grayish-blue);
+  }
+  header p{
+    width: 70%;
+    justify-self: center;
+  }
+  
+  p{
+    color: var(--grayish-blue);
+  }
+
+  .card h2{
+      padding: 0;
+      margin: 0;
+      font-size: 1.2rem;
+      font-weight: 600;
+      color: var(--very-dark-blue);
+  }
+  .card{
+    background-color: white;
+    padding: 30px;
+    border-radius: 7px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 10px 20px 5px rgba(0, 0, 0, 0.225);
+    box-sizing: border-box;
+    height: 250px;
+  }
+
+  .card p{
+    font-size: 14px;
+  }
+
+  .card img{
+    align-self: flex-end;
+    justify-self: end;
+  }
+
+  .supervisor{
+    border-top: 3px solid var(--cyan);
+  }
+
+  .team{
+    border-top: 3px solid var(--red);
+
+  }
+
+  .karma{
+    border-top: 3px solid  var(--orange);
+
+  }
+
+  .calculator{
+    border-top:3px solid var(--blue);
+
+  }
+
+
+  .hero-container{
+    display: grid;
+    gap: 2rem;
+  }
+

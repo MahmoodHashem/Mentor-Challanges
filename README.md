@@ -173,7 +173,7 @@ Below is a list of Frontend Mentor challenges I have completed.
 ##### Huddle Landing Page
 
 - [Live](https://mahmoodhashem.github.io/Mentor-Challanges/huddle-landing-page/index.html) | [Repo](https://github.com/MahmoodHashem/Mentor-Challanges/tree/main/huddle-landing-page) | [Try out](https://www.frontendmentor.io/challenges/huddle-landing-page-with-a-single-introductory-section-B_2Wvxgi0)
-  - ![img](./four-card-feature/images/desktop.png)
+  - ![img](./huddle-landing-page/images/desktop.png)
 
 ### [All Challanges Live Site](https://mahmoodhashem.github.io/Mentor-Challanges/)
 

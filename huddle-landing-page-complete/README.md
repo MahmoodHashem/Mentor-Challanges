@@ -32,8 +32,8 @@ Users should be able to:
 
 ### Links
 
-- [Solution URL](https://github.com/MahmoodHashem/Mentor-Challanges/tree/main/)
-- [Live Site URL](https://mahmoodhashem.github.io/Mentor-Challanges/)
+- [Solution URL](https://github.com/MahmoodHashem/Mentor-Challanges/tree/main/huddle-landing-page-complete)
+- [Live Site URL](https://mahmoodhashem.github.io/Mentor-Challanges/huddle-landing-page-complete/index.html)
 
 ## My process
 
@@ -54,8 +54,7 @@ In this challenge, one of the most fascinating things I learned was how to creat
 
 ### Useful resources
 
-- [Yout Video](https://www.youtube.com/watch?v=1_4EbmSxMtQ) - I was stuck in the curve section and this video helped me.
-
+- [Youtube Video](https://www.youtube.com/watch?v=1_4EbmSxMtQ) - I was stuck in the curve section and this video helped me.
 
 ## Author
 

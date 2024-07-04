@@ -41,6 +41,7 @@ This repository is a collection of my solutions to various Frontend Mentor chall
       <li><a href="https://github.com/MahmoodHashem/Mentor-Challanges/tree/main/intro-section">Intro Section with Dropdown Menue</a></li>
       <li><a href="https://github.com/MahmoodHashem/Mentor-Challanges/tree/main/time-tracking">Time Tracking Dashboard</a></li>
       <li><a href="https://github.com/MahmoodHashem/Mentor-Challanges/tree/main/advice-generator">Advice Generator</a></li>
+       <li><a href="https://github.com/MahmoodHashem/Mentor-Challanges/tree/main/huddle-landing-page-complete">Huddle Landing Page With curved</a></li>
     </ol>
   </details>
 
@@ -174,6 +175,11 @@ Below is a list of Frontend Mentor challenges I have completed.
 
 - [Live](https://mahmoodhashem.github.io/Mentor-Challanges/huddle-landing-page/index.html) | [Repo](https://github.com/MahmoodHashem/Mentor-Challanges/tree/main/huddle-landing-page) | [Try out](https://www.frontendmentor.io/challenges/huddle-landing-page-with-a-single-introductory-section-B_2Wvxgi0)
   - ![img](./huddle-landing-page/images/desktop.png)
+
+##### Huddle Landing Page with curved sections
+
+- [Live](https://mahmoodhashem.github.io/Mentor-Challanges/huddle-landing-page-complete/index.html) | [Repo](https://github.com/MahmoodHashem/Mentor-Challanges/tree/main/huddle-landing-page-complete) | [Try out](https://www.frontendmentor.io/challenges/huddle-landing-page-with-curved-sections-5ca5ecd01e82137ec91a50f2)
+  - ![img](./huddle-landing-page-complete/images/desktop.png)
 
 ### [All Challanges Live Site](https://mahmoodhashem.github.io/Mentor-Challanges/)
 

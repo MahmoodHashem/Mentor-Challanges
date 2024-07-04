@@ -119,7 +119,7 @@
   }
 
 
-  section.grow,
+  .grow,
   section.conversation,
   section.users {
     display: flex;
@@ -129,15 +129,15 @@
     font-family: Poppins, sans-serif;
   }
 
-  section.grow,
-  section.users {
+.grow,
+  .users {
     background-color: hsl(207, 100%, 98%);
 
   }
 
-  section.grow img,
+  .grow img,
   section.conversation img,
-  section.users img {
+.users img {
     width: 50%;
     height: auto;
   }

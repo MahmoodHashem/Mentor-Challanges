@@ -1,86 +1,85 @@
-
-
-*{
-    padding: 0px; 
-    margin: 0px;
-}
-
-body{
+/* Global Styles */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-@font-face {
-    font-family: Inter;
-    src: url(assets/fonts/static/Inter-Bold.ttf);
-  }
-@font-face {
-    font-family: Inter-regular;
-    src: url(assets/fonts/static/Inter-Regular.ttf);
-}
-
-html{
+    height: 100vh;
+    overflow: hidden;
     background-color: hsl(0, 0%, 8%);
-}
-
-img{
+    font-family: 'Inter-regular', sans-serif;
+    color: white;
+  }
+  
+  /* Fonts */
+  @font-face {
+    font-family: 'Inter';
+    src: url('assets/fonts/static/Inter-Bold.ttf') format('truetype');
+    font-weight: bold;
+  }
+  
+  @font-face {
+    font-family: 'Inter-regular';
+    src: url('assets/fonts/static/Inter-Regular.ttf') format('truetype');
+    font-weight: normal;
+  }
+  
+  /* Image */
+  img {
     width: 100px;
     height: 100px;
     border-radius: 50%;
     margin-bottom: 15px;
-}
-
-.country{
-    padding-top: 7px;
-    font-size: 18px;
-    font-family: 'Inter-regular', sans-serif;
-    color: hsl(75, 94%, 57%);
-}
-
-.name{
-    font-family:  "Inter", sans-serif;
-    font-size: 25px;
-    color: white;
-}
-
-.description{
-    padding-top: 18px;
-    padding-bottom: 10px;
-    font-family: "Inter-regular", sans-serif;
-    font-weight: lighter;
-    color: white;
-}
-
-.card{
-    width: 320px; 
-    height: 75%;
-    margin: 100px auto;
-    padding: 10px;
+  }
+  
+  /* Card */
+  .card {
+    width: 380px;
+    padding: 20px;
     border-radius: 10px;
     text-align: center;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    padding-bottom: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     background-color: hsl(0, 0%, 12%);
-}
-
-
-.links{
+  }
+  
+  .country {
+    padding-top: 7px;
+    font-size: 18px;
+    color: hsl(75, 94%, 57%);
+  }
+  
+  .name {
+    font-family: 'Inter', sans-serif;
+    font-size: 25px;
+  }
+  
+  .description {
+    padding: 18px 0 10px;
+    font-weight: lighter;
+  }
+  
+  /* Links */
+  .links {
     display: flex;
     flex-direction: column;
-}
-
-
-a{
+    gap: 10px;
+  }
+  
+  .links a {
     text-decoration: none;
     color: white;
-    background-color:hsl(0, 0%, 20%);
+    background-color: hsl(0, 0%, 20%);
     padding: 15px;
-    margin: 5px;
     border-radius: 10px;
-}
-
-a:hover{
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .links a:hover {
     background-color: hsl(75, 94%, 57%);
     color: black;
-}
+  }

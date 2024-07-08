@@ -1,36 +1,228 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Article preview component</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <title>Article preview component</title>
+
   <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      display: flex;
+      height: 100vh;
+      justify-content: center;
+      align-items: center;
+      background-color: hsl(210, 46%, 95%)
+    }
+
+
+    p {
+      color: hsl(214, 17%, 51%)
+    }
+
+
+    @media screen and (max-width: 992px) {
+
+      .card {
+        flex-direction: column;
+        width: 80%;
+      }
+
+      .image {
+        height: 200px;
+        border-top-left-radius: 0.8rem;
+        border-top-right-radius: 0.8rem;
+      }
+      .mobile-card-footer {
+        display: flex;
+        background-color: hsl(217, 19%, 35%);
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+      }
+
+      .mobile-card-footer > img{
+        background-color: hsl(214, 17%, 51%);
+        padding: 10px;
+        border-radius: 100%;
+      }
+
+      .share-icons{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 25px;
+      }
+
+      .desktop-card-footer {
+        display: none;
+      }
+
+
+    }
+
+    @media screen and (min-width: 993px) {
+      .card {
+        width: 60%;
+      }
+
+      .share-content {
+        display: none;
+        position: absolute;
+        background-color: hsl(217, 19%, 35%);
+        top: -90px;
+        left: -83px;
+        padding: 5px 15px;
+        width: 200px;
+        border-radius: 10px;
+
+      }
+
+      .share-content::after {
+        content: "";
+        background-color: inherit;
+        position: absolute;
+        bottom: -20px;
+        border-left: 10px solid white;
+        border-right: 10px solid white;
+        border-top: 20px solid hsl(217, 19%, 35%);
+      }
+
+      .share:hover .share-content {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+      }
+
+      .image {
+        border-top-left-radius: 0.8rem;
+        border-bottom-left-radius: 0.8rem;
+      }
+
+      .mobile-card-footer {
+        display: none;
+      }
+
+      .desktop-card-footer {
+        display: flex;
+      }
+
+      .info {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+      }
+
+    }
+
+    .card {
+      display: flex;
+      background-color: white;
+      border-radius: 0.8rem;
+    }
+
+    .card-footer {
+      justify-content: space-around;
+      align-items: center;
+    }
+
+    .image {
+      width: 100%;
+      background-image: url(./images/drawers.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+
+    }
+
+    .contents {
+      padding: 2.5rem 3rem;
+      font-family: sans-serif;
+      box-sizing: border-box;
+    }
+
+    .contents h3 {
+      line-height: 2rem;
+      margin-top: 0;
+    }
+
+    .info .name p,
+    h5 {
+      margin: 10px;
+      padding: 0;
+    }
+
+    img[alt='img-avatar'] {
+      width: 50px;
+      height: 50px;
+      border-radius: 100%;
+    }
+
+    .share {
+      position: relative;
+    }
+
+    .share>img {
+      background-color: hsl(217, 19%, 35%);
+      padding: 10px;
+      border-radius: 100%;
+      cursor: pointer;
+    }
   </style>
+
+
 </head>
+
 <body>
+  <div class="card">
+    <div class="image">
+    </div>
+    <div class="contents">
+      <h3>Shift the overall look and feel by adding these wonderful
+        touches to furniture in your home</h3>
+      <p>
+        Ever been in a room and felt like something was missing? Perhaps
+        it felt slightly bare and uninviting. I’ve got some simple tips
+        to help you make any room feel complete.
+      </p>
+      <div class="card-footer desktop-card-footer">
+        <div class="info">
+          <img src="./images/avatar-michelle.jpg" alt="img-avatar">
+          <div class="name">
+            <h5>Michelle Appleton</h5>
+            <p>28 Jun 2020</p>
+          </div>
+        </div>
+        <div class="share">
+          <img src="./images/icon-share.svg" alt="img-share">
+          <div class="share-content">
+            <p>Share</p>
+            <img src="./images/icon-facebook.svg" alt="icon-facebook">
+            <img src="./images/icon-twitter.svg" alt="icon-twitter">
+            <img src="./images/icon-pinterest.svg" alt="icon-pinterest">
+          </div>
+        </div>
+      </div>
+    </div>
 
-  Shift the overall look and feel by adding these wonderful 
-  touches to furniture in your home
+    <div class="mobile-card-footer card-footer">
+      <div class="share-icons">
+        <p>Share</p>
+        <img src="./images/icon-facebook.svg" alt="icon-facebook">
+        <img src="./images/icon-twitter.svg" alt="icon-twitter">
+        <img src="./images/icon-pinterest.svg" alt="icon-pinterest">
+      </div>
+      <img src="./images/icon-share.svg" alt="img-share">
+    </div>
 
-  Ever been in a room and felt like something was missing? Perhaps 
-  it felt slightly bare and uninviting. I’ve got some simple tips 
-  to help you make any room feel complete.
 
-  Michelle Appleton
-  28 Jun 2020
-
-  Share
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
   </div>
+
 </body>
+
 </html>

@@ -11,37 +11,39 @@ This repository is a collection of my solutions to various Frontend Mentor chall
 <details>
     <summary>NEWBIE</summary>
     <ol>
-      <li><a href="https://github.com/MahmoodHashem/Mentor-Challanges/tree/main/QR%20code">QR Code</a></li>
-      <li><a href="https://github.com/MahmoodHashem/Mentor-Challanges/tree/main/Social%20links%20profile" >Social Links Profile</a></li>
-      <li><a href="https://github.com/MahmoodHashem/Mentor-Challanges/tree/main/Blog%20card">Blog Card</a></li>
+     <li><a href="https://github.com/MahmoodHashem/Mentor-Challanges/tree/main/3-column-preview-card">3 Column Preview Card</a></li>
+      <li><a href="https://github.com/MahmoodHashem/Mentor-Challanges/tree/main/article-preview-component">Article Preview Component</a></li>
+       <li><a href="https://github.com/MahmoodHashem/Mentor-Challanges/tree/main/Blog%20card">Blog Card</a></li>
+       <li><a href="https://github.com/MahmoodHashem/Mentor-Challanges/tree/main/faq-accordion">FAQ Accordion</a></li>
+    <li><a href="https://github.com/MahmoodHashem/Mentor-Challanges/tree/main/four-card-feature">Four Card Feature</a></li>
+    <li><a href="https://github.com/MahmoodHashem/Mentor-Challanges/tree/main/huddle-landing-page">Huddle Landing Page</a></li>
+         <li><a href="https://github.com/MahmoodHashem/Mentor-Challanges/tree/main/signup-form">Intro Component with Sign-up Form</a></li>
       <li><a href="https://github.com/MahmoodHashem/Mentor-Challanges/tree/main/nft-preveiw">NFT Preview Card</a></li>
       <li><a href="https://github.com/MahmoodHashem/Mentor-Challanges/tree/main/order-summary-component">Order Summary Component</a></li>
+     <li><a href="https://github.com/MahmoodHashem/Mentor-Challanges/tree/main/ping-coming-soon">Ping Coming Soon</a></li>
       <li> <a href="https://github.com/MahmoodHashem/Mentor-Challanges/tree/main/product-preview-card">Product Preview Card</a></li>
-      <li><a href="https://github.com/MahmoodHashem/Mentor-Challanges/tree/main/rating-component">Rating Card Componen</a></li>
-      <li><a href="https://github.com/MahmoodHashem/Mentor-Challanges/tree/main/recipe-page">Recipe Page</a></li>
+      <li><a href="https://github.com/MahmoodHashem/Mentor-Challanges/tree/main/QR%20code">QR Code</a></li>
+       <li><a href="https://github.com/MahmoodHashem/Mentor-Challanges/tree/main/rating-component">Rating Card Component</a></li>
+       <li><a href="https://github.com/MahmoodHashem/Mentor-Challanges/tree/main/recipe-page">Recipe Page</a></li>
       <li><a href="https://github.com/MahmoodHashem/Mentor-Challanges/tree/main/result-summary">Result Summary</a></li>
-      <li><a href="https://github.com/MahmoodHashem/Mentor-Challanges/tree/main/faq-accordion">FAQ Accordion</a></li>
-      <li><a href="https://github.com/MahmoodHashem/Mentor-Challanges/tree/main/3-column-preview-card">3 Column Preview Card</a></li>
+     <li><a href="https://github.com/MahmoodHashem/Mentor-Challanges/tree/main/signle-price-grid">Single Price Grid Component</a></li>
+      <li><a href="https://github.com/MahmoodHashem/Mentor-Challanges/tree/main/Social%20links%20profile" >Social Links Profile</a></li>
       <li><a href="https://github.com/MahmoodHashem/Mentor-Challanges/tree/main/social-proof-section">Social Proof Section </a></li>
-      <li><a href="https://github.com/MahmoodHashem/Mentor-Challanges/tree/main/signup-form">Intro Component with Sign-up Form</a></li>
       <li><a href="https://github.com/MahmoodHashem/Mentor-Challanges/tree/main/stats-preview-card">Stats Preview Card</a></li>
-       <li><a href="https://github.com/MahmoodHashem/Mentor-Challanges/tree/main/ping-coming-soon">Ping Coming Soon</a></li>
-        <li><a href="https://github.com/MahmoodHashem/Mentor-Challanges/tree/main/signle-price-grid">Single Price Grid Component</a></li>
-         <li><a href="https://github.com/MahmoodHashem/Mentor-Challanges/tree/main/four-card-feature">Four Card Feature</a></li>
-      <li><a href="https://github.com/MahmoodHashem/Mentor-Challanges/tree/main/huddle-landing-page">Huddle Landing Page</a></li>
     </ol>
   </details>
 
 <details>
     <summary>JUNIOR</summary>
     <ol>
-      <li><a href="https://github.com/MahmoodHashem/Mentor-Challanges/tree/main/newsletter-sign-up-with-success-message-main">Newsletter Subscription</a></li>
+        <li><a href="https://github.com/MahmoodHashem/Mentor-Challanges/tree/main/advice-generator">Advice Generator</a></li>
       <li><a href="https://github.com/MahmoodHashem/Mentor-Challanges/tree/main/age-calculator">Age Calculator</a></li>
+         <li><a href="https://github.com/MahmoodHashem/Mentor-Challanges/tree/main/">Expense Chart</a></li>
+           <li><a href="https://github.com/MahmoodHashem/Mentor-Challanges/tree/main/huddle-landing-page-complete">Huddle Landing Page With curved</a></li>
+          <li><a href="https://github.com/MahmoodHashem/Mentor-Challanges/tree/main/intro-section">Intro Section with Dropdown Menue</a></li>
+      <li><a href="https://github.com/MahmoodHashem/Mentor-Challanges/tree/main/newsletter-sign-up-with-success-message-main">Newsletter Subscription</a></li>
       <li><a href="https://github.com/MahmoodHashem/Mentor-Challanges/tree/main/news-homepage-main">News Homepage</a></li>
-      <li><a href="https://github.com/MahmoodHashem/Mentor-Challanges/tree/main/intro-section">Intro Section with Dropdown Menue</a></li>
       <li><a href="https://github.com/MahmoodHashem/Mentor-Challanges/tree/main/time-tracking">Time Tracking Dashboard</a></li>
-      <li><a href="https://github.com/MahmoodHashem/Mentor-Challanges/tree/main/advice-generator">Advice Generator</a></li>
-       <li><a href="https://github.com/MahmoodHashem/Mentor-Challanges/tree/main/huddle-landing-page-complete">Huddle Landing Page With curved</a></li>
     </ol>
   </details>
 
@@ -180,6 +182,16 @@ Below is a list of Frontend Mentor challenges I have completed.
 
 - [Live](https://mahmoodhashem.github.io/Mentor-Challanges/huddle-landing-page-complete/index.html) | [Repo](https://github.com/MahmoodHashem/Mentor-Challanges/tree/main/huddle-landing-page-complete) | [Try out](https://www.frontendmentor.io/challenges/huddle-landing-page-with-curved-sections-5ca5ecd01e82137ec91a50f2)
   - ![img](./huddle-landing-page-complete/images/desktop.png)
+
+##### Article Preview Component
+
+- [Live](https://mahmoodhashem.github.io/Mentor-Challanges/article-preview-component/index.html) | [Repo](https://github.com/MahmoodHashem/Mentor-Challanges/tree/main/article-preview-component) | [Try out](https://www.frontendmentor.io/challenges/article-preview-component-dYBN_pYFT)
+  - ![img](./article-preview-component/images/desktop.png)
+
+##### Article Preview Component
+
+- [Live](https://mahmoodhashem.github.io/Mentor-Challanges/expense-chart/index.html) | [Repo](https://github.com/MahmoodHashem/Mentor-Challanges/tree/main/expense-chart) | [Try out](https://www.frontendmentor.io/challenges/expenses-chart-component-e7yJBUdjwt)
+  - ![img](./expense-chart/images/desktop.png)
 
 ### [All Challanges Live Site](https://mahmoodhashem.github.io/Mentor-Challanges/)
 

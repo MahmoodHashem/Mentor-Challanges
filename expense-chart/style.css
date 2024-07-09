@@ -1,0 +1,130 @@
+/* style fonts */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+  font-family: "DM Sans", sans-serif;
+}
+
+h6,
+h3,
+h1 {
+  margin: 10px;
+}
+
+h6 {
+  font-size: 14px;
+}
+h3 {
+  font-size: 25px;
+}
+
+/* **************************** */
+
+/* Styel the body to center the card and set the background color*/
+body {
+  background-color: hsla(10, 79%, 65%, 0.149);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* **************************** */
+
+
+/* This is the placeholder for the whole card including header and body of the card*/
+.container {
+  max-width: 400px;
+  font-family: sans-serif;
+}
+/* **************************** */
+
+/* This is for styling the header of the card */
+.header {
+  display: flex;
+  background-color: hsl(10, 79%, 65%);
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  color: white;
+  border-radius: 10px;
+}
+/* **************************** */
+
+/* This is for styling the body of the card where reports are shown */
+.body {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 30px;
+}
+/* **************************** */
+
+/* These are for styling the charts and their titles to come below them */
+
+.charts {
+  display: flex;
+  align-items: end;
+  gap: 10px;
+  height: 140px;
+}
+.charts-title {
+  display: flex;
+  gap: 10px;
+}
+.charts-title p {
+  width: 40px;
+  text-align: center;
+  margin-top: 5px;
+}
+.chart {
+    position: relative;
+  width: 40px;
+  background-color: hsl(10, 79%, 65%);
+  border-radius: 7px;
+}
+
+.chart:hover{
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.chart:Hover .chart-value{
+    display: block;
+    opacity: 1;
+}
+
+.chart-value{
+    display: none;
+    position: absolute;
+    background-color: black;
+    padding: 5px;
+    border-radius: 5px;
+    color: white;
+    top: -30px;
+    left: -10px;
+    z-index: 10;
+}
+
+/* **************************** */
+
+/* Aligning the footer elements  */
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
+
+.report {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  margin: 10px;
+}
+
+/* **************************** */

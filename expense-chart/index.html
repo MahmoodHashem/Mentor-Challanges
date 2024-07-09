@@ -4,200 +4,67 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-
-  <title>Frontend Mentor | Expenses chart component</title>
-
-  <style>
-    body {
-      background-color: hsla(10, 79%, 65%, 0.149);
-      height: 100vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-
-    .container {
-      max-width: 400px;
-      font-family: sans-serif;
-
-    }
-
-    .header {
-      display: flex;
-      background-color: hsl(10, 79%, 65%);
-      justify-content: space-between;
-      align-items: center;
-      padding: 10px 20px;
-      color: white;
-      border-radius: 10px;
-    }
-
-    h6,
-    h3 {
-      margin: 10px;
-      font-size: 16px;
-    }
-
-    h5,
-    h1 {
-      margin: 0;
-    }
-
-    h5 {
-      margin-top: 20px;
-    }
-
-    h1 {
-      margin-top: 10px;
-      font-size: 40px;
-    }
-
-    h3 {
-      font-size: 30px;
-    }
-
-
-
-    .body {
-      background-color: white;
-      padding: 20px;
-      border-radius: 10px;
-      margin-top: 30px;
-    }
-
-
-    .charts {
-      display: flex;
-      align-items: end;
-      gap: 10px;
-      height: 140px;
-
-    }
-
-    .charts-title {
-      display: flex;
-      gap: 10px;
-    }
-
-
-    .charts-title p {
-      width: 40px;
-      text-align: center;
-      margin-top: 5px;
-    }
-
-    .chart {
-      width: 40px;
-      background-color: hsl(10, 79%, 65%);
-      border-radius: 7px;
-    }
-
-    .mon {
-      height: 37.45%;
-    }
-
-    .tue {
-      height: 54.91%;
-    }
-
-    .wed {
-      height: 72.36%;
-      background-color: hsl(186, 34%, 60%);
-    }
-
-    .thu {
-      height: 51.07%;
-    }
-
-    .fri {
-      height: 33.39%;
-    }
-
-    .sat {
-      height: 63.28%;
-    }
-
-    .sun {
-      height: 32.48%;
-    }
-
-    .footer {
-      display: flex;
-      justify-content: space-between;
-      align-items: end;
-    }
-
-    .footer p,
-    .footer h6 {
-      margin: 0;
-    }
-
-    .report {
-      display: flex;
-      flex-direction: column;
-      align-items: end;
-    }
-  </style>
-
+  <title>Expenses chart component</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
-  <div class="container">
-    <div class="header">
-      <div class="title">
-        <h6> My balance</h6>
-        <h3> $921.48</h3>
+  <main>
+    <div class="container">
+      <div class="header">
+        <div class="title">
+          <h6> My balance</h6>
+          <h3> $921.48</h3>
+        </div>
+        <img src="./images/logo.svg" alt="">
       </div>
-      <img src="./images/logo.svg" alt="">
-    </div>
-    <div class="body">
-      <h2>Spending - Last 7 days</h1>
-        <div class="charts">
-          <div class="chart mon"></div>
-          <div class="chart tue"></div>
-          <div class="chart wed"></div>
-          <div class="chart thu"></div>
-          <div class="chart fri"></div>
-          <div class="chart sat"></div>
-          <div class="chart sun"></div>
-        </div>
-        <div class="charts-title">
-          <p>mon</p>
-          <p>tue</p>
-          <p>wed</p>
-          <p>thu</p>
-          <p>fri</p>
-          <p>sat</p>
-          <p>sun</p>
-        </div>
-        <hr>
-
-        <div class="footer">
-          <div>
-            <h5>Total this month</h5>
-            <h1>$478.33</h1>
+      <div class="body">
+        <h2>Spending - Last 7 days</h1>
+          <div class="charts">
+            <div class="chart mon" style="height: 37.45%;">
+              <span class="chart-value">&dollar;37.45</span>
+            </div>
+            <div class="chart tue" style="height: 54.91%;">
+              <span class="chart-value">&dollar;54.91</span>
+            </div>
+            <div class="chart wed" style="height: 72.36%;">
+              <span class="chart-value">&dollar;72.36</span>
+            </div>
+            <div class="chart thu" style="height: 51.07%;"><span class="chart-value">&dollar;51.07</span></div>
+            <div class="chart fri" style="height: 33.39%;"><span class="chart-value">&dollar;33.39</span></div>
+            <div class="chart sat" style="height: 63.28%;"><span class="chart-value">&dollar;63.28</span></div>
+            <div class="chart sun" style="height: 32.48%;"><span class="chart-value">&dollar;32.48</span></div>
           </div>
-          <div class="report">
-            <h6>+2.4%</h6>
-            <p>from last month</p>
+          <div class="charts-title">
+            <p>mon</p>
+            <p>tue</p>
+            <p>wed</p>
+            <p>thu</p>
+            <p>fri</p>
+            <p>sat</p>
+            <p>sun</p>
           </div>
-        </div>
-
+          <hr>
+          <div class="footer">
+            <div>
+              <h6>Total this month</h6>
+              <h1>$478.33</h1>
+            </div>
+            <div class="report">
+              <h6>+2.4%</h6>
+              <p>from last month</p>
+            </div>
+          </div>
+      </div>
     </div>
-
-  </div>
-
-
-  <!-- 
-  
-
-  
-   -->
-
-
+  </main>
 </body>
 
 </html>

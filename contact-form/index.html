@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="./style.css">
+  <title>Contact form</title>
+</head>
+
+<body>
+
+  <main class="form-container">
+    <h1>Contact Us</h1>
+    <form action="#">
+      <div class="name">
+        <div class="label name-label" >
+          <label for="f-name">First Name</label>
+          <input type="text" id="name">
+        </div>
+        <div class="label name-label">
+          <label for="l-name">Last Name</label>
+          <input type="text" id="l-name">
+        </div>
+      </div>
+      <div class="label name-label">
+        <label for="email">Email Address</label>
+        <input type="email" name="email" id="email">
+      </div>
+      <div class="label">
+        <label for="query">Query Type</label>
+        <div class="radio-input">
+          <label class="label2">
+            <input type="radio" id="value-1" checked="" name="value-radio" value="value-1" />
+            <p class="text">General Enquiry</p>
+          </label>
+          <label class="label2">
+            <input type="radio" id="value-2" name="value-radio" value="value-2" />
+            <p class="text">Support Request</p>
+          </label>
+        </div>
+      </div>
+      <div class="label">
+        <label for="message">Message</label>
+        <textarea name="message" id="message" rows="4"></textarea>
+      </div>
+      <label class="checkbox-container">
+        I consent to being contacted by the team
+        <input class="custom-checkbox"  type="checkbox">
+        <span class="checkmark"></span>
+      </label>
+      <button class="btn">Submit</button>
+    </form>
+  </main>
+
+
+  <script>
+    const btn = document.querySelector('.btn'); 
+    const labels = document.querySelectorAll('.name-label');
+    const input = document.querySelectorAll('input[type="text"]'); 
+
+
+    btn.addEventListener('click', function(){
+
+        labels.forEach((label, i) =>{
+
+        input[i].classList.add('empty-error'); 
+        label.classList.add('empty-error')
+        })
+
+    })
+  </script>
+</body>
+</html>

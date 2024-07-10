@@ -38,6 +38,7 @@ This repository is a collection of my solutions to various Frontend Mentor chall
     <ol>
         <li><a href="https://github.com/MahmoodHashem/Mentor-Challanges/tree/main/advice-generator">Advice Generator</a></li>
       <li><a href="https://github.com/MahmoodHashem/Mentor-Challanges/tree/main/age-calculator">Age Calculator</a></li>
+         <li><a href="https://github.com/MahmoodHashem/Mentor-Challanges/tree/main/contact-form">Contact Form</a></li>
          <li><a href="https://github.com/MahmoodHashem/Mentor-Challanges/tree/main/">Expense Chart</a></li>
            <li><a href="https://github.com/MahmoodHashem/Mentor-Challanges/tree/main/huddle-landing-page-complete">Huddle Landing Page With curved</a></li>
           <li><a href="https://github.com/MahmoodHashem/Mentor-Challanges/tree/main/intro-section">Intro Section with Dropdown Menue</a></li>
@@ -192,6 +193,11 @@ Below is a list of Frontend Mentor challenges I have completed.
 
 - [Live](https://mahmoodhashem.github.io/Mentor-Challanges/expense-chart/index.html) | [Repo](https://github.com/MahmoodHashem/Mentor-Challanges/tree/main/expense-chart) | [Try out](https://www.frontendmentor.io/challenges/expenses-chart-component-e7yJBUdjwt)
   - ![img](./expense-chart/images/desktop.png)
+
+##### Article Preview Component
+
+- [Live](https://mahmoodhashem.github.io/Mentor-Challanges/contact-form/index.html) | [Repo](https://github.com/MahmoodHashem/Mentor-Challanges/tree/main/contact-form) | [Try out](https://www.frontendmentor.io/challenges/contact-form--G-hYlqKJj)
+  - ![img](./contact-form/assets/images/desktop.png)
 
 ### [All Challanges Live Site](https://mahmoodhashem.github.io/Mentor-Challanges/)
 

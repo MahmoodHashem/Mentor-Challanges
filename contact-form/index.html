@@ -12,24 +12,32 @@
 <body>
 
   <main class="form-container">
+
+    <div class="popup">
+      <h3><span><img src="./assets/images/icon-success-check.svg" alt="success-icon"></span>
+        Message Sent!
+      </h3>
+      <p>Thanks for completing the form. We'll be in touch soon</p>
+    </div>
+
     <h1>Contact Us</h1>
     <form action="#">
       <div class="name">
-        <div class="label name-label" >
-          <label for="f-name">First Name</label>
-          <input type="text" id="name">
-        </div>
         <div class="label name-label">
-          <label for="l-name">Last Name</label>
-          <input type="text" id="l-name">
+          <label for="f-name">First Name <span class="astrick">&ast;</span></label>
+          <input type="text" id="name" pattern="[a-zA-Z]{3,}" required>
+        </div>
+        <div class="label last-name-label">
+          <label for="l-name">Last Name <span class="astrick">&ast;</span></label>
+          <input type="text" id="l-name" pattern="[a-zA-Z]" required>
         </div>
       </div>
-      <div class="label name-label">
-        <label for="email">Email Address</label>
-        <input type="email" name="email" id="email">
+      <div class="label email-label">
+        <label for="email">Email Address <span class="astrick">&ast;</span></label>
+        <input type="email" required name="email" id="email">
       </div>
       <div class="label">
-        <label for="query">Query Type</label>
+        <label for="query">Query Type <span class="astrick">&ast;</span></label>
         <div class="radio-input">
           <label class="label2">
             <input type="radio" id="value-1" checked="" name="value-radio" value="value-1" />
@@ -41,35 +49,21 @@
           </label>
         </div>
       </div>
-      <div class="label">
-        <label for="message">Message</label>
-        <textarea name="message" id="message" rows="4"></textarea>
+      <div class="label message-label">
+        <label for="message">Message <span class="astrick">&ast;</span></label>
+        <textarea required minlength="20" name="message" id="message" rows="4"></textarea>
       </div>
       <label class="checkbox-container">
         I consent to being contacted by the team
-        <input class="custom-checkbox"  type="checkbox">
+        <input class="custom-checkbox" id="consent" required type="checkbox">
         <span class="checkmark"></span>
       </label>
-      <button class="btn">Submit</button>
+      <button type="submit" class="btn">Submit</button>
     </form>
   </main>
 
 
-  <script>
-    const btn = document.querySelector('.btn'); 
-    const labels = document.querySelectorAll('.name-label');
-    const input = document.querySelectorAll('input[type="text"]'); 
-
-
-    btn.addEventListener('click', function(){
-
-        labels.forEach((label, i) =>{
-
-        input[i].classList.add('empty-error'); 
-        label.classList.add('empty-error')
-        })
-
-    })
-  </script>
+  <script src="script.js"></script>
 </body>
+
 </html>

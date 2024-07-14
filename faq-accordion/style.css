@@ -1,65 +1,100 @@
+@font-face {
+  font-family: WorkSans;
+  src: url(./assets/fonts/static/WorkSans-Regular.ttf);
+}
 
 @font-face {
-    font-family: WorkSans;
-    src: url(./assets/fonts/static/WorkSans-Regular.ttf);
-}
-
-@font-face {
-    font-family: WorkSansBold;
-    src: url(./assets/fonts/static/WorkSans-Bold.ttf);
-}
-
-body{
-    background-color: hsl(275, 100%, 97%);
-    background-image: url(./assets/images/background-pattern-desktop.svg);
-    background-repeat: no-repeat;
-    display: flex;
-    height: 100vh;
-    justify-content: center;
-    align-items: center;
-
+  font-family: WorkSansBold;
+  src: url(./assets/fonts/static/WorkSans-Bold.ttf);
 }
 
 
-.card{
-    background-color: white; 
-    width: 500px;
-    padding: 30px;
-    border-radius: 15px;
-    box-shadow: 0px 2px 15px 10px rgba(0, 0, 0, 0.226);
+@media screen and (max-width: 550px) {
+    body{
+        background-image: url(./assets/images/background-pattern-mobile.svg);
+        background-size: contain;
+        background-position: top center;
+    }
 }
 
-.heading, .q{
-    display: flex;
+@media screen and (min-width: 551px) {
+    body{
+        background-image: url(./assets/images/background-pattern-desktop.svg);
+    }
 }
 
-.heading{
-    gap: 30px;
-    align-items: center;
+body {
+  background-color: hsl(275, 100%, 97%);
+  background-repeat: no-repeat;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
 }
 
-h1, h4{
-    font-family: WorkSansBold, sans-serif;
-    font-weight: bold;
+.card {
+  background-color: white;
+  width: 500px;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0px 2px 15px 10px rgba(0, 0, 0, 0.226);
 }
 
-.q{
-    justify-content: space-between;
-    align-items: center;
+.heading {
+  display: flex;
 }
 
-p{
-    opacity: 0.6;
+.heading {
+  gap: 30px;
+  align-items: center;
+}
+
+h1,
+h4 {
+  font-family: WorkSansBold, sans-serif;
+  font-weight: bold;
+}
+
+p {
+  opacity: 0.6;
   margin: 0;
   font-family: WorkSans, sans-serif;
 }
 
-
-.hide{
-    display: none;
+img {
+  cursor: pointer;
+  height: 30px;
 }
 
-img{
-    cursor: pointer;
-    height: 30px;
+details {
+  border-bottom: 2px solid #ad28eb61;
+  padding: 10px 0;
+}
+details:last-child {
+  border-bottom: none;
+}
+details[open] .answer {
+  max-height: 100%;
+}
+details[open] .minus-icon {
+  display: block;
+}
+details[open] .plus-icon {
+  display: none;
+}
+summary {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  font-size: 1rem;
+  font-weight: 600;
+}
+.minus-icon {
+  display: none;
+}
+.answer {
+  overflow: hidden;
+  padding: 1rem 0;
 }

@@ -41,15 +41,17 @@ In this challenge, one of the key things I learned was how to create dynamic cha
 
 On the CSS side, I likely explored techniques for building the basic chart structure, such as:
 
-- Using `div` and  `span` elements  to represent the chart bars, labels, or other visual components.
+- Using `div` and `span` elements to represent the chart bars, labels, or other visual components.
 - Applying styles like `width`, `height`, `background-color`, `border-radius`, etc. to shape and style the chart elements.
 - Leveraging CSS positioning and layout properties to arrange the chart components properly.
+- Potentially using CSS animations or transitions to add interactivity and transitions to the chart.
 
 Then, on the JavaScript side, I was able to take this static chart structure and make it dynamic by:
 
 - Selecting the relevant chart elements using DOM manipulation methods.
-- Updating the styles of these elements programmatically, such as changing the `background ` property to reflect today report
-- Potentially hooking into user events like  hovers to trigger more advanced chart interactions.
+- Updating the styles of these elements programmatically, such as changing the `width` or `height` properties to reflect changing data.
+- Potentially hooking into user events like clicks or hovers to trigger more advanced chart interactions.
+- Using JavaScript to fetch data from source, and then updating the chart in real-time to visualize the data.
 
 By combining the visual power of CSS and the programmatic capabilities of JavaScript, I was able to create engaging, interactive, and data-driven charts that could be tailored to the specific needs of the project.
 

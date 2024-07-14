@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Base Apparel coming soon page</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+  <header>
+    <nav>
+      <div class="nav-logo">
+        <img src="./images/logo.svg" alt="logo" class="logo">
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <div class="container">
+      <div class="contents">
+        <h1>
+          <span>We're</span> <br> coming soon
+        </h1>
+        <p>
+          Hello fellow shoppers! We're currently building our new fashion store.
+          Add your email below to stay up-to-date with announcements and our launch deals.
+        </p>
+        <form action="#">
+          <div class="input">
+            <input type="email" required placeholder="Email Adress">
+            <img src="./images/icon-error.svg" class="error" alt="error">
+          </div>
+          <button type="submit"><img src="./images/icon-arrow.svg" alt="submit"></button>
+        </form>
+      </div>
+    </div>
+    <div class="image">
+      <picture>
+        <source media="(max-width: 850px)" srcset="./images/hero-mobile.jpg">
+        <img src="./images/hero-desktop.jpg" alt="">
+      </picture>
+    </div>
+  </main>
+
+  <script>
+    const form = document.querySelector('form');
+    const input = document.querySelector('input');
+    const errorIcon = document.querySelector(".error");
+
+    const inputContainer = document.querySelector('.input');
+
+    form.noValidate = true;
+
+    form.addEventListener('submit', function () {
+      event.preventDefault();
+
+      console.log("Start")
+
+      if (input.validity.valueMissing) {
+
+        input.classList.remove('email-error');
+        inputContainer.classList.remove("email-error");
+
+        input.classList.add('empty-error');
+        inputContainer.classList.add('empty-error');
+        errorIcon.style.display = 'block';
+      }
+      else if (input.validity.typeMismatch) {
+
+        input.classList.remove('empty-error');
+        inputContainer.classList.remove('empty-error');
+
+        input.classList.add('email-error');
+        inputContainer.classList.add("email-error");
+        errorIcon.style.display = 'block';
+      } else {
+        console.log("OK");
+        input.classList.remove('email-error', 'empty-error');
+        inputContainer.classList.remove("email-error", 'empty-error');
+        errorIcon.style.display = 'none';
+      }
+    })
+
+  </script>
+</body>
+
+</html>

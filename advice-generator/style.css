@@ -11,29 +11,6 @@ body{
 }
 
 
-@media all and (min-width:601px ) {
-    .card{
-        max-width: 500px;
-    }
-
-    .divider-mobile{
-        display: none;
-    }
-}
-
-@media all and (max-width: 600px) {
-
-    .card{
-        max-width: 300px; 
-    }
-
-    .divider-desktop{
-        display: none;
-    }
-    
-}
-
-
 .card{
     position: relative;
     display: flex;
@@ -43,9 +20,10 @@ body{
     padding: 50px 20px;
     text-align: center;
     background-color: hsl(217, 19%, 24%);
-  
     font-family: Manrope, serif;
     border-radius: 10px;
+    max-width: 500px;
+    width: 70%;
 }
 
 .card h4{

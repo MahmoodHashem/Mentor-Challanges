@@ -1,15 +1,5 @@
-
-
-
-
-/*
-The code initializes variables and selects DOM elements for further use.
- It then adds an event listener to the button, which triggers a
-  series of functions when clicked.
-*/
-
 const inputs = document.querySelectorAll('[data-input]');
-const empties = document.querySelectorAll('.empty');
+const labels = document.querySelectorAll('.column');
 const hints = document.querySelectorAll('.hint');
 const yearToShow = document.getElementById('years');
 const monthToShow = document.getElementById('months');
@@ -19,96 +9,54 @@ const day = document.getElementById('day');
 const month = document.getElementById('month');
 const year = document.getElementById('year');
 
-let isValid;
+const form = document.querySelector('form');
+
+form.noValidate = true;
 
 
-/*
- This code snippet [button.addEventListener] is an event listener for a button click.
- It performs several functions related to validating and calculating
- age based on user input.
-*/
+form.addEventListener('submit', function () {
+    event.preventDefault();
 
-button.addEventListener('click', () => {
-    resetStylesAndTexts();
+    let isValid = true;
 
-    isValid = true;
+    isValid = checkInput(inputs[0], labels[0], hints[0], 'day') && isValid;
+    isValid = checkInput(inputs[1], labels[1], hints[1], 'month') && isValid;
+    isValid = checkInput(inputs[2], labels[2], hints[2], 'year')  && isValid;
 
-    if (areInputsEmpty()) {
-        setInvalidStylesAndTexts();
-    } else {
-        checkIndividualInputs();
-        checkValidityOfDateValues();
-    }
+    inputs.forEach((input, i) =>{
+        const fieldType = ['day', 'month', 'year']; 
+        isValid = checkInput(input, labels[i], hints[i], fieldType) && isValid;
+    })
 
+    console.log(isValid)
     if (isValid) {
-        const age = calculateAge(year.value, month.value, day.value);
-
-        updateAgeDisplay(age);
+        let result = calculateAge(year.value, month.value, day.value);
+        yearToShow.textContent = result.years;
+        monthToShow.textContent = result.months;
+        dayToShow.textContent = result.days;
     }
-});
+
+})
 
 
-
-
-function resetStylesAndTexts() {
-    inputs.forEach((input, i) => {
-        input.style.borderColor = '#dbdbdb';
-        empties[i].textContent = "";
-        hints[i].style.color = 'hsl(0, 1%, 44%)';
-    });
-}
-
-function areInputsEmpty() {
-    return inputs[0].value === '' && inputs[1].value === '' && inputs[2].value === '';
-}
-
-function setInvalidStylesAndTexts() {
-    inputs.forEach((input, i) => {
+function checkInput(input, label, hint, type){
+    if(input.validity.valueMissing){
+        label.classList.add('empty-error');
+        hint.style.color = 'red';
         input.style.borderColor = 'red';
-        empties[i].textContent = 'Empty';
-        hints[i].style.color = 'red';
-        isValid = false;
-    });
-}
-
-function checkIndividualInputs() {
-    inputs.forEach((input, i) => {
-        if (input.value === '') {
+        return false; 
+    }else if(input.validity.rangeUnderflow || input.validity.rangeOverflow){
+        label.classList.remove('empty-error');
+            type === 'day' ? label.classList.add('valid-day') : type === 'month' ? label.classList.add('valid-month') : type === 'year' ? label.classList.add('valid-year') : '' ;
+            hint.style.color = 'red';
             input.style.borderColor = 'red';
-            empties[i].textContent = "Empty";
-            hints[i].style.color = 'red';
-            isValid = false;
-        }
-    });
-}
-
-function checkValidityOfDateValues() {
-    if (day.value > 31) {
-        empties[0].textContent = 'Must be a valid day';
-        hints[0].style.color = 'red';
-        inputs[0].style.borderColor = 'red';
-        isValid = false;
+            return false; 
+    }else{
+            label.classList.remove('empty-error', 'valid-day', 'valid-month', 'valid-year');
+            hint.style.color = 'hsl(0, 1%, 44%)';
+            input.style.borderColor = '#dbdbdb';
+            return true; 
     }
-
-    if (month.value > 12) {
-        empties[1].textContent = 'Must be a valid month';
-        hints[1].style.color = 'red';
-        inputs[1].style.borderColor = 'red';
-        isValid = false;
-    }
-
-    if (year.value > 2024 || (year.value < 1950 && year.value > 0)) {
-        empties[2].textContent = 'Must be a valid past';
-        hints[2].style.color = 'red';
-        inputs[2].style.borderColor = 'red';
-        isValid = false;
-    }
-}
-
-function updateAgeDisplay(age) {
-    yearToShow.textContent = age.years;
-    monthToShow.textContent = age.months;
-    dayToShow.textContent = age.days;
 }
 
 

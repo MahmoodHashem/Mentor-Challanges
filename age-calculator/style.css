@@ -6,17 +6,68 @@
 body {
   background-color: hsl(0, 0%, 94%);
   font-family: Poppins, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 
 }
 
+.row {
+  display: flex;
+}
+
+
+.arrow {
+  background-color: hsl(259, 100%, 65%);
+  border-radius: 50%;
+  width: 46px;
+  height: 44px;
+  padding: 20px;
+  position: relative;
+  z-index: 1; 
+}
+
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+  background-color: white;
+  padding: 20px 40px;
+  border-radius: 30px;
+  border-bottom-right-radius: 100px;
+}
+
+input{
+  border-radius: 14px; 
+  border: 1px solid #dbdbdb; 
+  font-weight: bold;
+}
+
+.result {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 70px;
+}
+
+.number {
+  color: hsl(259, 100%, 65%);
+}
+
+.hint{
+  margin-left: 5px;
+  color: hsl(0, 1%, 44%);
+  letter-spacing: 2px;
+}
+
+
 @media only screen and (min-width: 651px) {
 
-    body{
-        display: flex;
+    body{  
         flex-direction: column;
-        height: 100vh;
-        align-items: center;
-        justify-content: center;
     }
     
   .row {
@@ -29,92 +80,47 @@ body {
   }
 
   .card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: auto;
-    background-color: white;
     max-width: 800px;
-    padding: 20px 40px;
-   
-    border-radius: 30px;
-    border-bottom-right-radius: 100px;
   }
   .arrow {
-    background-color: hsl(259, 100%, 65%);
-    border-radius: 50%;
-    width: 46px;
-    height: 44px;
-    padding: 20px;
     float: right;
-    position: relative;
     top: 40px;
   }
   hr {
     width: 90%;
   }
-  .btn{
-    width: 100%;
-  }
+
 
   input {
     max-width: 150px;
     padding: 15px;
-    border-radius: 14px;
-    border: 1px solid hsl(0, 0%, 86%);
     font-size: 30px;
-    font-weight: bold;
     margin-top: 10px;
+  }
+
+  .result{
+    font-size: 80px;
+    margin-left: 40px;
   }
 
   .hint {
     font-size: 20px;
-    margin-left: 5px;
-    color: hsl(0, 1%, 44%);
-    letter-spacing: 2px;
   }
-
-  .result {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    margin-top: 70px;
-    font-size: 80px;
-    margin-left: 40px;
-  }
-  .number {
-    color: hsl(259, 100%, 65%);
-  }
-
 
 }
 
 @media only screen and (max-width: 650px) {
-
-
-  body{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+  .card{
+    max-width: 300px;
   }
-
-    .arrow {
-        background-color: hsl(259, 100%, 65%);
-        border-radius: 50%;
-        width: 46px;
-        height: 44px;
-        padding: 20px;
-        position: relative;
-        z-index: 1; 
-        left: 38%; 
-        top: 20px;
-        right: 70%;
-      }
-
-      .btn{
-        width: 100%;
-      }
+  .row{
+    justify-content: space-evenly;
+  }
+  .arrow{
+    left: 38%; 
+    top: 20px;
+    right: 70%;
+  }
 
   hr {
     position: relative;
@@ -123,54 +129,28 @@ body {
     width: 100%;
   }
 
-  .card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: auto;
-    background-color: white;
-    max-width: 300px;
-    padding: 20px 40px;
-    border-radius: 30px;
-    border-bottom-right-radius: 100px;
-  }
-  .row {
-    display: flex;
-    justify-content: space-evenly;
-   
-  }
   input {
     width: 70%;
     padding: 10px;
-    border-radius: 14px;
-    border: 1px solid #dbdbdb;
     font-size: 18px;
-    font-weight: bold;
   }
 
   .hint {
     font-size: 12px;
-    margin-left: 5px;
-    color: hsl(0, 1%, 44%);
-    letter-spacing: 2px;
   }
 
   .result {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    margin-top: 70px;
     font-size: 50px;
   }
-  .number {
-    color: hsl(259, 100%, 65%);
-  }
+}
 
-  .empty{
-    font-size: 10px;
-    width: 80%;
-    text-align: center;
-  }
+
+
+.btn{
+  width: 100%;
+  background: none;
+  outline: none;
+  border: none;
 }
 
 
@@ -179,10 +159,35 @@ input:focus{
   outline: none;
 } 
 
-.empty{
+
+.valid-day, .valid-month, .valid-year, .empty-error{
+  margin-bottom: 20px;
+}
+
+
+.empty-error::after, .valid-day::after, .valid-month::after, .valid-year::after{
     color: red;
     font-family: sans-serif;
     font-style: italic;
+    position: absolute;
+    width: 100px;
+    z-index: 2;
+}
+
+.empty-error::after{
+  content: "This field is required"; 
+}
+
+.valid-day::after{
+  content: "Must be a valid day"
+}
+
+.valid-month::after{
+  content: "Must be a valid month";
+}
+
+.valid-year::after{
+  content: "Must be a valid past"
 }
 
 

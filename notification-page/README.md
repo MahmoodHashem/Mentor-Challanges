@@ -47,6 +47,7 @@ Users should be able to:
 
 Just Practice What I had learned
 
+<<<<<<< HEAD
 
 ## Author
 
@@ -57,4 +58,7 @@ Just Practice What I had learned
 
 ## Acknowledgments
 
+<<<<<<< HEAD
 I would like to express my gratitude to all content creators, bloggers, and senior developers who have generously made learning web development accessible and free for us.
+=======
+

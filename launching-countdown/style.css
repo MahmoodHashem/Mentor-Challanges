@@ -1,0 +1,212 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@700&display=swap");
+
+body {
+    background-image: url(./images/pattern-hills.svg), url(./images/bg-stars.svg), linear-gradient(to bottom, hsl(235, 16%, 14%), hsl(236, 21%, 26%));
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    height: 100vh;
+    gap: 4rem;
+    text-align: center;
+    display: grid;
+    grid-template-rows: 150px auto;
+    justify-content: center;
+    justify-items: center;
+    font-family: "Red Hat Text", sans-serif;
+}
+
+
+h1 {
+    color: white;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-weight: 400;
+    letter-spacing: 7px;
+    position: relative;
+    top: 100px;
+}
+
+
+@media screen and (max-width: 440px) {
+
+    .timer__card {
+        width: 80px;
+        height: 40px;
+    }
+
+    .timer__card-part {
+        font-size: 2.5rem;
+        font-weight: 600;
+    }
+
+    .timer__card-bg {
+        top: 10px;
+        left: 1px;
+        width: 100%;
+    }
+}
+
+
+@media screen and (max-width: 660px) and (min-width: 441px) {
+    .timer__card {
+        width: 100px;
+        height: 40px;
+    }
+
+    .timer__card-part {
+        font-size: 3.5rem;
+        font-weight: 700;
+    }
+
+    .timer__card-bg {
+        top: 10px;
+        left: 8px;
+        width: 84%;
+    }
+
+}
+
+@media screen and (min-width: 661px) {
+    .timer__card {
+        width: 150px;
+        height: 70px;
+    }
+
+    .timer__card-part {
+        font-size: 5.5rem;
+        font-weight: 700;
+    }
+
+    .timer__card-bg {
+        top: 10px;
+        left: 1px;
+        width: calc(100% - 2px);
+    }
+
+
+}
+
+
+
+.timer {
+    display: flex;
+    gap: 20px;
+}
+
+.timer__card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    perspective: 550px;
+}
+
+.timer__card.running .timer__card-part--front::before {
+    animation: frontFlipDown 0.6s ease-in-out;
+}
+
+.timer__card.running .timer__card-part--back::after {
+    animation: backFlipDown 0.6s ease-in-out;
+}
+
+.timer__card-bg {
+    position: absolute;
+    height: 200%;
+    background: #191a24;
+    border-radius: 10px;
+}
+
+.timer__card-part {
+    color: #fb6087;
+}
+
+.timer__card-part::before,
+.timer__card-part::after {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    content: attr(data-timer-back);
+    left: 0;
+    width: 100%;
+    height: 100%;
+    line-height: 0;
+    overflow: hidden;
+}
+
+.timer__card-part--front::before {
+    content: attr(data-timer-front);
+    align-items: flex-end;
+    top: 0;
+    background: url("./imgaes/card-top.svg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    color: rgba(251, 96, 135, 0.9);
+    transform-origin: center bottom;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    z-index: 3;
+}
+
+.timer__card-part--front::after {
+    content: attr(data-timer-front);
+    top: 100%;
+    background: url("./images/card-bottom.svg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    z-index: 1;
+}
+
+.timer__card-part--back::before {
+    bottom: 0;
+    align-items: flex-end;
+    background: url("./images/card-top.svg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    color: rgba(251, 96, 135, 0.9);
+    z-index: 1;
+}
+
+.timer__card-part--back::after {
+    top: 100%;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    transform-origin: top center;
+    transform: rotateX(0.5turn);
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    z-index: 2;
+}
+
+.timer__card-name,
+button {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    top: 238%;
+    width: 100%;
+    color: #8486a9;
+    font-size: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+
+@keyframes frontFlipDown {
+    to {
+        transform: rotateX(-0.5turn);
+    }
+}
+
+@keyframes backFlipDown {
+    to {
+        background-image: url("./images/card-bottom-2.svg");
+        transform: rotateX(0turn);
+    }
+}
+
+/* Animations for countdown__socials */
+@keyframes iconRotate {
+    to {
+        color: #fb6087;
+    }
+}

@@ -7,7 +7,10 @@ const generator = document.querySelector('.dice');
 
 window.onload = generateQuote; 
 
-generator.addEventListener('click', generateQuote); 
+generator.addEventListener('click', ()=>{
+    generateQuote(); 
+    tween.restart(); 
+}); 
 
 
 function generateQuote(){
@@ -21,5 +24,12 @@ function generateQuote(){
     })
 }
 
+
+    console.log("Start animation")
+    // eslint-disable-next-line no-undef
+    let tween = gsap.to('.dice', {
+        rotate: 360,
+        duration: 1
+    })
 
 

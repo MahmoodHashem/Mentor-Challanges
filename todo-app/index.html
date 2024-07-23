@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./style.css">
+  <script src="script.js" defer></script>
+  <title>Todo app</title>
+</head>
+
+<body>
+
+
+  <main>
+    <div class="header">
+      <h1>Todo</h1>
+      <img src="./images/icon-moon.svg" alt="">
+    </div>
+
+    <form class="todo-input" action="" data-new-task-form >
+      <input type="checkbox">
+      <span class="custome-checkbox"></span>
+      <input type="text" required data-new-task-input >
+    </form>
+
+    <div class="todo-list">
+      <div class="tasks" data-tasks>
+        <div class="task">
+          <input type="checkbox" id="checkbox">
+          <label for="checkbox">
+            <span class="custome-checkbox"></span>
+            <span class="checkbox-label">Read for 1 hour</span>
+          </label>
+          <img src="./images/icon-cross.svg" class="cross" alt="icon-cross">
+        </div>
+      </div>
+      <div class="todo-list-footer">
+        <span class="left-items" task-count>5 items left</span>
+        <div class="tabs">
+          <span class="all active">All</span>
+          <span class="active-tasks">Active</span>
+          <span class="completed">Completed</span>
+        </div>
+        <span class="clear-completed ">Clear Completed </span>
+      </div>
+      <div class="mobile-todo-footer">
+        <span class="all active">All</span>
+        <span class="active-tasks">Active</span>
+        <span class="completed">Completed</span>
+      </div>
+    </div>
+  </main>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="https://www.github.com/MahmoodHashem" target="_blank">Mahmood Hasehmi</a>.
+  </div>
+
+
+  <template id="task-template">
+    <div class="task">
+      <input type="checkbox">
+      <label>
+        <span class="custome-checkbox"></span>
+        <span class="checkbox-label"></span>
+      </label>
+      <img src="./images/icon-cross.svg" class="cross" alt="icon-cross">
+    </div>
+  </template>
+
+</body>
+
+</html>

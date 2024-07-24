@@ -191,6 +191,23 @@ button {
 }
 
 
+footer{
+    position: absolute;
+    bottom: 20px;
+    display: flex;
+    gap: 20px;
+}
+
+footer i{
+    font-size: 1.7rem;
+    color:#8385A9
+}
+
+footer i:hover{
+    color: #fb6087;
+    cursor: pointer;
+    animation: iconRotate 0.4s; 
+}
 @keyframes frontFlipDown {
     to {
         transform: rotateX(-0.5turn);
@@ -207,6 +224,6 @@ button {
 /* Animations for countdown__socials */
 @keyframes iconRotate {
     to {
-        color: #fb6087;
+        transform: rotate(720deg);
     }
 }

@@ -14,7 +14,7 @@ const secfront = document.querySelector('div[ data-timer-card="seconds"] .timer_
 const secback = document.querySelector('div[ data-timer-card="seconds"] .timer__card-part--back');
 const seccard = document.querySelector('div[ data-timer-card="seconds"]');
 
-const newYearTime = new Date("July 30, 2024 00:00:00").getTime();
+const newYearTime = new Date().getTime() + (14 * 24 * 60 * 60 * 1000);
 
 function updateCountDown() {
     const now = new Date().getTime();

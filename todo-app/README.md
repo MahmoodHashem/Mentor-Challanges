@@ -35,6 +35,7 @@ Users should be able to:
 ### Screenshot
 
 ![](./images/screenshot.png)
+![](./images/darkmode.png)
 
 ### Links
 
@@ -54,31 +55,38 @@ Users should be able to:
 
 ### What I learned
 
-1. Browser Local Storage Manipulation:
+1. **Browser Local Storage Manipulation:**
 
    - One of the core things I learned was how to effectively use the browser's local storage to persist user data.
    - This allowed me to store task-related information, such as the todo items and their completion statuses, even after the page was refreshed or the browser was closed.
    - Mastering the `localStorage.setItem()`, `localStorage.getItem()`, and `localStorage.removeItem()` methods was crucial for ensuring the todo list maintained its state between user sessions.
-2. Drag-and-Drop Functionality:
+2. **Drag-and-Drop Functionality:**
 
    - Another key learning experience was implementing a drag-and-drop mechanism for reordering the todo list items.
    - I explored techniques to detect and handle the various drag and drop events, such as `dragstart`, `dragover`, `drop`, and `dragend`.
    - This enabled users to easily reorganize the todo items by simply clicking, dragging, and dropping them into their desired order.
-3. DOM Manipulation and Event Handling:
+3. **DOM Manipulation and Event Handling:**
 
    - A significant part of the challenge involved learning how to effectively manipulate the DOM (Document Object Model) and handle various JavaScript events.
    - For example, I learned how to efficiently target and update specific elements within a container, based on their state (e.g., completed or incomplete tasks).
    - This involved techniques like querying the DOM, attaching event listeners, and dynamically updating the UI to reflect the changes.
-4. Filtering and Searching Functionality:
+4. **Filtering and Searching Functionality:**
 
    - Another important aspect I mastered was the ability to filter and search the todo list items based on their completion status.
    - I learned how to implement features that allowed users to view all tasks, only completed tasks, or only incomplete tasks.
    - This required understanding how to effectively process and display the todo list data based on the user's selected filter criteria.
-5. Individual Task Deletion:
+5. **Individual Task Deletion:**
 
    - The final key learning point was the implementation of individual task deletion functionality.
    - I explored ways to enable users toremove specific todo items from the list, updating the local storage and the UI accordingly.
    - This involved handling click events ondelete buttons and updating the underlying data structure to reflect the changes.
+6. **Theme Toggling Capabilities:**
+
+- During this challenge, I learned about efficient ways to implement a theme toggling feature forthe todo listapplication.
+- Initially, I considered manually changing the colors and styles, but I quickly realized that would be a lot of work and potentially difficult to maintain.
+- Instead, I explored modern CSS features like `color-scheme`, `prefers-color-scheme`, and `light-dark()`, which made the theme toggling process much easier and more dynamic.
+- These CSS features allowed meto create a seamless user experience wherethe todo list could automatically adapt tothe user's system theme (light or dark mode) or provide a manual toggle option.
+- Mastering these theme-related CSS techniques has expanded my understanding of how to create visually appealing and responsive user interfaces that adapt tothe user's preferences.
 
 ### Continued development
 
@@ -98,6 +106,8 @@ Users should be able to:
 
 - 🎥 [Web Dev Simplified Video](https://www.youtube.com/watch?v=W7FaYfuwu70) This video was instrumental in helping me grasp the main structure of a Todo app! 📝
 - 🎬 [Kevin Powell Video](https://www.youtube.com/watch?v=IhmSidOJSeE&t=0s) A fantastic resource for customizing the checkbox and enhancing the form section. Perfect for elevating your project
+- [light-dark()](https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/light-dark) CSS color function: This enables setting two colors for a property - returning one of the two colors options by detecting if the developer has set a light or dark color scheme or the user has requested light or dark color theme......
+- [color-scheme](https://developer.mozilla.org/en-US/docs/Web/CSS/color-scheme) : The **`color-scheme`** [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS) property allows an element to indicate which color schemes it can comfortably be rendered in.
 
 ## Author
 

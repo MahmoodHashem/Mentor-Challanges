@@ -1,5 +1,5 @@
 
-
+const body = document.querySelector('body')
 
 const tasksContainer = document.querySelector("[data-tasks]");
 const taskTemplate = document.getElementById('task-template');
@@ -14,12 +14,23 @@ const allTab = document.querySelectorAll('.all');
 const activeTab = document.querySelectorAll('.active-tasks');
 const completedTab = document.querySelectorAll('.completed');
 
+const themeToggler = document.querySelector('.picture'); 
+const togglerImage = document.querySelector('.picture img'); 
 
 
 
-
+let isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches;
 
 let tasks = JSON.parse(localStorage.getItem('tasks')) || [];
+
+
+
+themeToggler.addEventListener('click', function(){
+
+  isDarkMode = !isDarkMode;
+  updateTheme();
+
+})
 
 
 tasksContainer.addEventListener('click', (e) => {
@@ -67,6 +78,18 @@ completedTab.forEach(completedTab =>{
     });
 })
 
+
+function updateTheme() {
+  if (isDarkMode) {
+    body.classList.add('dark-mode');
+    togglerImage.src = './images/icon-sun.svg'; 
+    body.classList.remove('light-mode');
+  } else {
+    body.classList.add('light-mode');
+    togglerImage.src = './images/icon-moon.svg'
+    body.classList.remove('dark-mode');
+  }
+}
 
 function updateActiveTab(activeTab) {
     const tabs = document.querySelectorAll('span');

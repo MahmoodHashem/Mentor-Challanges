@@ -30,8 +30,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- [Solution URL](https://github.com/MahmoodHashem/Mentor-Challanges/tree/main/launching-countdown)
+- [Live Site URL](https://mahmoodhashem.github.io/Mentor-Challanges/launching-countdown/index.html)
 
 ## My process
 
@@ -62,7 +62,6 @@ Users should be able to:
    - Becoming proficient with the Dateobject has equipped me with the skills tobuild complex time-based applications and handle dateandtime-related functionality effectively.
 
 These learnings from the launching countdown project have been invaluable in expanding my web development skills. The ability to create visually striking animations and effectively work with date and time-related data are crucial skills that I can applyto a wide range of future projects. I'm grateful for the opportunity to tackle this challenge and deepen my understanding of these important web development concepts.
-
 
 ## Author
 

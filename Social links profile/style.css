@@ -1,4 +1,8 @@
 /* Global Styles */
+html{
+  font-size: 10px;
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -10,7 +14,7 @@
     justify-content: center;
     align-items: center;
     height: 100vh;
-    overflow: hidden;
+
     background-color: hsl(0, 0%, 8%);
     font-family: 'Inter-regular', sans-serif;
     color: white;
@@ -31,36 +35,43 @@
   
   /* Image */
   img {
-    width: 100px;
-    height: 100px;
+    width: 10rem;
+    height: 10rem;
     border-radius: 50%;
-    margin-bottom: 15px;
+    margin-bottom: 1.5rem;
+  }
+
+
+  main{
+    max-width: 40rem;
+    flex: 1;
+    margin: 2rem;
   }
   
   /* Card */
   .card {
-    width: 380px;
-    padding: 20px;
-    border-radius: 10px;
+    padding: 2rem;
+    border-radius: 1rem;
     text-align: center;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     background-color: hsl(0, 0%, 12%);
   }
   
   .country {
-    padding-top: 7px;
-    font-size: 18px;
+    padding-top: 0.7rem;
+    font-size: 1.8rem;
     color: hsl(75, 94%, 57%);
   }
   
   .name {
     font-family: 'Inter', sans-serif;
-    font-size: 25px;
+    font-size: 3rem;
   }
   
   .description {
-    padding: 18px 0 10px;
+    padding: 1.8rem 0 ; 
     font-weight: lighter;
+    font-size: 1.5rem;
   }
   
   /* Links */
@@ -68,14 +79,17 @@
     display: flex;
     flex-direction: column;
     gap: 10px;
+    width: 100%;
+  
   }
   
   .links a {
     text-decoration: none;
     color: white;
+    font-size: 1.6rem;
     background-color: hsl(0, 0%, 20%);
-    padding: 15px;
-    border-radius: 10px;
+    padding: 1.5rem;
+    border-radius: 1rem;
     transition: background-color 0.3s, color 0.3s;
   }
   

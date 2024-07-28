@@ -195,3 +195,34 @@ p{
   margin: 0;
   padding: 0;
 }
+
+.result div {
+  display: flex;
+  align-items: start;
+}
+
+.result div span.animate{
+  display: block;
+  animation: rotate 0.7s;
+  animation-fill-mode: forwards;
+}
+
+
+.result div span.animate {
+  animation-name: rotate;
+  animation-duration: 0.7s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes rotate {
+
+  from{
+    transform:rotate(0deg) scale(0.4);
+  }
+
+  to{
+    transform: rotate(360deg) scale(1);
+
+  }
+  
+}

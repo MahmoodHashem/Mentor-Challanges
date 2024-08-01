@@ -18,6 +18,7 @@ const themeToggler = document.querySelector('.picture');
 const togglerImage = document.querySelector('.picture img'); 
 
 
+let currentThem = localStorage.getItem('theme'); 
 
 let isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches;
 
@@ -25,8 +26,13 @@ let tasks = JSON.parse(localStorage.getItem('tasks')) || [];
 
 
 
-themeToggler.addEventListener('click', function(){
+console.log(currentThem); 
 
+if(currentThem === 'dark-mode'){
+  body.classList.add("dark-mode")
+}
+
+themeToggler.addEventListener('click', function(){
   isDarkMode = !isDarkMode;
   updateTheme();
 
@@ -39,6 +45,7 @@ tasksContainer.addEventListener('click', (e) => {
         const task = tasks.find((t) => t.id === taskId);
         task.complete = e.target.checked;
         renderTaskCount()
+        saveTasksToLocalStorage()
     }
 
     if (e.target.classList.contains('cross')) {
@@ -80,15 +87,22 @@ completedTab.forEach(completedTab =>{
 
 
 function updateTheme() {
+
+  let theme = 'light-mode'; 
+
   if (isDarkMode) {
     body.classList.add('dark-mode');
     togglerImage.src = './images/icon-sun.svg'; 
     body.classList.remove('light-mode');
+    theme = 'dark-mode'; 
   } else {
     body.classList.add('light-mode');
     togglerImage.src = './images/icon-moon.svg'
     body.classList.remove('dark-mode');
+    theme = 'light-mode'; 
   }
+  console.log(theme)
+  localStorage.setItem('theme', theme);
 }
 
 function updateActiveTab(activeTab) {

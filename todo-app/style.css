@@ -99,6 +99,7 @@ body {
   margin: 0;
   color: light-dark( var(--Very-dark-blue), var(--Very-light-gray));
   background-color: light-dark(var(--Very-light-gray), var(--Very-dark-blue));
+  transition: all 0.5s;
 }
 
 main {

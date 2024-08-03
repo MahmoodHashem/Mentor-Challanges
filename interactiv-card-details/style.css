@@ -1,0 +1,271 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap");
+
+/**
+ * Media queries for responsive design:
+ * - Adjusts card positions and sizes based on screen width.
+ * - Defines background image and card heights for different screen sizes.
+ * - Modifies layout and positioning for smaller screens.
+ */
+
+@media screen and (min-width: 880px) {
+  .card-back {
+    left: 20%;
+  }
+
+  .card-front {
+    left: 10%;
+  }
+}
+
+@media screen and (min-width: 701px) {
+  body {
+    background-image: url(./images/bg-main-desktop.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  .cards {
+    height: 100vh;
+  }
+  .card-back {
+    top: 50%;
+  }
+
+  .card-front {
+    bottom: 10%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .card-front {
+    bottom: 3.75rem;
+  }
+
+  .card-back {
+    left: 4%;
+  }
+
+  main {
+    flex-direction: column;
+  }
+
+  form {
+    position: relative;
+    bottom: 1.25rem;
+  }
+}
+/* *********************** */
+
+
+/**
+ * Sets the font family to "Space Grotesk" for the entire body element and defines its height as 100% of the viewport height.
+ */
+body {
+  font-family: "Space Grotesk", sans-serif;
+  height: 100vh;
+}
+
+
+.cards {
+  width: 50vw;
+  min-width: 23.125rem;
+}
+
+.card {
+  max-width: 20.625rem;
+  height: 10rem;
+  background-size: 100% 100%;
+  position: relative;
+  color: white;
+  margin: 0 1.25rem;
+  transition: all 0.5s;
+}
+
+.card-front {
+  background-image: url(./images/bg-card-front.png);
+}
+
+.card-back {
+  background-image: url(./images/bg-card-back.png);
+}
+
+.card-front::after {
+  content: attr(data-number);
+  position: absolute;
+  bottom: 20%;
+  padding: 1.25rem;
+  font-size: 1.3rem;
+  letter-spacing: 3px;
+  font-weight: 350;
+  text-align: center;
+}
+
+.card-front::before {
+  background-image: url(./images/card-logo.svg);
+  background-repeat: no-repeat;
+  padding: 1.25rem;
+  width: 6.25rem;
+  height: 3.75rem;
+  content: "";
+  position: absolute;
+  top: 10%;
+  left: 5%;
+}
+
+.card-front .name::after {
+  content: attr(data-name);
+  color: white;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 1.25rem;
+}
+
+.card-front .date::after {
+  content: attr(data-date);
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 1.25rem;
+}
+
+.card-back::after {
+  content: attr(data-code);
+  right: 12%;
+  position: absolute;
+  top: 45%;
+  color: white;
+  font-weight: 300;
+}
+
+label {
+  text-transform: uppercase;
+  font-weight: bold;
+  color: hsl(278, 68%, 11%);
+  font-size: 0.8rem;
+}
+
+.input {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin: 0.625rem;
+}
+
+input {
+  padding: 0.625rem;
+  border: 1px solid hsl(279, 6%, 55%);
+  border-radius: 5px;
+  font-family: "Space Grotesk", sans-serif;
+}
+
+input:focus {
+    border: 1px solid hsl(249, 99%, 64%);
+    outline: none;
+}
+
+
+.error-border{
+    border-color: red;
+    margin-bottom: 16px;
+}
+
+
+.error-text{
+    position:relative;
+}
+
+.error-text::after{
+    content: "Can't be blank";
+    font-size: 0.7rem;
+    color: red;
+    position: absolute;
+    bottom: 0
+}
+
+.error-mismatch{
+    position: relative;
+}
+
+.error-mismatch::after{
+    content: "Wrong format, numbers only";
+    font-size: 0.7rem;
+    color: red;
+    position: absolute;
+    bottom: 0
+}
+
+
+
+input::placeholder {
+  font-weight: bold;
+  color: hsl(279, 6%, 55%);
+  font-family: "Space Grotesk", sans-serif;
+}
+
+.date {
+  display: flex;
+  align-items: start;
+  gap: 5px;
+}
+.date input {
+  width: 100%;
+}
+
+.date-container {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: start;
+}
+
+main {
+  display: flex;
+  align-items: center;
+}
+
+form {
+  max-width: 21.875rem;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+button {
+  border: none;
+  color: white;
+  background-color: hsl(278, 68%, 11%);
+  padding: 0.8rem;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 1rem;
+  border-radius: 5px;
+}
+
+
+.success{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 330px;
+}
+
+.success h3{
+    text-transform: uppercase;
+    margin: 0.625rem;
+    letter-spacing: 5px;
+}
+
+.success p{
+    margin: 0;
+    padding: 0;
+    color:  hsl(279, 6%, 55%);
+}
+
+.success button{
+    margin-top: 1.2rem;
+    align-self: stretch;
+}
+
+.hide{
+    display: none;
+}

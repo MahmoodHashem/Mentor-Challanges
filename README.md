@@ -1,5 +1,7 @@
 [![wakatime](https://wakatime.com/badge/github/MahmoodHashem/Mentor-Challanges.svg)](https://wakatime.com/badge/github/MahmoodHashem/Mentor-Challanges)
 
+https://www.codewars.com/users/MahmoodHashem/badges/large
+
 # Frontend Mentor Challenges
 
 Welcome to my repository where I tackle challenges from [Frontend Mentor](https://www.frontendmentor.io). Frontend Mentor provides real-world coding challenges that help developers improve their coding skills by building realistic projects.
@@ -202,15 +204,36 @@ Below is a list of Frontend Mentor challenges I have completed.
 - [Live](https://mahmoodhashem.github.io/Mentor-Challanges/article-preview-component/index.html) | [Repo](https://github.com/MahmoodHashem/Mentor-Challanges/tree/main/article-preview-component) | [Try out](https://www.frontendmentor.io/challenges/article-preview-component-dYBN_pYFT)
   - ![img](./article-preview-component/images/desktop.png)
 
-##### Article Preview Component
+##### Expense Chart Component
 
 - [Live](https://mahmoodhashem.github.io/Mentor-Challanges/expense-chart/index.html) | [Repo](https://github.com/MahmoodHashem/Mentor-Challanges/tree/main/expense-chart) | [Try out](https://www.frontendmentor.io/challenges/expenses-chart-component-e7yJBUdjwt)
   - ![img](./expense-chart/images/desktop.png)
 
-##### Article Preview Component
+##### Contact Form
 
 - [Live](https://mahmoodhashem.github.io/Mentor-Challanges/contact-form/index.html) | [Repo](https://github.com/MahmoodHashem/Mentor-Challanges/tree/main/contact-form) | [Try out](https://www.frontendmentor.io/challenges/contact-form--G-hYlqKJj)
   - ![img](./contact-form/assets/images/desktop.png)
+
+##### Base Aparel coming soon
+
+- [Live](https://mahmoodhashem.github.io/Mentor-Challanges/base-apparel-coming-soon/index.html) | [Repo](https://github.com/MahmoodHashem/Mentor-Challanges/tree/main/base-apparel-coming-soon) | [Try out](https://www.frontendmentor.io/challenges/base-apparel-coming-soon-page-5d46b47f8db8a7063f9331a0)
+  - ![img](./base-apparel-coming-soon/images/desktop.png)
+
+##### Interactive Card Details 
+
+- [Live](https://mahmoodhashem.github.io/Mentor-Challanges/interactive-card-details/index.html) | [Repo](https://github.com/MahmoodHashem/Mentor-Challanges/tree/main/interactive-card-details) | [Try out](https://www.frontendmentor.io/challenges/interactive-card-details-form-XpS8cKZDWw)
+  - ![img](./interactive-card-details/images/screenshot.png)
+  
+##### Launch Countdown Timer
+
+- [Live](https://mahmoodhashem.github.io/Mentor-Challanges/launching-countdown/index.html) | [Repo](https://github.com/MahmoodHashem/Mentor-Challanges/tree/main/launching-countdown) | [Try out](https://www.frontendmentor.io/challenges/launch-countdown-timer-N0XkGfyz-)
+  - ![img](./launching-countdown/images/desktop-design.jpg)
+
+##### Todo App
+
+- [Live](https://mahmoodhashem.github.io/Mentor-Challanges/todo-app/index.html) | [Repo](https://github.com/MahmoodHashem/Mentor-Challanges/tree/main/todo-app) | [Try out](https://www.frontendmentor.io/challenges/todo-app-Su1_KokOW)
+  - ![img](./todo-app/images/screenshot.png)
+
 
 ### [All Challanges Live Site](https://mahmoodhashem.github.io/Mentor-Challanges/)
 

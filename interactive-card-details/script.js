@@ -29,6 +29,7 @@ let inputs = [id('name'), id('number'), id('month'), id('year'), id('cvc')];
  */
 form.addEventListener('submit', event => {
     event.preventDefault();
+
     inputs.forEach(input => {
         if (input.validity.valueMissing) {
             showError(input, 'error-text');
@@ -36,10 +37,15 @@ form.addEventListener('submit', event => {
             showError(input, 'error-mismatch');
         } else {
             clearError(input);
-            form.classList.add('hide');
-            successPop.classList.remove('hide');
         }
     });
+    let isValid = inputs.every(input => input.checkValidity()); 
+
+    if(isValid){
+        form.classList.add('hide');
+        successPop.classList.remove('hide');
+    }
+    
 });
 
 

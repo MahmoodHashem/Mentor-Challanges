@@ -15,6 +15,14 @@ body{
 }
 
 
+@media screen and (max-width: 650px) {
+
+    .grid-container{
+        justify-content: center;
+    }
+    
+}
+
 .grid-container{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 300px));
@@ -36,19 +44,25 @@ body{
 .back {
     width: 100%;
     height: 100%;
-    background-color: #275d75;
+    background-color: #6fc1e4;
     border-radius: 10px;
 }
 
 .top {
-    width: 200px;
-    border-left: 25px solid transparent;
-    border-top: 80px solid #e7e7e9ca;
+    width: 70%;
+    height: 100%;
     position: absolute;
-    right: 0;
+    z-index: 2; 
     top: 0;
+    right: 0;
     border-top-right-radius: 10px;
-   
+    background-color: #e1e1e1;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    box-sizing: border-box;
 }
 
 h1 {
@@ -72,17 +86,11 @@ h3 {
 }
 
 .top h3 a:hover{
-    color: white
+    color: rgb(17, 26, 165)
 }
 
 p {
     padding: 0;
-    margin-top: 5px;
+    margin-top: 5px; 
     font-size: 12px;
-}
-
-.top div {
-    position: absolute;
-    bottom: 20%;
-    padding-top: 5px;
 }

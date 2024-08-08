@@ -230,3 +230,28 @@
   section.result p {
     color: hsl(202, 86%, 94%);
   }
+
+
+  .error-label{
+    background-color: red !important; 
+    color: white !important ;
+  }
+
+
+  .error-text{
+    position: relative;
+    margin-bottom: 20px;
+  }
+
+  .error-border:focus{
+    border-color: red;
+    
+  }
+
+  .error-text::after{
+    content: 'This field is required';
+    color: red;
+    position: absolute;
+    bottom: -10px;
+   left: 0;
+  }

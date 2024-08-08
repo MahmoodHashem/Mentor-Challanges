@@ -10,6 +10,7 @@
 
   <title>Mortgage repayment calculator</title>
   <link rel="stylesheet" href="./style.css">
+  <script src="./script.js" defer></script>
 </head>
 
 <body>
@@ -27,32 +28,35 @@
 
         <label for="amount">Mortgage Amount</label>
 
-        <div class="input-container amount">
-          <input type="number" id="amount" required>
-          <i class="fa-solid fa-sterling-sign"></i>
+        <div data-inputContainer="">
+          <div class="input-container amount">
+            <input type="number" id="amount" required data-input>
+            <i class="fa-solid fa-sterling-sign " data-label></i>
+          </div>
         </div>
-
         <div class="input-row">
-          <div class="input term">
+          <div class="input term" data-inputContainer="">
             <label for="term">Mortgage Term</label>
             <div class="input-container">
-              <input type="number" id="term">
-              <i>Years</i>
+              <input type="number" required id="term" data-input>
+              <i data-inputContainer="">Years</i>
             </div>
           </div>
-          <div class="input rate">
+          <div class="input rate " data-inputContainer="">
             <label for="rate">Interest Rate</label>
             <div class="input-container">
-              <input type="number" id="rate">
-              <i>%</i>
+              <input type="tel" required id="rate" data-input>
+              <i data-inputContainer="">%</i>
             </div>
           </div>
         </div>
 
         <h3>Mortgage Type</h3>
 
+
+
         <label class="label" tabindex="0" for="repayment">
-          <input type="radio" tabindex="-1" id="repayment" name="type">
+          <input type="radio" tabindex="-1" id="repayment" checked name="type">
           <span class="custom-radio"></span>
           Repayment</label>
         <label class="label" tabindex="0" for="interest">
@@ -60,14 +64,15 @@
           <span class="custom-radio"></span>
           Interest Only</label>
 
+
         <button type="submit" class="btn"><i class="fa-solid fa-calculator"></i>Calculat Repayment</button>
       </form>
     </section>
     <section class="result">
       <img src="./assets/images/illustration-empty.svg" alt="Empty">
       <h2>Results shown here</h3>
-      <p>Complete the form and click “calculate repayments” to see what
-        your monthly repayments would be.</p>
+        <p>Complete the form and click “calculate repayments” to see what
+          your monthly repayments would be.</p>
     </section>
   </main>
 </body>

@@ -38,14 +38,18 @@
       </div>
       <div class="label">
         <label for="query">Query Type <span class="astrick">&ast;</span></label>
-        <div class="radio-input">
-          <label class="label2">
-            <input type="radio" id="value-1" checked="" name="value-radio" value="value-1" />
-            <p class="text">General Enquiry</p>
+
+        <div class="radios">
+          <label for="enquiry" class="radio-input">
+            <input type="radio" id="enquiry" name="type" checked>
+            <span class="custom-radio"></span>
+            General Enquiry
           </label>
-          <label class="label2">
-            <input type="radio" id="value-2" name="value-radio" value="value-2" />
-            <p class="text">Support Request</p>
+
+          <label for="request" class="radio-input">
+            <input type="radio" id="request" name="type">
+            <span class="custom-radio"></span>
+            Support Request
           </label>
         </div>
       </div>
@@ -53,10 +57,11 @@
         <label for="message">Message <span class="astrick">&ast;</span></label>
         <textarea required minlength="20" name="message" id="message" rows="4"></textarea>
       </div>
-      <label class="checkbox-container">
+      <label class="checkbox-label" for="consent">
+       
+        <input id="consent" required type="checkbox">
+        <span class="custom-checkbox"></span>
         I consent to being contacted by the team
-        <input class="custom-checkbox" id="consent" required type="checkbox">
-        <span class="checkmark"></span>
       </label>
       <button type="submit" class="btn">Submit</button>
     </form>

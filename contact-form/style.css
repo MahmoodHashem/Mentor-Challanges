@@ -88,144 +88,85 @@ input {
   border-radius: 5px;
 }
 
-.radio-input {
+
+
+.radios{
   display: flex;
+  gap: 5px;
+}
+
+
+input[type="radio"]{
+  display: none;
+}
+
+.custom-radio{
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  border: 2px solid white;
+  outline: 2px solid hsl(169, 82%, 27%);
+  box-sizing: border-box;
+}
+
+
+input[type='radio']:checked + .custom-radio{
+  background-color:hsl(169, 82%, 27%); 
+}
+
+.radio-input{
+  display: inline-flex;
+  flex: 1;
   align-items: center;
   gap: 10px;
-}
-
-.radio-input * {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-}
-
-.radio-input label {
-  display: flex;
-  align-items: center;
-  gap: 15px;
-  padding: 0 20px;
-  width: 100%;
-  cursor: pointer;
-  height: 35px;
-  position: relative;
-}
-
-.radio-input label::before {
-  position: absolute;
-  content: "";
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 100%;
-  height: 35px;
-  z-index: 1;
-  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  border: 1.5px solid hsl(169, 82%, 27%);
+  padding: 10px ;
   border-radius: 5px;
-  border: 1px solid black;
 }
 
-.radio-input label:hover::before {
-  transition: all 0.2s ease;
+.radio-input:has(input[type='radio']:checked){
+  background-color: hsla(169, 82%, 27%, 0.139);
 }
 
-.radio-input .label2:has(input:checked)::before {
-  background-color: hsla(169, 82%, 27%, 0.24);
-  border-color: hsl(169, 82%, 27%);
-  height: 35px;
-}
 
-.radio-input .label2 input[type="radio"] {
-  border: 1px solid hsl(169, 82%, 27%);
-  appearance: none;
-  border-radius: 100%;
+.checkbox-label{
   display: flex;
-  justify-content: center;
+  gap: 10px;
   align-items: center;
-  flex: 0.1;
-  padding: 2px;
-}
-
-.radio-input .label2 input[type="radio"]:checked {
-  background-color: #fff;
-}
-
-.radio-input .label2 input[type="radio"]::before {
-  content: "";
-  width: 10px;
-  height: 10px;
-  border-radius: 100%;
-  transition: transform 0.1s cubic-bezier(0.165, 0.84, 0.44, 1);
-  background-color: hsl(169, 82%, 27%);
-  transform: scale(0);
-}
-
-.radio-input .label2 input[type="radio"]:checked::before {
-  transform: scale(1);
-}
-
-.checkbox-container {
-  display: inline-block;
   position: relative;
-  padding-left: 35px;
-  margin-bottom: 12px;
-  cursor: pointer;
-  font-size: 16px;
-  user-select: none;
+
+}
+
+input[type='checkbox']{
+  display: none;
+}
+
+.custom-checkbox{
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  border: 1px solid rgba(34, 33, 33, 0.685);
+  border-radius: 3px;
+  background-size: cover;
+}
+
+input[type='checkbox']:checked + .custom-checkbox{
+  background-image: url(./assets/images/icon-checkbox-check.svg);
+
 }
 
 .checkbox-container-error::after {
   content: "To submit this form, please consent to being contacted";
   color: red;
   position: absolute;
-  margin-top: 10px;
-  margin-bottom: 15px;
+  margin-top: 5px;
   top: 100%;
   left: 0;
-  font-size: 12px;
+  font-size: 13px;
 }
 
-.custom-checkbox {
-  position: absolute;
-  opacity: 0;
-  cursor: pointer;
-  height: 0;
-  width: 0;
-}
 
-.checkmark {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 20px;
-  width: 20px;
-  background-color: #eee;
-  border-radius: 2px;
-  border: 1px solid;
-  transition: background-color 0.3s;
-}
-
-.checkmark::after {
-  content: "";
-  position: absolute;
-  display: none;
-  left: 7px;
-  top: 3px;
-  width: 4px;
-  height: 8px;
-  border: solid white;
-  border-width: 0 2px 2px 0;
-  transform: rotate(45deg);
-}
-
-.custom-checkbox:checked ~ .checkmark {
-  background-color: hsl(169, 82%, 27%);
-  border: none;
-}
-
-.custom-checkbox:checked ~ .checkmark::after {
-  display: block;
-}
 
 textarea {
   resize: none;

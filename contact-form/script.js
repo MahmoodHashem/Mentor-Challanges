@@ -9,7 +9,7 @@ const nameLabel = document.querySelector('.name-label');
 const lastNamelabel = document.querySelector('.last-name-label');
 const emailLabel = document.querySelector('.email-label');
 const messageLabel = document.querySelector('.message-label')
-const checkboxLabel = document.querySelector('.checkbox-container');
+const checkboxLabel = document.querySelector('.checkbox-label');
 
 const popup = document.querySelector('.popup');
 

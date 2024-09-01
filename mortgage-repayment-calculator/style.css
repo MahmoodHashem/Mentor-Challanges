@@ -10,16 +10,58 @@
     font-family: 'Jakarta';
     src: url('./assets/fonts/static/PlusJakartaSans-Medium.ttf');
   }
+
+
+  @media screen and (max-width: 600px) {
+    
+    .container{
+      flex-direction: column;
+    }
+
+
+
+  }
   
+  @media screen and (min-width: 601px) {
+    section{
+      flex: 1;
+    }
+
+    .container{
+      border-radius:1rem;
+    }
+
+    .result-placeholder{
+      border-radius: 0px 0.9375rem 0.9375rem 4.375rem;
+    }
+
+    .input-row{
+      width: 100%;
+      box-sizing: border-box;
+      display: flex;
+      gap: 1.25rem;
+    }
+
+    body{
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+    }
+
+    .btn{
+      width: 80%;
+    }
+
+  }
+
   /* Body styles */
   body {
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+   
     background-color: hsl(202, 86%, 94%);
     font-family: 'Jakarta', sans-serif;
-    overflow: hidden;
+   
   }
   
   /* Heading styles */
@@ -35,13 +77,11 @@
     max-width: 45rem;
     display: flex;
     z-index: 0;
-    border-radius:1rem;
+    position: relative;
+    box-sizing: border-box;
   }
   
   /* Section styles */
-  section {
-    width: 50%;
-  }
   
   section.calculator {
     margin: 2rem;
@@ -61,6 +101,7 @@
   .header h5 {
     text-decoration: underline;
     color: hsl(200, 24%, 40%);
+    cursor: pointer;
   }
   
   section.calculator form {
@@ -79,6 +120,7 @@
     margin-top: 0.625rem;
     margin-bottom: 1.25rem;
   }
+
   
   input {
     padding: 0.6rem;
@@ -149,12 +191,7 @@
   }
 
 
-  .input-row{
-    width: 100%;
-    box-sizing: border-box;
-    display: flex;
-    gap: 1.25rem;
-  }
+
   
   /* Custom radio button styles */
   [type="radio"] {
@@ -193,7 +230,7 @@
   
   /* Button styles */
   .btn {
-    width: 80%;
+   
     border: none;
     background-color: hsl(61, 70%, 52%);
     padding: 0.625rem;
@@ -210,26 +247,73 @@
   }
   
   /* Result section styles */
-  section.result {
+
+  .result-placeholder{
+    background-color: hsl(202, 55%, 16%);
+    color: white;
+    
+  }
+
+  .result-toshow {
     display: flex;
+    height: 100%;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
-    background-color: hsl(202, 55%, 16%);
-    color: white;
-    border-radius: 0px 0.9375rem 0.9375rem 4.375rem;
+
   }
+
+
   
-  section.result h2 {
+  .result-placeholder h2 {
     margin-top: 0.75rem;
     margin-bottom: 0.625rem;
     font-size: 1.125rem;
+    font-weight: 400;
   }
-  
-  section.result p {
+
+   .result-placeholder p {
     color: hsl(202, 86%, 94%);
+   
   }
+
+  .result{
+    padding: 2rem;
+  }
+ 
+
+  .result__monthly{
+    background-color:   hsl(200, 57%, 9%);
+    border-top: 2px solid hsl(61, 70%, 52%);
+    border-radius: 5px;
+    padding: 1rem;
+    margin-top: 2rem;
+  }
+
+  .result__monthly h5{
+    font-weight: 400;
+    color: hsla(203, 87%, 94%, 0.672);
+  }
+
+  .result__monthly-calculated{
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color:hsl(61, 70%, 52%)!important
+  }
+
+  .result__monthly-term{
+    margin-top: 1rem;
+    font-weight: bold;
+  }
+
+
+  .result__monthly hr{
+    opacity: 0.5;
+    margin-bottom: 2rem;
+  }
+
 
 
   .error-label{
@@ -254,4 +338,10 @@
     position: absolute;
     bottom: -10px;
    left: 0;
+  }
+
+
+
+  .hide{
+    display: none;
   }

@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Sunnyside agency landing page</title>
+
+  <style>
+
+
+    body{
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+    }
+    
+    .nav-bar{
+      display: flex;
+      justify-content: end;
+      align-items: center;
+      gap: 40px;
+      list-style: none;
+      margin: 0px;
+      padding: 30px;
+      color: white;
+    }
+
+    a{
+      color: white;
+      text-decoration: none;
+    }
+
+    .nav-brand{
+      width: 100px;
+      margin-right: auto;
+    }
+
+    .btn{
+      color: black;
+      text-transform: uppercase;
+      font-weight: bold;
+      font-family: serif;
+      background-color: white;
+      padding: 20px;
+      border-radius: 30px;
+      border: none;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .btn:hover{
+        background-color: rgba(255, 255, 255, 0.333); 
+        color: white
+    }
+
+    header{
+      background-image: url(./images/desktop/image-header.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center center;
+      height: 100vh;
+      text-align: center;
+    }
+
+    header h1{
+      color: white;
+      font-size: 2.5rem;
+      text-transform: uppercase;
+      letter-spacing: 6px;
+      margin-bottom: 70px;
+    }
+    .transform, .stand-out{
+      display: flex;
+    }
+
+    .text-box, .img-box{
+      width: 100%;
+    }
+    .img-box img{
+      width: 100%;
+      height: 100%;
+    }
+
+    .text-box .contents{
+      padding: 22%;
+    }
+
+    .text-box .contents h2{
+      font-size: 2.5rem;
+      margin-bottom: 5px;
+    }
+
+    .link{
+      color: black;
+      text-transform: uppercase;
+      font-weight: bold;
+      position: relative;
+    }
+
+    .link:hover .yellow::before{
+      background-color: hsl(51, 100%, 49%);
+    }
+    .link::before{
+      content: "";
+      width: 110%;
+      height: 10px;
+      position: absolute; 
+      bottom: 0px;
+      left: -5px;
+      border-radius: 15px;
+      z-index: -1;
+    }
+
+    .yellow::before{
+      background-color: hsla(51, 100%, 49%, 0.373);
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <ul class="nav-bar">
+        <li class="nav-brand">
+          <img src="./images/logo.svg" alt="logo">
+        </li>
+        <li> <a href="#">About</a> </li>
+        <li> <a href="#">Services</a></li>
+        <li> <a href="#">Projecs</a></li>
+        <li> <button class="btn">Contact</button></li>
+      </ul>
+    </nav>
+    <h1>
+      We Are creatives
+    </h1>
+    <img src="./images/icon-arrow-down.svg" alt="arrow">
+  </header>
+  <main>
+    <section class="transform">
+      <div class="text-box">
+        <div class="contents">
+          <h2>Transform your brand</h2>
+          <p>
+            We are a full-service creative agency specializing in helping brands grow fast. 
+            Engage your clients through compelling visuals that do most of the marketing for you.
+          </p>
+          <a href="#" class="link yellow">Learn more</a>
+        </div>
+      </div>
+      <div class="img-box">
+        <img src="./images/desktop/image-transform.jpg" alt="egg">
+      </div>
+    </section>
+    <section class="stand-out">
+      <div class="img-box">
+        <img src="./images/desktop/image-stand-out.jpg" alt="glass">
+      </div>
+      <div class="text-box">
+        <h2> Stand out to the right audience</h2>
+        <p>  Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places. 
+        </p>
+        <a href="#" class="link pink">Learn more</a>
+      </div>
+    </section>
+    <section>
+      <div class="graphic-design-img">
+          <h3>Graphic Design</h3>
+          <p>  Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients’ attention.
+          </p>
+      </div>
+      
+    
+      <div class="photography-img">
+        <h3>Photography</h3>
+          <p>Increase your credibility by getting the most stunning, high-quality photos that improve your business image.
+          </p>
+      </div>
+    </section>
+
+    <section class="testimonials">
+      <h2>
+        Client testimonials
+      </h2>
+      <div class="clients-card">
+        <div class="client"><img src="./images/image-emily.jpg" alt="emily"></div>
+        <div class="client">
+          <img src="./images/image-thomas.jpg" alt="image-thomas">
+        </div>
+        <div class="client">
+          <img src="./images/image-jennie.jpg" alt="image-jennie">
+        </div>
+      </div>
+    </section>
+    <section class="bottom-images">
+      <div class="bottom-img"></div>
+      <div class="bottom-img"></div>
+      <div class="bottom-img"></div>
+      <div class="bottom-img"></div>
+    </section>
+  </main>
+
+  <footer>
+      <h2>sunnyside</h2>
+      <ul>
+        <li>About</li>
+        <li>Services</li>
+        <li>Projects</li>
+      </ul>
+      <ul class="logos">
+        <li><img src="./images/icon-facebook.svg" alt="icon-facebook"></li>
+        <li><img src="./images/icon-instagram.svg" alt="icon-instagram"></li>
+        <li><img src="./images/icon-twitter.svg" alt="icon-twitter"></li>
+        <li><img src="./images/icon-pinterest.svg" alt="icon-pinterest"></li>
+      </ul>
+
+  </footer>
+
+</body>
+
+</html>

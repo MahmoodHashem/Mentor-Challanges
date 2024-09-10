@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- displays site properly based on user's device -->
+
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="./style.css">
@@ -14,6 +14,13 @@
 <body>
   <header>
     <nav>
+      <ul class="mobile-nav-bar" data-state ="close">
+        <li> <a href="#">About</a> </li>
+        <li> <a href="#">Services</a></li>
+        <li> <a href="#">Projecs</a></li>
+        <li> <button class="btn">Contact</button></li>
+      </ul>
+
       <ul class="nav-bar">
         <li class="nav-brand">
           <img src="./images/logo.svg" alt="logo">
@@ -28,6 +35,7 @@
     <h1>
       We Are creatives
     </h1>
+    
     <img src="./images/icon-arrow-down.svg" alt="arrow">
   </header>
   <main>
@@ -43,7 +51,11 @@
         </div>
       </div>
       <div class="img-box">
-        <img src="./images/desktop/image-transform.jpg" alt="egg">
+        <picture>
+          <source media="(min-width=700px)" srcset="./images/desktop/image-transform.jpg" alt="egg">
+          <img src="./images/mobile/image-transform.jpg" alt="egg">
+        </picture>
+        
       </div>
     </section>
     <section class="stand-out">
@@ -128,16 +140,28 @@
     </section>
     <section class="bottom-images">
       <div class="bottom-img">
-        <img src="./images/desktop/image-gallery-milkbottles.jpg" alt="image-gallery-milkbottles">
+        <picture>
+          <source media="(min-width=700px)" alt="" srcset="./images/desktop/image-gallery-milkbottles.jpg">
+          <img src="./images/mobile/image-gallery-milkbottles.jpg" alt="image-gallery-milkbottles">
+        </picture>
       </div>
       <div class="bottom-img">
-        <img src="./images/desktop/image-gallery-orange.jpg" alt="image-gallery-orange">
+        <picture>
+          <source media="(min-width=700px)" alt="" srcset="./images/desktop/image-gallery-orange.jpg">
+          <img src="./images/mobile/image-gallery-orange.jpg" alt="image-gallery-orange">
+        </picture>
       </div>
       <div class="bottom-img">
-        <img src="./images/desktop/image-gallery-cone.jpg" alt="cone">
+        <picture>
+          <source media="(min-width=700px)" alt="" srcset="./images/desktop/image-gallery-cone.jpg">
+          <img src="./images/mobile/image-gallery-cone.jpg" alt="cone">
+        </picture>
       </div>
       <div class="bottom-img">
-        <img src="./images/desktop/image-gallery-sugarcubes.jpg" alt="image-gallery-sugarcubes">
+        <picture></picture>
+          <source media="(min-width=700px)" alt="" srcset="./images/desktop/image-gallery-sugar-cubes.jpg">
+          <img src="./images/mobile/image-gallery-sugar-cubes.jpg" alt="image-gallery-sugarcubes">
+        </picture>
       </div>
     </section>
   </main>
@@ -157,6 +181,24 @@
     </ul>
 
   </footer>
+
+  <script>
+
+    const menu = document.querySelector('.menu'); 
+    const nav = document.querySelector('.mobile-nav-bar'); 
+
+    menu.addEventListener('click', ()=> {
+      
+      if(nav.dataset.state === 'close'){
+        nav.dataset.state = 'open'
+      }else {
+        nav.dataset.state = 'close'
+      }
+      
+    })
+
+  </script>
+
 
 </body>
 

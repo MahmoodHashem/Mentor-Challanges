@@ -35,7 +35,7 @@ Users should be able to:
 ### Links
 
 - [Solution URL:](https://github.com/MahmoodHashem/Mentor-Challanges/tree/main/mortgage-repayment-calculator)
-- [Live Site URL:](https://mahmoodhashem.github.io/Mentor-Challanges/mortgage-repayment-calculator)
+- [Live Site URL:](https://mahmoodhashem.github.io/Mentor-Challanges/mortgage-repayment-calculator/index.html)
 
 ## My process
 

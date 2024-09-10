@@ -49,9 +49,11 @@ This repository is a collection of my solutions to various Frontend Mentor chall
          <li><a href="https://github.com/MahmoodHashem/Mentor-Challanges/tree/main/">Expense Chart</a></li>
            <li><a href="https://github.com/MahmoodHashem/Mentor-Challanges/tree/main/huddle-landing-page-complete">Huddle Landing Page With curved</a></li>
           <li><a href="https://github.com/MahmoodHashem/Mentor-Challanges/tree/main/intro-section">Intro Section with Dropdown Menue</a></li>
+        <li><a href="https://github.com/MahmoodHashem/Mentor-Challanges/tree/main/mortgage-repayment-calculator">Mortgage repayment calculator</a></li>   
       <li><a href="https://github.com/MahmoodHashem/Mentor-Challanges/tree/main/newsletter-sign-up-with-success-message-main">Newsletter Subscription</a></li>
       <li><a href="https://github.com/MahmoodHashem/Mentor-Challanges/tree/main/news-homepage-main">News Homepage</a></li>
       <li><a href="https://github.com/MahmoodHashem/Mentor-Challanges/tree/main/notification-page">Notification Page</a></li>
+      <li><a href="https://github.com/MahmoodHashem/Mentor-Challanges/tree/main/sunnyside-agency">Sunnyside agency landing page</a></li>
       <li><a href="https://github.com/MahmoodHashem/Mentor-Challanges/tree/main/time-tracking">Time Tracking Dashboard</a></li>
     </ol>
   </details>
@@ -233,6 +235,16 @@ Below is a list of Frontend Mentor challenges I have completed.
 
 - [Live](https://mahmoodhashem.github.io/Mentor-Challanges/todo-app/index.html) | [Repo](https://github.com/MahmoodHashem/Mentor-Challanges/tree/main/todo-app) | [Try out](https://www.frontendmentor.io/challenges/todo-app-Su1_KokOW)
   - ![img](./todo-app/images/screenshot.png)
+
+##### Sunnyside Agency Landing Page
+
+- [Live](https://mahmoodhashem.github.io/Mentor-Challanges/sunnyside-agency/index.html) | [Repo](https://github.com/MahmoodHashem/Mentor-Challanges/tree/main/sunnyside-agency) | [Try out](https://www.frontendmentor.io/challenges/sunnyside-agency-landing-page-7yVs3B6ef)
+  - ![img](./sunnyside-agency/images/desktop-screenshot.png)
+
+  ##### Mortgage Repayment Calculator 
+
+- [Live](https://mahmoodhashem.github.io/Mentor-Challanges/mortgage-repayment-calculator/index.html) | [Repo](https://github.com/MahmoodHashem/Mentor-Challanges/tree/main/mortgage-repayment-calculator) | [Try out](https://www.frontendmentor.io/challenges/mortgage-repayment-calculator-Galx1LXK73)
+  - ![img](./mortgage-repayment-calculator/assets/images/desktop.png)
 
 
 ### [All Challanges Live Site](https://mahmoodhashem.github.io/Mentor-Challanges/)

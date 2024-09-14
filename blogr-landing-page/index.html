@@ -39,6 +39,7 @@
           <li class="nav-btn"><a href="#" class="btn log-btn">Login</a></li>
           <li><a href="#" class="btn sign-btn">Sign Up</a></li>
         </ul>
+        <img src="./images/icon-hamburger.svg" data-state="close" alt="menu" class="menu">
       </nav>
       <div class="container">
         <h1>A modern publishing platform</h1>
@@ -74,7 +75,11 @@
             </p>
           </div>
           <div class="future-design__contents__image">
-            <img src="./images/illustration-editor-desktop.svg" alt="desktop" />
+            <picture>
+              <source media="(min-width:650px)" srcset="./images/illustration-editor-desktop.svg" alt="illustration">
+               <img src="./images/illustration-editor-mobile.svg " alt="illustration" />
+            </picture>
+           
           </div>
         </div>
       </section>
@@ -96,7 +101,11 @@
 
       <section class="last">
         <div class="last__image">
-          <img src="./images/illustration-laptop-desktop.svg" alt="laptop" />
+          <picture>
+            <source media="(min-width:650px )" srcset="./images/illustration-laptop-desktop.svg" alt="laptop">
+            <img src="./images/illustration-laptop-mobile.svg" alt="laptop" />
+          </picture>
+         
         </div>
         <div class="last__contents">
           <h4>Free, open, simple</h4>
@@ -123,7 +132,7 @@
       <div class="logo">
         <img src="./images/logo.svg" alt="logo" />
       </div>
-      <div class="footer__product">
+      <div class="footer__product footer__list">
         <h5>Product</h5>
         <ul>
           <li><a href="#">Overview</a></li>
@@ -134,7 +143,7 @@
         </ul>
       </div>
 
-      <div class="footer__company">
+      <div class="footer__company footer__list">
         <h5>Company</h5>
         <ul>
           <li><a href="#">About</a></li>
@@ -143,7 +152,7 @@
           <li><a href="#">Careers</a></li>
         </ul>
       </div>
-      <div class="footer__connect">
+      <div class="footer__connect footer__list">
         <h5>Connect</h5>
 
         <ul>

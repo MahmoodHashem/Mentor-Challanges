@@ -1,35 +1,75 @@
 // modules/ui.js
 
 export const updateUserProfile = (data) => {
-    const avatar = document.querySelector(".avatar_img");
-    const profileName = document.querySelector(".name");
-    const username = document.querySelector(".username");
-    const userBio = document.querySelector(".bio");
-    const joindDate = document.querySelector(".joined-date");
-    const repositories = document.querySelector(".repos p");
-    const followersNo = document.querySelector(".followers p");
-    const followingNo = document.querySelector(".following p");
-    const locationName = document.querySelector(".location p");
-    const twitterAddress = document.querySelector(".twitter p");
-    const githubAddress = document.querySelector(".github p");
-    const companyName = document.querySelector(".company p");
 
-    avatar.src = data.avatar_url;
-    profileName.innerHTML = data.name;
-    username.innerHTML = `@${data.login}`;
-    userBio.innerHTML = data.bio || "No bio";
-    joindDate.innerHTML = `Joined at ${new Date(data.created_at).toLocaleDateString("en-GB", {
+    const $ = (element) => document.querySelector(element);
+
+    const elements = {
+        avatar: $('.avatar_img'),
+        profileName: $('.name'),
+        username: $('.username'),
+        userBio: $('.bio'),
+        joindDate: $('.joined-date'),
+        repositories: $('.repos p'),
+        followersNo: $('.followers p'),
+        followingNo: $('.following p'),
+        locationName: $('.location p'),
+        twitterAddress: $(".twitter p"),
+        githubAddress: $('.github p'),
+        companyName: $('.company p')
+    };
+
+    const dataMapping = {
+        avatar: 'avatar_url',
+        profileName: 'name',
+        username: 'login',
+        userBio: 'bio',
+        joindDate: 'created_at',
+        repositories: 'public_repos',
+        followersNo: 'followers',
+        followingNo: 'following',
+        locationName: 'location',
+        twitterAddress: 'twitter_username',
+        githubAddress: 'blog',
+        companyName: 'company'
+    };
+
+    for (const key in elements) {
+        const element = elements[key];
+        const dataKey = dataMapping[key];
+        if (dataKey) {
+            console.log(dataKey)
+
+            if (dataKey === 'avatar_url') {
+                element.src = data[dataKey]
+                continue;
+            }
+
+            if (dataKey === 'login') {
+                element.innerHTML = `@${data[dataKey]}`
+                continue;
+            }
+
+            element.innerHTML = data[dataKey] || (key === 'userBio' ? "No bio" : (key === 'locationName' ? "No location" : (key === 'twitterAddress' ? "No Twitter" : (key === 'companyName' ? "No company" : "No website"))));
+        }
+    }
+
+    elements.joindDate.innerHTML = `Joined at ${new Date(data.created_at).toLocaleDateString("en-GB", {
         day: "2-digit",
         month: "short",
         year: "numeric",
     })}`;
-    followersNo.innerHTML = data.followers;
-    followingNo.innerHTML = data.following;
-    repositories.innerHTML = data.public_repos;
-    locationName.innerHTML = data.location || "No location";
-    twitterAddress.innerHTML = data.twitter_username || "No Twitter";
-    companyName.innerHTML = data.company || "No company";
-    githubAddress.innerHTML = data.blog || "No website";
+
+    const toggleClasses = ['locationName', 'twitterAddress', 'companyName', 'githubAddress'];
+    toggleClasses.forEach((key) => {
+        const element = elements[key];
+        const dataKey = dataMapping[key];
+        if (data[dataKey]) {
+            element.classList.remove('deactive');
+        } else {
+            element.classList.add('deactive');
+        }
+    });
 };
 
 export const showToast = (message) => {

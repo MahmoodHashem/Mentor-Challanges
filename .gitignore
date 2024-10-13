@@ -1,3 +1,7 @@
 test2.html
-test*.html
+test*.*
 todo-app/style-guide.md
+custom*.html
+
+node_modules/
+.vscode/

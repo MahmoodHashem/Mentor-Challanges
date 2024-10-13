@@ -5,5 +5,11 @@
     "eslint": "^9.6.0",
     "eslint-plugin-react": "^7.34.3",
     "globals": "^15.8.0"
-  }
+  },
+  "dependencies": {
+    "tailwindcss": "^3.4.11"
+  },
+  "scripts": {
+  "build": "tailwindcss -i ./crowdfunding-landing-page/style.css -o ./crowdfunding-landing-page/output.css --watch"
+}
 }

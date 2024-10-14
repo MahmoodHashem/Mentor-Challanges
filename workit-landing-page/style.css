@@ -124,7 +124,7 @@ header h1 {
 }
 
 section.features {
-  padding: 10rem 1rem;
+  padding: 10rem 4rem;
   background-color: var(--color-bg);
   position: relative;
   z-index: -1;

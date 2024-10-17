@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base {
+    @font-face {
+      font-family: 'CommissionerBold';
+      src: url(./assets/fonts/static/Commissioner-Bold.ttf);
+    }
+
+    @font-face {
+      font-family: "CommissionerRegular";
+      src: url(./assets/fonts/static/Commissioner-Regular.ttf);
+    }
+  }
+
+
+  .radio-label:hover .custom-radio{
+    outline-color: hsl(176, 50%, 47%);
+  }
+
+  input[type='radio']:checked ~ .custom-radio{
+    background-color: hsl(176, 72%, 28%);
+  }
+
+  .modal::-webkit-scrollbar{
+    display: none;
+  }
+
+  
+  .open-modal{
+    overflow: hidden;
+  }
+
+  .modal::backdrop{
+    background-color: rgba(0, 0, 0, 0.181);
+    pointer-events: auto;
+  }
+
+
+

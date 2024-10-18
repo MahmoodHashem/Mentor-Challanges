@@ -12,7 +12,7 @@ export default function Header() {
     return (
         <header
             className='
-        h-3/6 font-CommissionerRegular
+        h-3/4 font-CommissionerRegular
         md:bg-desktop-hero-pattern  bg-mobile-hero-pattern
         bg-no-repeat bg-cover lg:px-28 px-12 py-8 shadow-inset
         text-3xl

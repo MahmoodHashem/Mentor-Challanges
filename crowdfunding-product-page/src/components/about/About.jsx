@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 
 /* eslint-disable react/prop-types */
 import Bamboo from "./Bambo";
@@ -6,7 +7,7 @@ import Mahogany from "./Mahogany";
 
 
 
-export default function About({openModal}) {
+export default function About({openModal, backs}) {
 
     return (
         <section className=" bg-white w-full md:w-[40rem]  mx-auto p-7 py-10 my-3 rounded-2xl " >
@@ -20,9 +21,9 @@ export default function About({openModal}) {
             <p className="font-CommissionerRegular text-lg text-dark-gray my-2">  Featuring artisan craftsmanship, the simplicity of design creates extra desk space below your computer
                 to allow notepads, pens, and USB sticks to be stored under the stand.
             </p>
-            <Bamboo openModal={openModal} />
-            <BlackEdition openModal={openModal} />
-            <Mahogany openModal={openModal} />
+            <Bamboo openModal={openModal} backs={backs} />
+            <BlackEdition openModal={openModal} backs={backs} />
+            <Mahogany openModal={openModal} backs={backs} />
         </section>
     )
 }

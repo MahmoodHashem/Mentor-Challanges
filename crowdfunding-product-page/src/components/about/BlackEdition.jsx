@@ -2,9 +2,9 @@
 
 
 
-export default function BlackEdition({openModal}) {
+export default function BlackEdition({openModal, backs}) {
     return (
-        <section className="p-8 border my-5 border-gray-300 rounded-md">
+        <section className={`p-8 ${backs.black === 0 ? "opacity-45" : "opacity-100"}  border my-5 border-gray-300 rounded-md`}>
             <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center mb-5">
                 <h3 className="text-[1.4rem] font-CommissionerBold 
 
@@ -16,10 +16,10 @@ export default function BlackEdition({openModal}) {
             member list. Shipping is included.
             </p>
             <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center mt-5" >
-                 <h4 className="font-CommissionerBold text-3xl">64 <small className="font-CommissionerRegular text-dark-gray text-sm" >left</small></h4> 
-                <button onClick={()=> openModal('black')} className="font-CommissionerBold text-white w-48 sm:w-auto mt-4 sm:mt-0 py-3 px-8 bg-dark-cyan rounded-full  ">
-                    Select Reward
-                </button>
+                 <h4 className="font-CommissionerBold text-3xl">{backs.black} <small className="font-CommissionerRegular text-dark-gray text-sm" >left</small></h4> 
+               { <button disabled={backs.black === 0} onClick={()=> openModal('black')} className={`font-CommissionerBold text-white w-48 sm:w-auto mt-4 sm:mt-0 py-3 px-8 ${backs.black === 0 ? "bg-dark-gray" : "bg-moderate-cyan hover:bg-dark-cyan"} rounded-full  `}>
+                    {backs.black === 0 ? "Out of Stock" : "Select Reward"}
+                </button> }
             </div>
         </section>
     )

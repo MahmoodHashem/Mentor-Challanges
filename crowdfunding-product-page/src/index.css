@@ -2,41 +2,34 @@
 @tailwind components;
 @tailwind utilities;
 
-
 @layer base {
-    @font-face {
-      font-family: 'CommissionerBold';
-      src: url(./assets/fonts/static/Commissioner-Bold.ttf);
-    }
-
-    @font-face {
-      font-family: "CommissionerRegular";
-      src: url(./assets/fonts/static/Commissioner-Regular.ttf);
-    }
+  @font-face {
+    font-family: "CommissionerBold";
+    src: url(./assets/fonts/static/Commissioner-Bold.ttf);
   }
 
-
-  .radio-label:hover .custom-radio{
-    outline-color: hsl(176, 50%, 47%);
+  @font-face {
+    font-family: "CommissionerRegular";
+    src: url(./assets/fonts/static/Commissioner-Regular.ttf);
   }
+}
 
-  input[type='radio']:checked ~ .custom-radio{
-    background-color: hsl(176, 72%, 28%);
-  }
+.radio-label:hover .custom-radio {
+  outline-color: hsl(176, 50%, 47%);
+}
 
-  .modal::-webkit-scrollbar{
-    display: none;
-  }
+input[type="radio"]:checked ~ .custom-radio {
+  background-color: hsl(176, 72%, 28%);
+}
 
-  
-  .open-modal{
-    overflow: hidden;
-  }
-
-  .modal::backdrop{
-    background-color: rgba(0, 0, 0, 0.181);
-    pointer-events: auto;
-  }
+.modal::-webkit-scrollbar {
+  display: none;
+}
 
 
 
+
+.modal::backdrop {
+ backdrop-filter: blur(5px);
+ 
+}

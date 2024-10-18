@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+  --moderate-violet: hsl(263, 55%, 52%);
+  --very-dark-grayish-blue: hsl(217, 19%, 35%);
+  --very-dark-blackish-blue: hsl(219, 29%, 14%);
+  --white: hsl(0, 0%, 100%);
+  --light-gray: hsl(0, 0%, 81%);
+  --light-grayish-blue: hsl(210, 46%, 95%);
+}
+
+body{
+    font-family: "Barlow Semi Condensed", sans-serif;
+    height: 100vh;
+    align-content: center;
+    background-color: var(--light-grayish-blue);
+    padding: 1rem;
+}
+
+main{
+    display: grid;
+   grid-template-areas:
+    'one' 
+     'two'
+     'three'
+     'four'
+     'five'   
+    ;
+    max-width: 1000px;
+    grid-auto-columns: 1fr;
+    margin: auto;
+    gap: 1rem;
+}
+
+
+
+.grid-item {
+  background-color: hsl(263, 55%, 52%);
+  border-radius: 10px;
+  padding: 1.5rem;
+  color: white;
+  font-family: sans-serif;
+  overflow: clip;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+
+h1{
+    font-size: 1rem; 
+}
+
+q{
+    color: var(--light-gray);
+    font-size: 0.8rem;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.profile img {
+  width: 30px;
+  border-radius: 50% ;
+  border: 2px solid rgba(255, 255, 255, 0.445);
+}
+
+.profile h4,
+h5 {
+  margin: 0;
+  font-size: 0.8rem;
+}
+
+.profile h5 {
+  margin-top: 0.5rem;
+  font-weight: 400;
+  color: var(--light-gray);
+}
+
+
+.grid-item-1{
+    grid-area: one;
+    background-image: url(./images/bg-pattern-quotation.svg);
+    background-repeat: no-repeat;
+    background-position: 90% top;
+  
+}
+
+.grid-item-2{
+   grid-area: two;
+    background-color: var(--very-dark-grayish-blue);
+}
+
+.grid-item-3{
+    grid-area: three;
+    background-color: var(--white);
+    color: black;
+}
+
+.grid-item-3 q{
+    color: var(--very-dark-grayish-blue);
+}
+
+.grid-item-4{
+    
+    grid-area: four;
+    background-color: var(--very-dark-blackish-blue);
+}
+
+.grid-item-5{
+    grid-area: five;
+    background-color: var(--white);
+    color: black;
+}
+
+.grid-item-5 q{
+    color: var(--very-dark-blackish-blue);
+}
+
+
+@media screen and (min-width: 770px) {
+    main{
+        grid-template-areas: 
+        "one one two"
+        "three four four"
+        "five five five"
+
+        ;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    main{
+        grid-template-areas: 
+        'one one two five'
+        'three four four five'
+        ;
+    }
+}

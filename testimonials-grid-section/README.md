@@ -45,11 +45,11 @@ Users should be able to:
 
 I learned the grid-template-area, that's fantastic, time saving and code reducer
 
-```html
-main{
+```css
+main {
 grid-template-area: 
-'one one two five'
-'three four four five'
+  'one one two five'
+  'three four four five'
 }
 ```
 

@@ -1,7 +1,5 @@
 [![wakatime](https://wakatime.com/badge/github/MahmoodHashem/Mentor-Challanges.svg)](https://wakatime.com/badge/github/MahmoodHashem/Mentor-Challanges)
 
-https://www.codewars.com/users/MahmoodHashem/badges/large
-
 # Frontend Mentor Challenges
 
 Welcome to my repository where I tackle challenges from [Frontend Mentor](https://www.frontendmentor.io). Frontend Mentor provides real-world coding challenges that help developers improve their coding skills by building realistic projects.
@@ -33,9 +31,11 @@ This repository is a collection of my solutions to various Frontend Mentor chall
        <li><a href="https://github.com/MahmoodHashem/Mentor-Challanges/tree/main/recipe-page">Recipe Page</a></li>
       <li><a href="https://github.com/MahmoodHashem/Mentor-Challanges/tree/main/result-summary">Result Summary</a></li>
      <li><a href="https://github.com/MahmoodHashem/Mentor-Challanges/tree/main/signle-price-grid">Single Price Grid Component</a></li>
+      <li><a href="https://github.com/MahmoodHashem/Mentor-Challanges/tree/main/skilled-elearning-langin-page">Skilled E-Learning landing page</a></li>
       <li><a href="https://github.com/MahmoodHashem/Mentor-Challanges/tree/main/Social%20links%20profile" >Social Links Profile</a></li>
       <li><a href="https://github.com/MahmoodHashem/Mentor-Challanges/tree/main/social-proof-section">Social Proof Section </a></li>
       <li><a href="https://github.com/MahmoodHashem/Mentor-Challanges/tree/main/stats-preview-card">Stats Preview Card</a></li>
+      <li><a href="https://github.com/MahmoodHashem/Mentor-Challanges/tree/main/workit-landing-page">Workit Landing page</a></li>
     </ol>
   </details>
 
@@ -44,16 +44,24 @@ This repository is a collection of my solutions to various Frontend Mentor chall
     <ol>
         <li><a href="https://github.com/MahmoodHashem/Mentor-Challanges/tree/main/advice-generator">Advice Generator</a></li>
       <li><a href="https://github.com/MahmoodHashem/Mentor-Challanges/tree/main/age-calculator">Age Calculator</a></li>
+      <li><a href="https://github.com/MahmoodHashem/Mentor-Challanges/tree/main/blogr-landing-page">Blogr Landing Page</a></li>
+     <li><a href="https://github.com/MahmoodHashem/Mentor-Challanges/tree/main/crowdfunding-product-page">Crowd Funding product page</a></li>
      <li><a href="https://github.com/MahmoodHashem/Mentor-Challanges/tree/main/contact-form">Contact Form</a></li>
      <li><a href="https://github.com/MahmoodHashem/Mentor-Challanges/tree/main/testemonial-slider">Coding bootcamp testimonial</a></li>
-         <li><a href="https://github.com/MahmoodHashem/Mentor-Challanges/tree/main/">Expense Chart</a></li>
-           <li><a href="https://github.com/MahmoodHashem/Mentor-Challanges/tree/main/huddle-landing-page-complete">Huddle Landing Page With curved</a></li>
-          <li><a href="https://github.com/MahmoodHashem/Mentor-Challanges/tree/main/intro-section">Intro Section with Dropdown Menue</a></li>
-        <li><a href="https://github.com/MahmoodHashem/Mentor-Challanges/tree/main/mortgage-repayment-calculator">Mortgage repayment calculator</a></li>   
+     <li><a href="https://github.com/MahmoodHashem/Mentor-Challanges/tree/main/clipboard-landing-page">Clipboard Landing Page</a></li>
+      <li><a href="https://github.com/MahmoodHashem/Mentor-Challanges/tree/main/expense-chart">Expense Chart</a></li>
+     <li><a href="https://github.com/MahmoodHashem/Mentor-Challanges/tree/main/github-user-search">Github User Search</a></li>
+     <li><a href="https://github.com/MahmoodHashem/Mentor-Challanges/tree/main/huddle-landing-page-complete">Huddle Landing Page With curved</a></li>
+     <li><a href="https://github.com/MahmoodHashem/Mentor-Challanges/tree/main/interactive-card-details">Interactive Card Details</a></li>
+      <li><a href="https://github.com/MahmoodHashem/Mentor-Challanges/tree/main/interactive-pricing-component">Interactive Pricing Component</a></li>
+     <li><a href="https://github.com/MahmoodHashem/Mentor-Challanges/tree/main/intro-section">Intro Section with Dropdown Menue</a></li>
+      <li><a href="https://github.com/MahmoodHashem/Mentor-Challanges/tree/main/mortgage-repayment-calculator">Mortgage repayment calculator</a></li>   
       <li><a href="https://github.com/MahmoodHashem/Mentor-Challanges/tree/main/newsletter-sign-up-with-success-message-main">Newsletter Subscription</a></li>
       <li><a href="https://github.com/MahmoodHashem/Mentor-Challanges/tree/main/news-homepage-main">News Homepage</a></li>
       <li><a href="https://github.com/MahmoodHashem/Mentor-Challanges/tree/main/notification-page">Notification Page</a></li>
+      <li><a href="https://github.com/MahmoodHashem/Mentor-Challanges/tree/main/skilled-elearning-langin-page">Skilled Elearning Landing page</a></li>
       <li><a href="https://github.com/MahmoodHashem/Mentor-Challanges/tree/main/sunnyside-agency">Sunnyside agency landing page</a></li>
+      <li><a href="https://github.com/MahmoodHashem/Mentor-Challanges/tree/main/testimonials-grid-section">Testimonials Grid Section</a></li>
       <li><a href="https://github.com/MahmoodHashem/Mentor-Challanges/tree/main/time-tracking">Time Tracking Dashboard</a></li>
     </ol>
   </details>
@@ -221,11 +229,11 @@ Below is a list of Frontend Mentor challenges I have completed.
 - [Live](https://mahmoodhashem.github.io/Mentor-Challanges/base-apparel-coming-soon/index.html) | [Repo](https://github.com/MahmoodHashem/Mentor-Challanges/tree/main/base-apparel-coming-soon) | [Try out](https://www.frontendmentor.io/challenges/base-apparel-coming-soon-page-5d46b47f8db8a7063f9331a0)
   - ![img](./base-apparel-coming-soon/images/desktop.png)
 
-##### Interactive Card Details 
+##### Interactive Card Details
 
 - [Live](https://mahmoodhashem.github.io/Mentor-Challanges/interactive-card-details/index.html) | [Repo](https://github.com/MahmoodHashem/Mentor-Challanges/tree/main/interactive-card-details) | [Try out](https://www.frontendmentor.io/challenges/interactive-card-details-form-XpS8cKZDWw)
   - ![img](./interactive-card-details/images/screenshot.png)
-  
+
 ##### Launch Countdown Timer
 
 - [Live](https://mahmoodhashem.github.io/Mentor-Challanges/launching-countdown/index.html) | [Repo](https://github.com/MahmoodHashem/Mentor-Challanges/tree/main/launching-countdown) | [Try out](https://www.frontendmentor.io/challenges/launch-countdown-timer-N0XkGfyz-)
@@ -239,13 +247,63 @@ Below is a list of Frontend Mentor challenges I have completed.
 ##### Sunnyside Agency Landing Page
 
 - [Live](https://mahmoodhashem.github.io/Mentor-Challanges/sunnyside-agency/index.html) | [Repo](https://github.com/MahmoodHashem/Mentor-Challanges/tree/main/sunnyside-agency) | [Try out](https://www.frontendmentor.io/challenges/sunnyside-agency-landing-page-7yVs3B6ef)
+
   - ![img](./sunnyside-agency/images/desktop-screenshot.png)
 
-  ##### Mortgage Repayment Calculator 
+##### Mortgage Repayment Calculator
 
 - [Live](https://mahmoodhashem.github.io/Mentor-Challanges/mortgage-repayment-calculator/index.html) | [Repo](https://github.com/MahmoodHashem/Mentor-Challanges/tree/main/mortgage-repayment-calculator) | [Try out](https://www.frontendmentor.io/challenges/mortgage-repayment-calculator-Galx1LXK73)
-  - ![img](./mortgage-repayment-calculator/assets/images/desktop.png)
 
+  - ![mortgage](./mortgage-repayment-calculator/assets/images/desktop.png)
+
+##### Clipboard Landing Page
+
+- [Live](https://mahmoodhashem.github.io/Mentor-Challanges/clipboard-landing-page/index.html) | [Repo](https://github.com/MahmoodHashem/Mentor-Challanges/tree/main/clipboard-landing-page) | [Try out](https://www.frontendmentor.io/challenges/clipboard-landing-page-5cc9bccd6c4c91111378ecb9)
+
+   - ![clipboard](./clipboard-landing-page/images/desktop-screenshot.png)
+
+##### Blogr Landing Page
+
+- [Live](https://mahmoodhashem.github.io/Mentor-Challanges/blogr-landing-page/index.html) | [Repo](https://github.com/MahmoodHashem/Mentor-Challanges/tree/main/blogr-landing-page) | [Try out](https://www.frontendmentor.io/challenges/blogr-landing-page-EX2RLAApP)
+
+    - ![blogr](./blogr-landing-page/images/desktop-screenshot.png)
+
+##### Githu User Search
+
+- [Live](https://mahmoodhashem.github.io/Mentor-Challanges/github-user-search/index.html) | [Repo](https://github.com/MahmoodHashem/Mentor-Challanges/tree/main/github-user-search) | [Try out](https://www.frontendmentor.io/challenges/github-user-search-api-challenge-gi9y0rA4g)
+
+  - ![img](./github-user-search/assets/screenshots/desktop.png)
+
+##### Workit Landing page
+
+- [Live](https://mahmoodhashem.github.io/Mentor-Challanges/workit-landing-page/index.html) | [Repo](https://github.com/MahmoodHashem/Mentor-Challanges/tree/main/workit-landing-page) | [Try out](https://www.frontendmentor.io/challenges/workit-landing-page-2fYnyle5lu)
+
+  - ![img](./workit-landing-page/assets/images/desktop-screenshot.png)
+
+##### Skilled Elearning Landing Page
+
+- [Live](https://mahmoodhashem.github.io/Mentor-Challanges/skilled-elearning-langin-page/index.html) | [Repo](https://github.com/MahmoodHashem/Mentor-Challanges/tree/main/skilled-elearning-langin-page) | [Try out](https://www.frontendmentor.io/challenges/skilled-elearning-landing-page-S1ObDrZ8q)
+
+  - ![skilled elearning](./skilled-elearning-langin-page/assets/screenshots/desktop.png)
+
+
+##### Interactive Pricing Component
+
+- [Live](https://mahmoodhashem.github.io/Mentor-Challanges/interactive-pricing-component/index.html) | [Repo](https://github.com/MahmoodHashem/Mentor-Challanges/tree/main/interactive-pricing-component) | [Try out](https://www.frontendmentor.io/challenges/interactive-pricing-component-t0m8PIyY8)
+
+  - ![interactive pricing compone](./interactive-pricing-component/images/desktop-screenshot.png)
+
+##### Testimonial Grid Section
+
+- [Live](https://mahmoodhashem.github.io/Mentor-Challanges/testimonials-grid-section/index.html) | [Repo](https://github.com/MahmoodHashem/Mentor-Challanges/tree/main/testimonials-grid-section) | [Try out](https://www.frontendmentor.io/challenges/testimonials-grid-section-Nnw6J7Un7)
+
+  - ![testimonial](./testimonials-grid-section/images/screenshot.png)
+
+##### Crowd Funding Product page
+
+- [Live](https://crowd-funding-ten-zeta.vercel.app/) | [Repo](https://github.com/MahmoodHashem/Mentor-Challanges/tree/main/crowdfunding-product-page) | [Try out](https://www.frontendmentor.io/challenges/crowdfunding-product-page-7uvcZe7ZR)
+
+  - ![testimonial](./crowdfunding-product-page/public/images/screenshot.png)
 
 ### [All Challanges Live Site](https://mahmoodhashem.github.io/Mentor-Challanges/)
 

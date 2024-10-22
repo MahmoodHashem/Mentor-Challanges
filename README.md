@@ -17,6 +17,7 @@ This repository is a collection of my solutions to various Frontend Mentor chall
       <li><a href="https://github.com/MahmoodHashem/Mentor-Challanges/tree/main/article-preview-component">Article Preview Component</a></li>
   <li><a href="https://github.com/MahmoodHashem/Mentor-Challanges/tree/main/base-apparel-coming-soon">Base Apparel coming soon</a></li>
        <li><a href="https://github.com/MahmoodHashem/Mentor-Challanges/tree/main/Blog%20card">Blog Card</a></li>
+       <li><a href="https://github.com/MahmoodHashem/Mentor-Challanges/tree/main/equalizer-landing-page">Equalizer Landing page</a></li>
        <li><a href="https://github.com/MahmoodHashem/Mentor-Challanges/tree/main/faq-accordion">FAQ Accordion</a></li>
     <li><a href="https://github.com/MahmoodHashem/Mentor-Challanges/tree/main/four-card-feature">Four Card Feature</a></li>
     <li><a href="https://github.com/MahmoodHashem/Mentor-Challanges/tree/main/huddle-landing-page">Huddle Landing Page</a></li>
@@ -44,12 +45,14 @@ This repository is a collection of my solutions to various Frontend Mentor chall
     <ol>
         <li><a href="https://github.com/MahmoodHashem/Mentor-Challanges/tree/main/advice-generator">Advice Generator</a></li>
       <li><a href="https://github.com/MahmoodHashem/Mentor-Challanges/tree/main/age-calculator">Age Calculator</a></li>
+      <li><a href="https://github.com/MahmoodHashem/Mentor-Challanges/tree/main/bento-grid">Bento Grid</a></li>
       <li><a href="https://github.com/MahmoodHashem/Mentor-Challanges/tree/main/blogr-landing-page">Blogr Landing Page</a></li>
      <li><a href="https://github.com/MahmoodHashem/Mentor-Challanges/tree/main/crowdfunding-product-page">Crowd Funding product page</a></li>
      <li><a href="https://github.com/MahmoodHashem/Mentor-Challanges/tree/main/contact-form">Contact Form</a></li>
      <li><a href="https://github.com/MahmoodHashem/Mentor-Challanges/tree/main/testemonial-slider">Coding bootcamp testimonial</a></li>
      <li><a href="https://github.com/MahmoodHashem/Mentor-Challanges/tree/main/clipboard-landing-page">Clipboard Landing Page</a></li>
       <li><a href="https://github.com/MahmoodHashem/Mentor-Challanges/tree/main/expense-chart">Expense Chart</a></li>
+      <li><a href="https://github.com/MahmoodHashem/Mentor-Challanges/tree/main/fylo-data_storage-component">Fylo Data Storage Component</a></li>
      <li><a href="https://github.com/MahmoodHashem/Mentor-Challanges/tree/main/github-user-search">Github User Search</a></li>
      <li><a href="https://github.com/MahmoodHashem/Mentor-Challanges/tree/main/huddle-landing-page-complete">Huddle Landing Page With curved</a></li>
      <li><a href="https://github.com/MahmoodHashem/Mentor-Challanges/tree/main/interactive-card-details">Interactive Card Details</a></li>
@@ -303,13 +306,31 @@ Below is a list of Frontend Mentor challenges I have completed.
 
 - [Live](https://crowd-funding-ten-zeta.vercel.app/) | [Repo](https://github.com/MahmoodHashem/Mentor-Challanges/tree/main/crowdfunding-product-page) | [Try out](https://www.frontendmentor.io/challenges/crowdfunding-product-page-7uvcZe7ZR)
 
-  - ![testimonial](./crowdfunding-product-page/public/images/screenshot.png)
+  - ![product list](./crowdfunding-product-page/public/images/screenshot.png)
 
 ##### Product List with cart
 
 - [Live](https://product-list-dun.vercel.app/) | [Repo](https://github.com/MahmoodHashem/Mentor-Challanges/tree/main/product-list-with-cart) | [Try out](https://www.frontendmentor.io/challenges/product-list-with-cart-5MmqLVAp_d)
 
   - ![testimonial](./product-list-with-cart/public/screenshot.png)
+
+##### Bento Grid
+
+- [Live](https://mahmoodhashem.github.io/Mentor-Challanges/bento-grid/index.html) | [Repo](https://github.com/MahmoodHashem/Mentor-Challanges/tree/main/bento-grid) | [Try out](https://www.frontendmentor.io/challenges/bento-grid-RMydElrlOj)
+
+  - ![bento grid](./bento-grid/assets/screenshots/labtop.png)
+
+##### Equalizer Landing Page
+
+- [Live](https://mahmoodhashem.github.io/Mentor-Challanges/equalizer-landing-page/index.html) | [Repo](https://github.com/MahmoodHashem/Mentor-Challanges/tree/main/equalizer-landing-page) | [Try out](https://www.frontendmentor.io/challenges/equalizer-landing-page-7VJ4gp3DE)
+
+  - ![Equalizer Landing Page](./equalizer-landing-page/images/screenshot.png)
+
+##### Fylo Data Storage Component
+
+- [Live](https://mahmoodhashem.github.io/Mentor-Challanges/fylo-data_storage-component/index.html) | [Repo](https://github.com/MahmoodHashem/Mentor-Challanges/tree/main/fylo-data_storage-component) | [Try out](https://www.frontendmentor.io/challenges/fylo-data-storage-component-1dZPRbV5n)
+
+  - ![Fylo data storage](./fylo-data_storage-component/images/screenshot.png)
 
 ### [All Challanges Live Site](https://mahmoodhashem.github.io/Mentor-Challanges/)
 

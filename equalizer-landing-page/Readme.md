@@ -1,6 +1,6 @@
 # Frontend Mentor - Crowdfunding Product Page Solution
 
-This is my solution to the [Equalizer landing page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/crowdfunding-product-page-7uvcZe7ZR). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
+This is my solution to the [Equalizer landing page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/equalizer-landing-page-7VJ4gp3DE). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
 ## Table of contents
 

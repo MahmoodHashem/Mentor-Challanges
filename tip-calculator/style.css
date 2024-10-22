@@ -1,0 +1,223 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+
+:root {
+  --strong-cyan: hsl(172, 67%, 45%);
+  --very-dark-cyan: hsl(183, 100%, 15%);
+  --dark-grayish-cyan: hsl(186, 14%, 43%);
+  --grayish-cyan: hsl(184, 14%, 56%);
+  --light-grayish-cyan: hsl(185, 41%, 84%);
+  --very-light-grayish-cyan: hsl(189, 41%, 97%);
+  --white: hsl(0, 0%, 100%);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+input {
+  font-family: inherit;
+}
+
+input:focus {
+  outline: none;
+  border-color: var(--strong-cyan) !important;
+}
+
+input::-webkit-inner-spin-button {
+  display: none;
+}
+
+body {
+  background-color: var(--light-grayish-cyan);
+  font-family: "Space Mono", Arial, Helvetica, sans-serif; 
+ 
+}
+
+main {
+  text-align: center;
+}
+
+main > img {
+  width: 4rem;
+  margin: 3.5rem;
+}
+
+.container {
+  background-color: var(--white);
+  padding: 1rem;
+  border-radius: 1rem;
+  text-align: start;
+  max-width: 700px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
+}
+
+.container > * {
+  width: 100%;
+}
+
+.form form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.input-controller {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 0.5rem;
+  position: relative;
+  --padding: 0.5rem;
+  position: relative;
+}
+
+.input-controller > input {
+  direction: rtl;
+  padding: var(--padding);
+  border-radius: 5px;
+  background-color: var(--very-light-grayish-cyan);
+  width: 100%;
+  border: 2px solid transparent;
+  outline: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: var(--very-dark-cyan);
+}
+
+.input-controller:has(input:user-invalid):not(.radios)::after{
+    content: "Can't be Zero";
+    position: absolute;
+    color: red;
+    top: 0;
+    right: 0;
+    font-family: inherit;
+}
+
+.input-controller > input:user-invalid{
+    border-color: red;
+}
+
+.input-controller > img {
+  position: absolute;
+  bottom: calc(var(--padding) + 8px);
+  left: 10px;
+}
+
+.tips {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.7rem;
+  width: 100%;
+}
+
+.tips > * {
+  width: 100%;
+}
+
+.tips > input {
+  border: 2px solid transparent;
+  border-radius: 6px;
+  background-color: var(--very-light-grayish-cyan);
+  padding: 0.5rem;
+  font-family: 1rem;
+  font-weight: bold;
+}
+
+.tips > input::placeholder {
+  font-weight: bold;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+.radio-label {
+  display: inline-block;
+  background-color: var(--very-dark-cyan);
+  color: white;
+  padding: 0.4rem;
+  text-align: center;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.radio-label:has(input[type="radio"]:checked) {
+  background-color: var(--strong-cyan);
+  color: var(--very-dark-cyan);
+}
+
+.result {
+  background-color: var(--very-dark-cyan);
+  color: white;
+  padding: 1rem;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  
+}
+
+.result h2 {
+  font-size: 1rem;
+  margin-bottom: 2.5rem;
+  font-weight: normal;
+}
+
+.result h3 {
+  font-size: 2rem;
+  margin: 0;
+  color: var(--strong-cyan);
+}
+
+.result h2 div {
+  font-size: 0.6rem;
+  color: rgba(255, 255, 255, 0.549);
+}
+
+.result .amount,
+.result .total {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+}
+
+button {
+  border: none;
+  padding: 0.4rem;
+  background-color: var(--strong-cyan);
+  font-family: inherit;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: var(--very-dark-cyan);
+  text-transform: uppercase;
+  border-radius: 5px;
+  cursor: pointer;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+
+@media screen and (min-width: 750px) {
+  .container {
+    flex-direction: row;
+    padding: 1.5rem;
+  }
+  .result{
+    padding: 2rem;
+  }
+
+  .tips{
+    grid-template-columns: repeat(3,1fr);
+  }
+}

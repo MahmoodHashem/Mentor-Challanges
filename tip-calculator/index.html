@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./style.css" />
+
+    <title>Tip calculator app</title>
+
+    <style></style>
+  </head>
+  <body>
+    <main>
+      <img src="./images/logo.svg" alt="logo" />
+
+      <div class="container">
+        <section class="form">
+          <form action="#">
+            <div class="input-controller">
+              <label for="bill">Bill</label>
+              <img src="./images/icon-dollar.svg" alt="dollor icon" />
+              <input
+                type="text"
+                name="bill"
+                id="bill"
+                placeholder="0"
+                required
+              />
+            </div>
+            <div class="input-controller radios">
+              <label for="tip">Select Tip %</label>
+
+              <div class="tips">
+                <label for="five" class="radio-label">
+                  5%
+                  <input
+                    type="radio"
+                    value="5"
+                    checked
+                    name="tip"
+                    id="five"
+                    required
+                  />
+                </label>
+                <label for="ten" class="radio-label">
+                  10%
+                  <input type="radio" value="10" name="tip" id="ten" required />
+                </label>
+                <label for="fifteen" class="radio-label">
+                  15%
+                  <input
+                    type="radio"
+                    value="15"
+                    name="tip"
+                    id="fifteen"
+                    required
+                  />
+                </label>
+                <label for="twentyfive" class="radio-label">
+                  25%
+                  <input
+                    type="radio"
+                    value="25"
+                    name="tip"
+                    id="twentyfive"
+                    required
+                  />
+                </label>
+                <label for="fifty" class="radio-label">
+                  50%
+                  <input
+                    type="radio"
+                    value="50"
+                    name="tip"
+                    id="fifty"
+                    required
+                  />
+                </label>
+                <input
+                  type="number"
+                  name="custom"
+                  id="tip"
+                  required
+                  placeholder="Custom"
+                />
+              </div>
+            </div>
+            <div class="input-controller">
+              <label for="people">Number of People</label>
+              <img src="./images/icon-person.svg" alt="person icon" />
+              <input
+                type="number"
+                name="people"
+                placeholder="0"
+                required
+                id="people"
+              />
+            </div>
+          </form>
+        </section>
+        <section class="result">
+          <div>
+            <div class="amount">
+              <h2>
+                Tip Amount
+                <div>/ person</div>
+              </h2>
+              <h3 id="tipAmount">$4.27</h3>
+            </div>
+            <div class="total">
+              <h2>
+                Total
+                <div>/ person</div>
+              </h2>
+              <h3 id="totalAmount">$32.79</h3>
+            </div>
+          </div>
+          <button id="reset">Reset</button>
+        </section>
+      </div>
+    </main>
+
+    <script src="./script.js" ></script>
+  </body>
+</html>

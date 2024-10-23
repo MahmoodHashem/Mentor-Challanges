@@ -182,8 +182,8 @@ section.creation {
 .interactive > picture {
   transform: scale(1);
   opacity: 1;
-  /* animation: fade-in forwards;
-  animation-timeline: view(); */
+  animation: fade-in forwards;
+  animation-timeline: view();
   -webkit-transform: scale(1);
   -moz-transform: scale(1);
   -ms-transform: scale(1);

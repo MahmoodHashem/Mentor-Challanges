@@ -5,8 +5,7 @@ const total = document.querySelector('.total')
 const overview = document.querySelector('.overview')
 
 
-const followers = document.querySelectorAll('.followers-no'); 
-const changes = document.querySelectorAll('.change'); 
+
 
 const socialMediaData = {
     totalFollowers: 23004,
@@ -143,6 +142,11 @@ toggle.addEventListener('click', () => {
     }
 
 })
+
+
+
+const followers = document.querySelectorAll('.followers-no'); 
+const changes = document.querySelectorAll('.change'); 
 
 
 animateCounts(followers, [...socialMediaData.socialMediaPlatforms.map(item => item.followers)])

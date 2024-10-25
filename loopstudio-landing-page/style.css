@@ -57,7 +57,7 @@ nav {
 }
 
 nav .logo img {
-  width: 8rem;
+  width: 12rem;
 }
 
 nav .nav-bar img {
@@ -106,7 +106,7 @@ nav .nav-bar img {
 .hero h1 {
   color: white;
   font-size: 3rem;
-  font-weight: 200;
+  font-weight: 300;
   font-family: "Poppins", sans-serif;
   text-transform: uppercase;
   margin: 0;
@@ -350,14 +350,25 @@ footer p {
   .creation a {
     grid-column: 3 / 5;
     grid-row: 1;
-    width: 12rem;
-    height: 3rem;
     margin-left: auto;
     margin-bottom: 4rem;
+    padding: 1rem;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+}
+
+  .cta:hover {
+        background-color: black;
+        color: white;
   }
+;
 
 
   .grid-item::after {
+
     align-content: end;
     padding-right: 1rem;
     background: linear-gradient(

@@ -96,7 +96,6 @@ const socialMediaData = {
 socialMediaData.socialMediaPlatforms.forEach((platform, index) => {
       const card = document.createElement('div'); 
       card.className = `card-${index+1} grid-item`
-     
       card.innerHTML = `<div class="icon">
           <img src=${platform.icon} alt="${platform.name} icon">
           <p>${platform.username}</p>
@@ -167,7 +166,7 @@ function animateCounts(elements, finalValues) {
                 currentValue = finalValue;
                 clearInterval(interval);
             }
-            element.textContent = currentValue;
+            element.textContent =Intl.NumberFormat().format(currentValue) ;
         }, 50); 
     });
 }

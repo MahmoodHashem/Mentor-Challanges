@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <title>Frontend Mentor | Project tracking intro component</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Alata&family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900");
+
+      :root {
+        --red: hsl(0, 100%, 68%);
+        --very-dark-blue: hsl(230, 29%, 20%);
+        --dark-grayish-blue: hsl(230, 11%, 40%);
+        --grayish-blue: hsl(231, 7%, 65%);
+        --light-grayish-blue: hsl(207, 33%, 95%);
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+
+      a {
+        color: black;
+        text-decoration: none;
+        font-family: "Barlow Condensed" sans-serif;
+      }
+
+      body {
+        font-family: "Barlow Condensed", sans-serif;
+        overflow-x: hidden;
+      }
+
+      nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: relative;
+        padding: 1rem;
+      }
+
+      .logo {
+        width: 25px;
+      }
+
+      .links {
+        position: absolute;
+        top: 3rem;
+        left: 50%;
+        translate: -50%;
+        background-color: white;
+        width: 80%;
+        text-align: center;
+        border-radius: 5px;
+        padding: 1rem;
+        transition: all 0.5s;
+      }
+
+      .links li{
+        margin-bottom: 1rem;
+      }
+
+      .links a {
+        font-weight: bold;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+        margin-bottom: 1rem;
+      }
+
+      .links li:last-child a {
+        color: var(--grayish-blue);
+      }
+
+      .line {
+        height: 1px;
+        width: 20px;
+        background-color: black;
+        margin-bottom: 4px;
+        transition: all 0.5s;
+      }
+
+      .close .line:nth-child(2) {
+        transform: rotate(45deg) translate(0px, 2px);
+        transform-origin: center;
+      }
+
+      .close .line:first-child {
+        transform: rotate(45deg) translate(4px, 6px);
+        transform-origin: center;
+      }
+      .close .line:last-child {
+        transform: rotate(-45deg) translate(2px, -4px);
+        transform-origin: center;
+      }
+
+      .hide{
+        transform: translateY(-150%);
+      }
+
+      .hero {
+        display: flex;
+        flex-direction: column-reverse;
+        padding-block: 3rem;
+      }
+
+      .hero img {
+        width: 100%;
+        max-width: 600px;
+      }
+
+      .hero .content {
+        margin: 1rem;
+      }
+
+      .badget {
+        background-color: var(--very-dark-blue);
+        color: white;
+        padding: 2px 8px;
+        border-radius: 50px;
+        font-size: 12px;
+        letter-spacing: 0;
+      }
+
+      .hero .content p:first-child {
+        text-transform: uppercase;
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        color: var(--dark-grayish-blue);
+        font-weight: 400;
+        letter-spacing: 5px;
+      }
+
+      .hero .content h1 {
+        text-transform: uppercase;
+        color: var(--very-dark-blue);
+      }
+
+      .content > p:last-of-type {
+        color: var(--dark-grayish-blue);
+        font-size: 1.2rem;
+      }
+
+      .cta {
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+      }
+
+      .cta a {
+        background-color: var(--red);
+        color: white;
+        padding: 0.5rem 1.2rem;
+        border-radius: 5px;
+        text-transform: uppercase;
+        font-weight: 500;
+      }
+
+      .cta p {
+        text-transform: uppercase;
+        font-size: 0.8rem;
+        color: var(--grayish-blue);
+        font-weight: 500;
+        letter-spacing: 2px;
+      }
+
+      .bg {
+        position: absolute;
+        right: 0;
+        width: 50%;
+        height: 50%;
+        z-index: -1;
+        border-bottom-left-radius: 5rem;
+        background-color: hsl(207, 33%, 95%);
+      }
+
+      @media screen and (min-width: 700px) and (max-width: 870px) {
+        .hero {
+          align-items: center;
+        }
+        .content {
+          text-align: center;
+        }
+        .cta,
+        .content p:first-child {
+          justify-content: center;
+        }
+      }
+
+      @media screen and (min-width: 871px) {
+        nav {
+          padding-inline: 8rem;
+        }
+
+        .menu {
+          display: none;
+        }
+
+        .links {
+          position: static;
+          flex-direction: row;
+          display: flex;
+          gap: 3rem;
+          background: transparent;
+          width: 100%;
+          translate: 0;
+        }
+
+        .hero {
+          flex-direction: row;
+          padding-block: 8rem;
+          padding-left: 8rem;
+          align-items: center;
+        }
+
+        .hero > * {
+          flex: 1;
+        }
+
+        .hero .image img {
+          width: 200%;
+          max-width: 800px;
+        }
+
+        .hero h1 {
+          font-size: 3.5rem;
+          margin-bottom: 1rem;
+          margin-top: 0.5rem;
+        }
+
+        .content > p:last-of-type {
+          margin-top: 0;
+          margin-bottom: 3rem;
+          width: 50%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="bg"></div>
+      <nav>
+        <img src="./images/logo.svg" alt="logo" class="logo" />
+        <ul class="navs">
+          <li>
+            <div class="menu">
+              <div class="line"></div>
+              <div class="line"></div>
+              <div class="line"></div>
+            </div>
+          </li>
+          <li>
+            <ul class="links hide">
+              <li><a href="#">Product</a></li>
+              <li><a href="#">Features </a></li>
+              <li><a href="#">Pricing </a></li>
+              <li><hr /></li>
+              <li><a href="#">Login</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <div class="hero">
+        <div class="content">
+          <p><spna class="badget">New</spna> Monograph Dashboard</p>
+          <h1>Powerful insights into your team</h1>
+          <p>Project planning and time tracking for agile teams</p>
+          <div class="cta">
+            <a href="#">Schedule a demo</a>
+            <p>to see a live preview</p>
+          </div>
+        </div>
+        <div class="image">
+          <img src="./images/illustration-devices.svg" alt="devices" />
+        </div>
+      </div>
+    </header>
+
+    <script>
+      const menu = document.querySelector(".menu");
+      const links = document.querySelector(".links");
+
+      menu.addEventListener("click", () => {
+        if (links.classList.contains("hide")) {
+          links.classList.remove("hide");
+          menu.className = "menu close";
+        } else {
+          links.classList.add("hide");
+          menu.className = "menu open";
+        }
+      });
+    </script>
+  </body>
+</html>

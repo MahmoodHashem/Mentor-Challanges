@@ -53,8 +53,10 @@ This repository is a collection of my solutions to various Frontend Mentor chall
      <li><a href="https://github.com/MahmoodHashem/Mentor-Challanges/tree/main/clipboard-landing-page">Clipboard Landing Page</a></li>
       <li><a href="https://github.com/MahmoodHashem/Mentor-Challanges/tree/main/expense-chart">Expense Chart</a></li>
       <li><a href="https://github.com/MahmoodHashem/Mentor-Challanges/tree/main/fylo-data_storage-component">Fylo Data Storage Component</a></li>
+      <li><a href="https://github.com/MahmoodHashem/Mentor-Challanges/tree/main/fylo-dark-theme">Fylo Dark them Landing Page</a></li>
      <li><a href="https://github.com/MahmoodHashem/Mentor-Challanges/tree/main/github-user-search">Github User Search</a></li>
      <li><a href="https://github.com/MahmoodHashem/Mentor-Challanges/tree/main/huddle-landing-page-complete">Huddle Landing Page With curved</a></li>
+     <li><a href="https://github.com/MahmoodHashem/Mentor-Challanges/tree/main/huddle-landing-page-with-feature-blocks">Huddle Landing Page With Feature blocks</a></li>
      <li><a href="https://github.com/MahmoodHashem/Mentor-Challanges/tree/main/loopstudio-landing-page">Loopstudio Landing page</a></li>
     <li><a href="https://github.com/MahmoodHashem/Mentor-Challanges/tree/main/insure-landing-page">Insure Landing Page</a></li>
      <li><a href="https://github.com/MahmoodHashem/Mentor-Challanges/tree/main/interactive-card-details">Interactive Card Details</a></li>
@@ -335,49 +337,50 @@ Below is a list of Frontend Mentor challenges I have completed.
 
 - [Live](https://mahmoodhashem.github.io/Mentor-Challanges/tip-calculator/index.html) | [Repo](https://github.com/MahmoodHashem/Mentor-Challanges/tree/main/tip-calculator) | [Try out](https://www.frontendmentor.io/challenges/fylo-data-storage-component-1dZPRbV5n)
 
-   - ![Fylo data storage](./fylo-data_storage-component/images/screenshot.png)
+  - ![Fylo data storage](./fylo-data_storage-component/images/screenshot.png)
 
 ##### Tip Calculator App
 
 - [Live](https://mahmoodhashem.github.io/Mentor-Challanges/tip-calculator/index.html) | [Repo](https://github.com/MahmoodHashem/Mentor-Challanges/tree/main/tip-calculator) | [Try out](https://www.frontendmentor.io/challenges/tip-calculator-app-ugJNGbJUX)
 
-    ![](./tip-calculator/images/screenshot.png)
+  ![](./tip-calculator/images/screenshot.png)
 
 ##### Loopstudio Landing Page
 
 - [Live](https://mahmoodhashem.github.io/Mentor-Challanges/loopstudio-landing-page/index.html) | [Repo](https://github.com/MahmoodHashem/Mentor-Challanges/tree/main/loopstudio-landing-page) | [Try out](https://www.frontendmentor.io/challenges/loopstudios-landing-page-N88J5Onjw)
 
-    ![](./loopstudio-landing-page/images/desktop-screenshot.png)
+  ![](./loopstudio-landing-page/images/desktop-screenshot.png)
 
 ##### Insure Landing Page
 
 - [Live](https://mahmoodhashem.github.io/Mentor-Challanges/insure-landing-page/index.html) | [Repo](https://github.com/MahmoodHashem/Mentor-Challanges/tree/main/insure-landing-page) | [Try out](https://www.frontendmentor.io/challenges/insure-landing-page-uTU68JV8)
 
-    ![](./insure-landing-page/images/screenshot.png)
+  ![](./insure-landing-page/images/screenshot.png)
 
 ##### Pricing Component with Toggle
 
 - [Live](https://mahmoodhashem.github.io/Mentor-Challanges/pricing-component-with-toggle/index.html) | [Repo](https://github.com/MahmoodHashem/Mentor-Challanges/tree/main/pricing-component-with-toggle) | [Try out](https://www.frontendmentor.io/challenges/pricing-component-with-toggle-8vPwRMIC)
 
-    ![](./pricing-component-with-toggle/images/screenshot.png)
+  ![](./pricing-component-with-toggle/images/screenshot.png)
+
+##### Project Tracking Intro
+
+- [Live](https://mahmoodhashem.github.io/Mentor-Challanges/project-tracking-intro/index.html) | [Repo](https://github.com/MahmoodHashem/Mentor-Challanges/tree/main/project-tracking-intro) | [Try out](https://www.frontendmentor.io/challenges/project-tracking-intro-component-5d289097500fcb331a67d80e)
+
+  ![](./project-tracking-intro/images/screenshot.png)
 
 
-##### Pricing Component with Toggle
+##### Huddle Landing Page with Featre blocks
 
-- [Live](https://mahmoodhashem.github.io/Mentor-Challanges/project-tracking-intro/index.html) | [Repo](https://github.com/MahmoodHashem/Mentor-Challanges/tree/main/project-tracking-intro) | [Try out]( https://www.frontendmentor.io/challenges/project-tracking-intro-component-5d289097500fcb331a67d80e)
+- [Live](https://mahmoodhashem.github.io/Mentor-Challanges/huddle-landing-page-with-feature-blocks/index.html) | [Repo](https://github.com/MahmoodHashem/Mentor-Challanges/tree/main/huddle-landing-page-with-feature-blocks) | [Try out](https://www.frontendmentor.io/challenges/huddle-landing-page-with-alternating-feature-blocks-5ca5f5981e82137ec91a5100)
 
-    ![](./project-tracking-intro/images/screenshot.png)
+  ![](./huddle-landing-page-with-feature-blocks/images/screenshot.png)
 
+##### Fylo Dark Them Landing Page 
 
-   
+- [Live](https://mahmoodhashem.github.io/Mentor-Challanges/fylo-dark-theme/index.html) | [Repo](https://github.com/MahmoodHashem/Mentor-Challanges/tree/main/fylo-dark-theme) | [Try out](https://www.frontendmentor.io/challenges/fylo-dark-theme-landing-page-5ca5f2d21e82137ec91a50fd)
 
-
-
-
-
-
-
- 
+  ![](./fylo-dark-theme/assets/images/screenshot.png)
 
 ### [All Challanges Live Site](https://mahmoodhashem.github.io/Mentor-Challanges/)
 

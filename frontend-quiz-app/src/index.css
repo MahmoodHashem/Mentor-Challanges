@@ -10,3 +10,21 @@
     -ms-transform: translateX(20px);
     -o-transform: translateX(20px);
 }
+
+.fade-in {
+    opacity: 1;
+    transition: opacity 0.5s ease-in;
+}
+
+.fade-out {
+    opacity: 0;
+    transition: opacity 0.5s ease-out;
+}
+
+.transition-time{
+    transition: transform 0.1s;
+    -webkit-transition: transform 0.1s;
+    -moz-transition: transform 0.1s;
+    -ms-transition: transform 0.1s;
+    -o-transition: transform 0.1s;
+}

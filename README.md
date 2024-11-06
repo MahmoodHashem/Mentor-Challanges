@@ -79,9 +79,11 @@ This repository is a collection of my solutions to various Frontend Mentor chall
 
 <details>  
   <summary>INTERMEDIATE</summary>
+    <ol>
+    <li><a href="https://github.com/MahmoodHashem/Mentor-Challanges/tree/main/frontend-quiz-app">Frontend Qiuz App</a></li>
        <li><a href="https://github.com/MahmoodHashem/Mentor-Challanges/tree/main/launching-countdown">Launch Countdown timer</a></li>
         <li><a href="https://github.com/MahmoodHashem/Mentor-Challanges/tree/main/todo-app">Todo App</a></li>
-
+   </ol>
 </details>
 
 ## Challenges
@@ -381,6 +383,13 @@ Below is a list of Frontend Mentor challenges I have completed.
 - [Live](https://mahmoodhashem.github.io/Mentor-Challanges/fylo-dark-theme/index.html) | [Repo](https://github.com/MahmoodHashem/Mentor-Challanges/tree/main/fylo-dark-theme) | [Try out](https://www.frontendmentor.io/challenges/fylo-dark-theme-landing-page-5ca5f2d21e82137ec91a50fd)
 
   ![](./fylo-dark-theme/assets/images/screenshot.png)
+
+
+##### Frontend Quiz App
+
+- [Live](https://frontend-quiz-eight.vercel.app/) | [Repo](https://github.com/MahmoodHashem/Mentor-Challanges/tree/main/frontend-quiz-app) | [Try out](https://www.frontendmentor.io/challenges/frontend-quiz-app-BE7xkzXQnU)
+
+  ![](./frontend-quiz-app/public/screenshot.png)
 
 ### [All Challanges Live Site](https://mahmoodhashem.github.io/Mentor-Challanges/)
 

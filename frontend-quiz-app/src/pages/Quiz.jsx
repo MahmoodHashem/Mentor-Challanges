@@ -1,10 +1,9 @@
-import { useState, useRef} from "react"
-import Quiz from "../htmlQuestions"
+import { useState, useRef, useEffect} from "react"
 import Confetti from "react-confetti";
 import { useNavigate } from "react-router-dom";
 
 
-const HtmlQuiz = () => {
+const Quiz = ({questions, page}) => {
 
     const [index, setIndex] = useState(0)
     const [selectedAnswer, setSelectedAnswer] = useState(null);
@@ -16,23 +15,40 @@ const HtmlQuiz = () => {
     const [fadeClass, setFadeClass] = useState("fade-in")
     const navigate = useNavigate(); 
     const ansRef = useRef([])
+    let [width, setWidth] = useState(window.innerWidth)
+    let height= window.innerHeight
 
+  
 
-    const quiz = Quiz
+    const quiz = questions
     let correctAnswer = quiz[index].answer;
 
     const progressWidth = `${(index) * 11.09}%`
 
+
+    useEffect(()=>{
+ 
+        const handleResize = () => {
+            setWidth(window.innerWidth);
+        };
+    
+        window.addEventListener("resize", handleResize);
+        return () => {
+            window.removeEventListener("resize", handleResize);
+        };
+        
+    }, [])
+
     function handleRef(i) {
         setSelectedAnswer(i + 1);
-        ansRef.current[i].classList.add("border-blue-500")
+        ansRef.current[i].classList.add("border-custom-purple", "dark:border-custom-purple")
 
         ansRef.current[i].firstElementChild.classList.add("bg-purple-600", "text-white")
 
         setError(false)
         ansRef.current.map(ans => {
             if (ans !== ansRef.current[i]) {
-                ans.classList.remove("border-blue-500")
+                ans.classList.remove("border-custom-purple", "dark:border-custom-purple")
                 ans.firstElementChild.classList.remove("bg-purple-600", "text-white")
             }
         })
@@ -51,16 +67,16 @@ const HtmlQuiz = () => {
 
         if (selectedAnswer) {
             if (correctAnswer == selectedAnswer) {
-                ansRef.current[selectedAnswer - 1].classList.add("bg-green-200", "border-green-600")
-                ansRef.current[selectedAnswer - 1].firstElementChild.classList.add("bg-green-600", "text-white")
+                ansRef.current[selectedAnswer - 1].classList.add( "border-custom-green", "dark:border-custom-green")
+                ansRef.current[selectedAnswer - 1].firstElementChild.classList.add("bg-custom-green", "text-white")
                 ansRef.current[selectedAnswer - 1].appendChild(correctIcon)
                 setScores(prev => prev + 1)
             } else {
-                ansRef.current[selectedAnswer - 1].classList.add("border-red-500")
+                ansRef.current[selectedAnswer - 1].classList.add("border-custom-red", "dark:border-custom-red")
                 ansRef.current[selectedAnswer - 1].firstElementChild.classList.add("bg-red-600", "text-white")
                 ansRef.current[selectedAnswer - 1].appendChild(wrongIcon)
-                ansRef.current[correctAnswer - 1].classList.add("bg-green-200", "border-green-500")
-                ansRef.current[correctAnswer - 1].firstElementChild.classList.add("bg-green-600", "text-white")
+                ansRef.current[correctAnswer - 1].classList.add("border-custom-green", "dark:border-custom-green")
+                ansRef.current[correctAnswer - 1].firstElementChild.classList.add("bg-custom-green", "text-white")
                 ansRef.current[correctAnswer - 1].appendChild(correctIcon)
             }
             setIsSubmited(true)
@@ -92,19 +108,18 @@ const HtmlQuiz = () => {
                     return 0
                 }
             })
-
-
-            setIsSubmited(false)
-            setSelectedAnswer(null)
-            setLock(false)
-
             ansRef.current.map(ans => {
-                ans.classList.remove("bg-green-100", "border-green-500", "bg-red-100", "border-red-500", "border-blue-500")
+                ans.classList.remove("border-green-500", "border-red-500", "border-blue-500")
                 ans.firstElementChild.classList.remove("bg-purple-600", "text-white")
 
             })
             setFadeClass("fade-in");
         }, 500);
+
+        
+        setIsSubmited(false)
+        setSelectedAnswer(null)
+        setLock(false)
 
 
 
@@ -120,12 +135,20 @@ const HtmlQuiz = () => {
 
     const optionTags = ['A', "B", "C", "D"]
 
+  
 
 
     return (
+        <>
+        <div className="flex items-center gap-2 mb-4" >
+                 <img src={`/icon-${page}.svg`} alt="" width={40} />
+                 <h2 className="uppercase transition-all text-navy dark:text-light-grey" >{page}</h2>
+            </div>
         <div className="flex md:flex-row flex-col md:gap-10" >
-           
-           {reset && scores > 7 && <Confetti/>}
+           {reset && scores > 9 &&  <Confetti
+      width={width - 20}
+      height={height}
+    />}
             {
                 reset
                     ?
@@ -151,10 +174,10 @@ const HtmlQuiz = () => {
                     ?
                     <div className="text-center flex flex-col items-center transition-all mb-5 bg-white p-8 rounded-md dark:bg-navy text">
                        <div className="flex justify-center items-center gap-2">
-                       <img src="/icon-html.svg" alt="html icon" />
-                       <h2 className="text-xl font-bold text-navy dark:text-white " >HTML</h2>
-                        </div> 
-                        <h3 className="md:text-[6rem] my-6 font-bold text-dark-navy dark:text-white" >{scores}</h3>
+                       <img src={`/icon-${page}.svg`} alt="html icon" />
+                       <h2 className="text-xl transition-all font-bold text-navy dark:text-white uppercase " >{page}</h2>
+                       </div> 
+                        <h3 className={`md:text-[6rem] text-5xl transition-all my-6 font-bold text-dark-navy dark:text-white ${fadeClass} `} >{scores}</h3>
                         <h4 className="text-light-bluish" > out of 10</h4>
                     </div>
                     :
@@ -166,7 +189,7 @@ const HtmlQuiz = () => {
                                         <button
                                             ref={(el) => ansRef.current[i] = el}
                                             onClick={() => lock ? null : handleRef(i)}
-                                            className={`${i} p-5 border-2  shadow-lg transition-all rounded-2xl  transition-time   flex items-center gap-5 text-lg md:text-2xl dark:bg-navy bg-white dark:text-white text-dark-navy  my-2 cursor-pointer text-start w-full ${fadeClass}`}
+                                            className={`${i} p-5 border-2 dark:border-navy  shadow-lg transition-all rounded-2xl  transition-time   flex items-center gap-5 text-lg md:text-2xl dark:bg-navy  bg-white dark:text-white text-dark-navy  my-2 cursor-pointer text-start w-full ${fadeClass}`}
                                         >
                                             <span
                                                 className={` bg-light-grey text-navy p-3 rounded-md flex items-center justify-center min-w-12 h-12 text-lg font-bold transition-all ${fadeClass}`} >
@@ -183,12 +206,13 @@ const HtmlQuiz = () => {
                 }
                 <button
                     onClick={reset ? handleReset : isSubmited ? handleNexQuestion : handleSubmit}
-                    className={`bg-custom-purple  text-white font-rubik p-5 text-xl rounded-xl ${fadeClass} `}>
+                    className={`bg-custom-purple  text-white font-rubik p-5 text-xl rounded-xl  `}>
                     {reset ? "Play Again" : isSubmited ? "Next Question" : "Submit Answer"}</button>
-                {error ? <p className="text-red-500 font-bold m-auto mt-4 ">Select one of the options</p> : <></>}
+                {error ? <div className="flex items-center justify-center mt-4 gap-3" >  <img src="/icon-error.svg" alt="" /> <p className="text-red-500 text-xl font-rubik ">Please Select an Answer</p> </div>: <></>}
             </div>
         </div>
+        </>
     )
 }
 
-export default HtmlQuiz
+export default Quiz

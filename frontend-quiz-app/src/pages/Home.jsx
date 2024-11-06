@@ -1,11 +1,8 @@
 import { Link } from 'react-router-dom';
-export default function Home(props) {
+export default function Home() {
     return (
         <div className='md:flex'>
             <header className='p-5 flex-1' >
-                <div>
-                    <img src="/icon-html.svg" alt="" />
-                </div>
                 <h1 className="text-dark-navy dark:text-light-grey transition-all text-4xl sm:text-5xl lg:text-[4rem] my-5 ">Welcom to the <br />  <b>Frontend Quiz!</b></h1>
                 <p className='text-dark-navy dark:text-gray-300 transition-all italic'  >Pick a subject to get started.</p>
             </header>

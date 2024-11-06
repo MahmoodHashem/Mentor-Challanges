@@ -31,6 +31,9 @@ Users should be able to:
 - **Bonus**: Change the app's theme between light and dark
 
 ## Screenshots
+ ![](./public/screenshot.png)
+ ![](./public/screenshot-quiz.png)
+ ![](./public/screenshot-bonus.png)
 
 
 ## Links

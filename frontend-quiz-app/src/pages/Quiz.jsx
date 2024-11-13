@@ -41,6 +41,7 @@ const Quiz = ({questions, page}) => {
 
     function handleRef(i) {
         setSelectedAnswer(i + 1);
+        ansRef.current[i].classList.remove("dark:border-navy")
         ansRef.current[i].classList.add("border-custom-purple", "dark:border-custom-purple")
 
         ansRef.current[i].firstElementChild.classList.add("bg-purple-600", "text-white")
@@ -49,6 +50,7 @@ const Quiz = ({questions, page}) => {
         ansRef.current.map(ans => {
             if (ans !== ansRef.current[i]) {
                 ans.classList.remove("border-custom-purple", "dark:border-custom-purple")
+                ans.classList.add("dark:border-navy")
                 ans.firstElementChild.classList.remove("bg-purple-600", "text-white")
             }
         })
@@ -67,15 +69,21 @@ const Quiz = ({questions, page}) => {
 
         if (selectedAnswer) {
             if (correctAnswer == selectedAnswer) {
+                ansRef.current[selectedAnswer - 1].classList.remove("border-custom-purple", "dark:border-custom-purple")
+                
                 ansRef.current[selectedAnswer - 1].classList.add( "border-custom-green", "dark:border-custom-green")
+                ansRef.current[selectedAnswer - 1].firstElementChild.classList.remove("bg-light-grey","text-navy","bg-purple-600" )
                 ansRef.current[selectedAnswer - 1].firstElementChild.classList.add("bg-custom-green", "text-white")
                 ansRef.current[selectedAnswer - 1].appendChild(correctIcon)
                 setScores(prev => prev + 1)
             } else {
                 ansRef.current[selectedAnswer - 1].classList.add("border-custom-red", "dark:border-custom-red")
                 ansRef.current[selectedAnswer - 1].firstElementChild.classList.add("bg-red-600", "text-white")
+
                 ansRef.current[selectedAnswer - 1].appendChild(wrongIcon)
+                ansRef.current[correctAnswer - 1].classList.remove("border-navy", "dark:border-navy")
                 ansRef.current[correctAnswer - 1].classList.add("border-custom-green", "dark:border-custom-green")
+                ansRef.current[correctAnswer - 1].firstElementChild.classList.remove("bg-light-grey","text-navy")
                 ansRef.current[correctAnswer - 1].firstElementChild.classList.add("bg-custom-green", "text-white")
                 ansRef.current[correctAnswer - 1].appendChild(correctIcon)
             }
@@ -110,7 +118,9 @@ const Quiz = ({questions, page}) => {
             })
             ansRef.current.map(ans => {
                 ans.classList.remove("border-green-500", "border-red-500", "border-blue-500")
+                ans.classList.add("border-2", "dark:border-navy")
                 ans.firstElementChild.classList.remove("bg-purple-600", "text-white")
+                ans.firstElementChild.classList.add("bg-white", "dark:bg-navy")
 
             })
             setFadeClass("fade-in");
@@ -134,9 +144,6 @@ const Quiz = ({questions, page}) => {
 
 
     const optionTags = ['A', "B", "C", "D"]
-
-  
-
 
     return (
         <>
@@ -189,7 +196,7 @@ const Quiz = ({questions, page}) => {
                                         <button
                                             ref={(el) => ansRef.current[i] = el}
                                             onClick={() => lock ? null : handleRef(i)}
-                                            className={`${i} p-5 border-2 dark:border-navy  shadow-lg transition-all rounded-2xl  transition-time   flex items-center gap-5 text-lg md:text-2xl dark:bg-navy  bg-white dark:text-white text-dark-navy  my-2 cursor-pointer text-start w-full ${fadeClass}`}
+                                            className={`${i} dark:border-navy dark:bg-navy bg-white dark:text-white text-dark-navy p-5 border-2   shadow-lg transition-all rounded-2xl  transition-time   flex items-center gap-5 text-lg md:text-2xl      my-2 cursor-pointer text-start w-full  ${fadeClass}`}
                                         >
                                             <span
                                                 className={` bg-light-grey text-navy p-3 rounded-md flex items-center justify-center min-w-12 h-12 text-lg font-bold transition-all ${fadeClass}`} >

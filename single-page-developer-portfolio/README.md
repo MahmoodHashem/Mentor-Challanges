@@ -21,7 +21,7 @@ Users should be able to:
 ## Table of Contents
 
 - [Features](#features)
-- [Link](#link)https://www.emailjs.com/
+- [Link](#link)
 - [Technologies Used](#technologies-used)
 - [What I Learned](#what-i-learned)
 
@@ -34,7 +34,7 @@ Users should be able to:
 
 ## Link
 
-* [Live Site](#)  `<!-- Add URL to live site -->`
+* [Live Site](https://developer-portfolio-phi-teal.vercel.app/)  
 * [Solution URL](https://github.com/MahmoodHashem/Mentor-Challanges/tree/main/single-page-developer-portfolio)
 
 ## Technologies Used
@@ -52,7 +52,6 @@ Users should be able to:
 - Setting up a contact form with EmailJS for handling user inquiries.
 - Building a responsive layout with Tailwind CSS.
 - Managing state and props in React for dynamic content rendering.
-
 
 ## Author
 

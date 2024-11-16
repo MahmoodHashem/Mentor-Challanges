@@ -1,14 +1,59 @@
 
 
+import { useState } from 'react'
 import error from '../assets/images/error.png'
-
+import emailjs from 'emailjs-com';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Footer = () => {
+
+    const [formData, setFormData] = useState({
+        name: "",
+        email: "",
+        message: "",
+    })
+
+
+    function handleFormInputs(event) {
+        const {name, value} = event.target
+        setFormData(prevFormData => {
+            return {
+                ...prevFormData,
+                [name]: value
+            }
+        })  
+    }
+
+    function handleSubmit(event) {
+        event.preventDefault()
+        
+        emailjs.send('service_wz4hull', 'contact_dqa4y5w', formData, 'S5XS-iF52cas7x_GU')
+        .then(() => {
+            toast.success("Message sent successfully!");
+            setFormData({
+                name: "",
+                email: "",
+                message: "",
+            })
+            window.scrollTo({
+                top: 0,
+                left: 0,
+                behavior: 'smooth'
+              });
+        }, () => {
+            toast.error("Failed to send message. Please try again.");
+        });
+
+
+      
+    }
+
     return (
-        <footer className="p-10 md:px-28 lg:px-32   bg-raisinBlack  text-white text-center" >
+        <footer id='footer' className="p-10 md:px-28 lg:px-32   bg-raisinBlack  text-white text-center" >
             <div className='lg:flex gap-10 text-start' >
 
-                <div className='flex-1'> 
+                <div className='flex-1'>
                     <h2 className="text-4xl md:text-[4rem] font-bold my-3 lg:my-12">Contact</h2>
                     <p className="text-lightSilver md:text-xl ">
                         I would love to hear about your project and how I could help. Please fill in the form, and I’ll get back to you as soon as possible.
@@ -16,7 +61,7 @@ const Footer = () => {
                 </div>
 
 
-                <form action="/" className="flex flex-col gap-10 text-start flex-1 my-10">
+                <form onSubmit={handleSubmit} action="/" className="flex flex-col gap-10 text-start flex-1 my-10">
                     <div className='input-control relative text-start '>
                         <label htmlFor="name" className="opacity-0 transition-all  absolute">Name</label>
                         <input
@@ -24,6 +69,8 @@ const Footer = () => {
                             name="name"
                             placeholder="Name"
                             id="name"
+                            value={formData.name}
+                            onChange={handleFormInputs}
                             required
                             className="placeholder:uppercase placeholder:font-bold  font-bold pl-6 pb-3 w-full  border-b  outline-none bg-transparent transition-all"
                         />
@@ -38,6 +85,8 @@ const Footer = () => {
                             name="email"
                             placeholder="Email"
                             id="name"
+                            value={formData.email}
+                            onChange={handleFormInputs}
                             required
                             className=":border-red-500 placeholder:uppercase placeholder:font-bold  font-bold pl-6 pb-3 w-full  border-b outline-none bg-transparent transition-all"
                         />
@@ -53,6 +102,8 @@ const Footer = () => {
                             name="message"
                             placeholder="Message"
                             id="message"
+                            value={formData.message}
+                            onChange={handleFormInputs}
                             required
                             className=":border-red-500 placeholder:uppercase placeholder:font-bold  font-bold pl-6 pb-3 w-full  border-b outline-none bg-transparent transition-all resize-none"
                         />
@@ -98,6 +149,8 @@ const Footer = () => {
                     </a></li>
                 </ul>
             </div>
+
+            <ToastContainer />
         </footer>
     )
 }

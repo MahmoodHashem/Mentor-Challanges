@@ -7,7 +7,12 @@
   src: url(./assets/fonts/SpaceGrotesk-VariableFont_wght.ttf);
 }
 
-body {
+
+html {
+  scroll-behavior: smooth;
+}
+
+.body {
   background-image: url(/images/pattern-rings.svg),
     url(/images/pattern-circle.svg);
   background-position: -400px 200px, 115% 300px;
@@ -49,7 +54,7 @@ body {
   display: block;
 }
 
-input:user-invalid{
+input:user-invalid, textarea:user-invalid{
   border-color: hsl(7, 100%, 68%);
 }
 

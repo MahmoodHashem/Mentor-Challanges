@@ -1,6 +1,5 @@
 import AOS from 'aos';
 import 'aos/dist/aos.css'; 
-import { document } from 'postcss';
 
 import {useEffect, useState} from 'react'
 
@@ -24,7 +23,7 @@ const Project = ({title, image,  tools, previewLink, codeLink }) => {
       </ul>
       <ul className='flex gap-3 my-2'>
         <li>
-          <a href="http://"
+          <a href={previewLink}
            target="_blank" 
            rel="noopener noreferrer"
            className="border-b-2 border-eucalyptus link text-lg font-bold uppercase "
@@ -33,7 +32,7 @@ const Project = ({title, image,  tools, previewLink, codeLink }) => {
           </a>
         </li>
         <li>
-          <a href="http://" target="_blank" rel="noopener noreferrer"
+          <a href={codeLink} target="_blank" rel="noopener noreferrer"
            className="border-b-2 border-eucalyptus link text-lg font-bold uppercase "
           >
             View Code

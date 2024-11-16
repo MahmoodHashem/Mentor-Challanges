@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: SpaceGrotesk;
+  src: url(./assets/fonts/SpaceGrotesk-VariableFont_wght.ttf);
+}
+
+body {
+  background-image: url(/images/pattern-rings.svg),
+    url(/images/pattern-circle.svg);
+  background-position: -400px 200px, 115% 300px;
+  background-repeat: no-repeat;
+}
+
+.link {
+  -webkit-background-clip: text;
+  background-clip: text;
+  background-color: white;
+  background-image: linear-gradient(90deg, #4ce19e, #4ce19e);
+  background-repeat: no-repeat;
+  background-size: 0 100%;
+  border-bottom: 2px solid #4ce19e;
+  color: transparent;
+  display: inline-block;
+  font-size: 0.8888888889rem;
+  font-weight: 700;
+  height: 2rem;
+  letter-spacing: 2.28571px;
+  line-height: 1.625;
+  text-transform: uppercase;
+  transition: background-size 0.2s linear;
+}
+
+.link:hover {
+    background-size: 100% 100%;
+}
+
+
+.input-control:has(input:user-invalid)::after, .input-control:has(textarea:user-invalid)::after{
+  content: "Please don't leave this field blank."; 
+  color: hsl(7, 100%, 68%); 
+  font-size: 12px; 
+  font-weight: normal
+}
+
+.input-control:has(input:user-invalid) img, .input-control:has(textarea:user-invalid) img{
+  display: block;
+}
+
+input:user-invalid{
+  border-color: hsl(7, 100%, 68%);
+}
+

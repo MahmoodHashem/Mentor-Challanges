@@ -6,6 +6,14 @@ import { useState } from "react"
 const App = () => {
 
   const [home, setHome] = useState(true)
+  const [isCpuMode, setIsCpuMode] = useState(true);
+  const [isTypeX, setIsTypeX] = useState(false)
+
+
+
+  function handleToggle(type){
+          setIsTypeX(type === 'x')
+  }
 
   function goHome(){
     setHome(true)
@@ -20,9 +28,9 @@ const App = () => {
     <div className='bg-darknavy h-screen content-center'>
       {
       home ?    
-      <Start goToGamePage = {goToGame} />
+      <Start goToGamePage = {goToGame}  handleCputMode = { setIsCpuMode} isTypeX={isTypeX} handleToggle = {handleToggle}  />
       :
-      <Board goHomePage = {goHome} />
+      <Board goHomePage = {goHome} isCpuMode = {isCpuMode} isTypeX={isTypeX} handleToggle = {handleToggle} />
       }
     </div>
   )

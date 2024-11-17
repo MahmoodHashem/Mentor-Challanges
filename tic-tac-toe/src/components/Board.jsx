@@ -13,26 +13,24 @@ import restartIcon from '../assets/images/icon-restart.svg'
 import Swal from 'sweetalert2'
 import withReactContent from 'sweetalert2-react-content'
 
-const Board = ({goHomePage}) => {
+const Board = ({ goHomePage, isCpuMode, isTypeX }) => {
 
   const MySwal = withReactContent(Swal)
 
 
 
 
-  const [boxContent, setBoxContent] = useState(Array(9).fill(null)); 
-  const [isHovered, setIsHovered] = useState(Array(9).fill(false)); 
+  const [boxContent, setBoxContent] = useState(Array(9).fill(null));
+  const [isHovered, setIsHovered] = useState(Array(9).fill(false));
   const [status, setStatus] = useState(null)
   const [isXTurn, setIsXTurn] = useState(true)
-  const [xScores, setXScores] = useState(0)
-  const [oScores, setOScores] = useState(0)
-  const [ties, setTies] = useState(0)
+
+  const [gameStats, setGameStats] = useState({ xScores: 0, oScores: 0, ties: 0 });
 
   const [winningPattern, setWinningPattern] = useState([])
 
   useEffect(() => {
-
-
+    console.log(isTypeX)
     if (!winner(boxContent) && boxContent.every(el => el !== null)) {
       setStatus("It's a Tie")
       showTied()
@@ -44,10 +42,52 @@ const Board = ({goHomePage}) => {
       setWinningPattern(winner(boxContent).pattern)
 
       showModal(currentWinner === 'X' ? 1 : 2)
-   
+
+      console.log(isTypeX)
+
+    } else if (!isXTurn && isCpuMode) {
+      // If it's the CPU's turn and the game is in CPU mode, make a CPU move
+      makeCpuMove();
     }
 
   }, [boxContent, isXTurn])
+
+
+  const makeCpuMove = () => {
+    const emptyIndices = boxContent.map((value, index) => value === null ? index : null).filter(index => index !== null);
+  
+    const cpuType = isTypeX ? 'O' : 'X'
+    const playerType = isTypeX ? 'X' : 'O'
+
+    // Check if CPU can win in the next move
+    for (let i = 0; i < emptyIndices.length; i++) {
+      const index = emptyIndices[i];
+      const newContent = [...boxContent];
+      newContent[index] = cpuType; // Assume CPU is 'O'
+      if (winner(newContent)?.winner === cpuType) {
+        handleBoxClick(index);
+        return;
+      }
+    }
+  
+    // Check if player can win in the next move and block it
+    for (let i = 0; i < emptyIndices.length; i++) {
+      const index = emptyIndices[i];
+      const newContent = [...boxContent];
+      newContent[index] = playerType; // Assume player is 'X'
+      if (winner(newContent)?.winner === playerType) {
+        handleMouseEnter(index)
+        handleBoxClick(index);
+        return;
+      }
+    }
+  
+    // Otherwise, choose a random move
+    if (emptyIndices.length > 0) {
+      const randomIndex = emptyIndices[Math.floor(Math.random() * emptyIndices.length)];
+      handleBoxClick(randomIndex);
+    }
+  };
 
 
   const showModal = (winner) => {
@@ -62,21 +102,20 @@ const Board = ({goHomePage}) => {
       denyButtonColor: '#f2b137',
       denyButtonText: `<p class="font-Outfit font-semibold text-darknavy" >NEXT ROUND</p>`,
     }).then((result) => {
-       // Remeber this logic is reverese in buttons (quit is confirmed and nex round is deny)
+      // Remeber this logic is reverese in buttons (quit is confirmed and nex round is deny)
       if (result.isConfirmed || result.isDismissed) {
         reset()
-        setXScores(0)
-        setOScores(0)
+        setGameStats({ xScores: 0, oScores: 0, ties: 0 });
         goHomePage()
       } else if (result.isDenied) {
-        if (winner === 1) {
-         
-          setXScores(prev => prev + 1)
-        } else if (winner === 2) {
-          console.log('O wins')
-          setOScores(prev => prev + 1)
-        }
-        reset()
+   
+          setGameStats(prevStats => ({
+            ...prevStats,
+            xScores: winner === 1 ? prevStats.xScores + 1 : prevStats.xScores,
+            oScores: winner === 2 ? prevStats.oScores + 1 : prevStats.oScores,
+          }));
+          reset()
+
       }
     });
   }
@@ -94,13 +133,14 @@ const Board = ({goHomePage}) => {
     }).then((result) => {
       // Remeber this logic is reverese in buttons (quit is confirmed and nex round is deny)
       if (result.isConfirmed || result.isDismissed) {
-        setTies(0)
         reset()
-        setXScores(0)
-        setOScores(0)
+        setGameStats({ xScores: 0, oScores: 0, ties: 0 });
         goHomePage()
       } else if (result.isDenied) {
-        setTies(prev => prev + 1)
+        setGameStats(prevStats => ({
+          ...prevStats,
+          ties: prevStats.ties + 1,
+        }));
         reset()
       }
     });
@@ -117,7 +157,7 @@ const Board = ({goHomePage}) => {
       denyButtonColor: '#f2b137',
       denyButtonText: `<p class="font-Outfit uppercase font-semibold text-darknavy" >Yes, Restart</p>`,
     }).then((result) => {
-       // Remeber this logic is reverese in buttons (cancel is confirmed and okay is deny)
+      // Remeber this logic is reverese in buttons (cancel is confirmed and okay is deny)
       if (!result.isConfirmed) {
         reset()
       }
@@ -125,7 +165,7 @@ const Board = ({goHomePage}) => {
   }
 
   const handleBoxClick = (index) => {
-    if (status) return
+    if (status || boxContent[index]) return
 
     setBoxContent((prevContent) => {
       if (prevContent[index] === null) {
@@ -136,11 +176,11 @@ const Board = ({goHomePage}) => {
       }
       return prevContent; // Prevent changes if already set
     });
-
   };
 
-  const handleMouseEnter = (index) => {
 
+
+  const handleMouseEnter = (index) => {
     if (status) return
 
     setIsHovered((prevHovered) => {
@@ -206,7 +246,7 @@ const Board = ({goHomePage}) => {
       <button className='bg-silver justify-self-end flex items-center justify-center self-center rounded-lg w-10 h-10' onClick={restartGame} > <img src={restartIcon} alt="restart icon" className='w-5' />  </button>
       {[0, 1, 2, 3, 4, 5, 6, 7, 8].map((index) => (
         <button
-          className={`${winningPattern.includes(index) ? boxContent[index] === "X" ? "bg-lightblue": "bg-lightyellow" : "bg-semidarknavy"} relative rounded-xl w-28 h-28 shadow-custom-shadow`}
+          className={`${winningPattern.includes(index) ? boxContent[index] === "X" ? "bg-lightblue" : "bg-lightyellow" : "bg-semidarknavy"} relative rounded-xl w-28 h-28 shadow-custom-shadow`}
           key={index}
           onClick={() => handleBoxClick(index)}
           // onFocus={() => handleMouseEnter(index)}
@@ -236,14 +276,14 @@ const Board = ({goHomePage}) => {
           )}
           {boxContent[index] === 'O' && (
             <img
-              src={winningPattern.includes(index) ?  oWins : o}
+              src={winningPattern.includes(index) ? oWins : o}
               alt="O"
               style={{ maxHeight: '150px', maxWidth: '150px', position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)' }}
             />
           )}
           {boxContent[index] === 'X' && (
             <img
-              src={winningPattern.includes(index) ? xWins :  x}
+              src={winningPattern.includes(index) ? xWins : x}
               alt="X"
               style={{ maxHeight: '150px', maxWidth: '150px', position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)' }}
             />
@@ -253,19 +293,19 @@ const Board = ({goHomePage}) => {
       <div className='flex flex-col items-center justify-center bg-lightblue text-darknavy font-Outfit font-bold rounded-lg text-lg uppercase text-center'>
         <h2 className='text-sm font-semibold' >X (p1)</h2>
         <h3>
-          {xScores}
+          {gameStats.xScores}
         </h3>
       </div>
       <div className='flex flex-col items-center justify-center bg-silver text-darknavy font-Outfit font-bold rounded-lg text-lg uppercase text-center'>
         <h2 className='text-sm font-semibold' >Ties</h2>
         <h3>
-          {ties}
+          {gameStats.ties}
         </h3>
       </div>
       <div className='flex flex-col items-center justify-center bg-lightyellow text-darknavy font-Outfit font-bold rounded-lg text-lg uppercase text-center'>
         <h2 className='text-sm font-semibold' >O(CPU)</h2>
         <h3>
-          {oScores}
+          {gameStats.oScores}
         </h3>
       </div>
     </div>

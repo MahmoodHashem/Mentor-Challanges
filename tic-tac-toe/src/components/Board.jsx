@@ -303,7 +303,7 @@ const Board = ({ goHomePage, isCpuMode, isTypeX }) => {
         </h3>
       </div>
       <div className='flex flex-col items-center justify-center bg-lightyellow text-darknavy font-Outfit font-bold rounded-lg text-lg uppercase text-center'>
-        <h2 className='text-sm font-semibold' >O(CPU)</h2>
+        <h2 className='text-sm font-semibold' >{isCpuMode ? "O(CPU)" : "O(P2)"}</h2>
         <h3>
           {gameStats.oScores}
         </h3>

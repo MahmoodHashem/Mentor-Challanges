@@ -9,6 +9,7 @@ import titan from '../assets/images/destination/image-titan.png'
 const Tabbar = () => {
     const [activeTab, setActiveTab] = useState(0);
 
+ 
     const planets = [
         {
             title: "moone",
@@ -39,6 +40,8 @@ const Tabbar = () => {
             img: titan,
         },
     ]
+
+ 
 
     return (
         <div className="mx-10 lg:mx-16 font-Barlow-Condensed flex flex-col items-center gap-16 pt-40 " >

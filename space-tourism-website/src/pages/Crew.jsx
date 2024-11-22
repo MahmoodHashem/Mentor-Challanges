@@ -7,7 +7,8 @@ import anousheh from '../assets/images/crew/image-anousheh-ansari.png'
 import douglas from '../assets/images/crew/image-douglas-hurley.png'
 import mark from '../assets/images/crew/image-mark-shuttleworth.png'
 import victor from '../assets/images/crew/image-victor-glover.png'
-import Navbar from '../components/Navbar'
+
+
 
 
 
@@ -47,7 +48,7 @@ export default function Crew() {
   return (
     <div className="bg-[url(/crew/background-crew-mobile.jpg)] md:bg-[url(/crew/background-crew-tablet.jpg)] lg:bg-[url(/crew/background-crew-desktop.jpg)]   min-h-screen bg-no-repeat bg-cover bg-fixed text-white  pt-40 ">
 
-    
+
 
       <p className=' text-center md:text-start text-base md:text-xl uppercase tracking-wider md:ml-16  '> <span className='ml-5 font-bold'>02</span> Meet Your Crew </p>
 

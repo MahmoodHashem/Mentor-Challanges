@@ -10,7 +10,6 @@ import capsuleLandscape from '../assets/images/technology/image-space-capsule-la
 import spaceportPortrait from '../assets/images/technology/image-spaceport-portrait.jpg'
 import spaceportLandscape from '../assets/images/technology/image-spaceport-landscape.jpg'
 
-import Navbar from '../components/Navbar'
 
 
 
@@ -58,7 +57,6 @@ export default function Technology() {
   return (
     <div className="bg-[url(/technology/background-technology-mobile.jpg)] md:bg-[url(/technology/background-technology-tablet.jpg)] lg:bg-[url(/technology/background-technology-desktop.jpg)]   min-h-screen bg-no-repeat bg-cover bg-fixed text-white overflow-x-hidden ">
 
-   
 
       <p className=' text-center md:text-start text-base md:text-xl uppercase tracking-wider md:ml-16  pt-52 '> <span className='ml-5 font-bold'>03</span> Space Launch 101 </p>
 

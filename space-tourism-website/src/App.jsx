@@ -10,8 +10,9 @@ const App = () => {
 
   return (
     <div className="overflow-x-hidden">
+     
       <Router>
-        <Navbar />
+      <Navbar/>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/destination" element={<Destination />} />

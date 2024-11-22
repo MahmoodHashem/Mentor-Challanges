@@ -53,14 +53,17 @@ const Navbar = () => {
   }, [location]);
 
   return (
-    <nav  className='flex items-center justify-between gap-10  absolute right-0 left-0 z-50 px-7 md:px-0 md:pl-10 pt-5 md:pt-0 lg:pt-14 bg-transparent '>
+        <header className=' relative'>
+
+     
+    <nav  className='flex items-center justify-between gap-10 absolute right-0 left-0   z-50 px-7 md:px-0 md:pl-10 pt-5 md:pt-0 lg:pt-14 bg-transparent '>
       <div>
         <img src={logo} alt="logo" />
       </div>
       <button ref={buttonRef} onClick={handleMenu} className='menuIcon md:hidden'>
         <img src={menuIcon} alt="menu icon" />
       </button>
-      <ul ref={navRef} className={`flex flex-col gap-5 md:flex-row md:justify-end md:gap-10 font-Barlow-Condensed text-3 text-white uppercase transition-all duration-300 tracking-widest absolute md:static -top-0 backdrop-blur-2xl md:backdrop-blur-3xl shadow-lg   lg:bg-transparent  h-screen md:h-20 font-extralight w-3/4 md:w-full lg:w-auto lg:pl-10 pl-5 py-5  md:p-0 md:pr-5 md:pt-7 ${showMenu ? ' -right-0' : '-right-full'}`} >
+      <ul ref={navRef} className={`flex flex-col gap-5 md:flex-row md:justify-end md:gap-10 font-Barlow-Condensed text-3 text-white uppercase transition-all duration-300 tracking-widest absolute  md:static -top-0 backdrop-blur-2xl md:backdrop-blur-3xl shadow-lg   lg:bg-transparent  h-screen md:h-20 font-extralight w-3/4 md:w-full lg:w-auto lg:pl-10 pl-5 py-5  md:p-0 md:pr-5 md:pt-7 ${showMenu ? 'right-0' : '-right-full'}`} >
         <li className='ml-auto mb-20 pr-5 pt-5 md:hidden  '>
           <img onClick={handleMenu} src={crossIcon} alt="close icon" />
         </li>
@@ -103,6 +106,8 @@ const Navbar = () => {
         </li>
       </ul>
     </nav>
+
+    </header>
   )
 }
 

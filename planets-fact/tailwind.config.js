@@ -23,7 +23,10 @@ export default {
       }, 
       fontFamily: {
         'antonio': ['Antonio', 'sans-serif'],
-        'spartan': ['League Spartan', 'sans-serif']
+        'spartan': ['League Spartan', 'sans-serif'], 
+        'vazir': ['Vazirmatn', 'sans-serif'], 
+        'tanha': ['Tanha', 'sans-serif'],
+        'farnaz': ['Farnaz', 'sans-serif']
       }
     },
   },

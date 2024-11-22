@@ -2,3 +2,21 @@
 @tailwind components;
 @tailwind utilities;
 
+
+
+
+@font-face {
+    font-family: 'Vazirmatn';
+    src: url(./assets/fonts/Vazirmatn[wght].ttf);
+}
+
+@font-face {
+    font-family: "Tanha";
+    src: url(./assets/fonts/Tanha-FD.ttf);
+}
+
+
+@font-face {
+    font-family: "Farnaz";
+    src: url(./assets/fonts/SFARNAZ.ttf);
+}

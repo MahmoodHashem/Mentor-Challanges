@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import { useState, useEffect, useRef } from 'react'
 
 function CommentForm({ currentUser, onSubmit, replyingTo, initialContent = '', submitLabel = 'SEND'  }) {

@@ -5,6 +5,8 @@ import editIcon from '../assets/images/icon-edit.svg'
 import replyIcon from '../assets/images/icon-reply.svg'
 
 import CommentForm from './CommentForm'
+import { formatDistanceToNow } from 'date-fns'
+
 
 function Comment({ comment, currentUser, parentId = null, onDelete }) {
     const [score, setScore] = useState(comment.score)
@@ -21,7 +23,7 @@ function Comment({ comment, currentUser, parentId = null, onDelete }) {
         const newReply = {
             id: Date.now(),
             content,
-            createdAt: 'Just now',
+            createdAt:  new Date().toISOString(),
             score: 0,
             replyingTo: comment.user.username,
             user: currentUser
@@ -36,7 +38,6 @@ function Comment({ comment, currentUser, parentId = null, onDelete }) {
         setReplies(replies.filter(reply => reply.id !== replyId))
     }
 
-    console.log(parentId)
 
 
     const handleEdit = (newContent) => {
@@ -76,7 +77,9 @@ function Comment({ comment, currentUser, parentId = null, onDelete }) {
                                     <span className="text-white py-1 px-2 text-sm bg-moderateBlue ml-2 rounded-sm">you</span>
                                 )}
                             </span>
-                            <span className="text-grayishBlue">{comment.createdAt}</span>
+                            <span className="text-grayishBlue">
+                                {formatDistanceToNow(new Date(comment.createdAt), { addSuffix: true })}
+                            </span>
 
                             <div className={` absolute ${isReplying ? "bottom-1/2" : "bottom-6"} right-4 sm:static ml-auto flex items-center gap-2 font-bold`}>
                                 {!isCurrentUser
@@ -145,7 +148,6 @@ function Comment({ comment, currentUser, parentId = null, onDelete }) {
                 {replies.map(reply => (
                     <div key={reply.id} className='my-5 ' >
                         <Comment
-
                             comment={reply}
                             currentUser={currentUser}
                             parentId={comment.id}
@@ -155,8 +157,6 @@ function Comment({ comment, currentUser, parentId = null, onDelete }) {
 
                 ))}
             </div>
-
-
 
             {showDeleteModal && (
                 <div className="fixed z-50 inset-0 bg-black bg-opacity-50 flex items-center justify-center">

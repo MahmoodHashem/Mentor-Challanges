@@ -15,6 +15,9 @@ export default {
         grayishBlue: "hsl(211, 10%, 45%)",
         lightGray: "hsl(223, 19%, 93%)", 
         veryLightGray: "hsl(228, 33%, 97%)"
+      }, 
+      fontFamily:{  
+        Rubik: ['Rubik', 'sans-serif']
       }
     },
   },

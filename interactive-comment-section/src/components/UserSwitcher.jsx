@@ -41,6 +41,7 @@ function UserSwitcher({ users, currentUser, onUserChange, onUserEdit }) {
 
     const handleSave = () => {
         onUserEdit(editingUser.username, newUsername)
+        setShowMenu(false)
         setIsEditing(false)
     }
 
@@ -50,12 +51,12 @@ function UserSwitcher({ users, currentUser, onUserChange, onUserEdit }) {
             <div className="lgo text-black font-bold text-xl">Mahmood Hashemi</div>
 
             <img src={showMenu ? close : menu} alt="menu icon" className="ml-auto w-7 sm:hidden cursor-pointer" onClick={() => setShowMenu(!showMenu)} />
-            <div className={`absolute   bg-white sm:bg-transparent sm:static right-0 top-16 z-50 w-1/2 sm:w-auto p-5 sm:p-0 shadow-lg sm:shadow-none rounded-md sm:rounded-none flex flex-col-reverse  sm:flex-row ml-auto  items-start sm:items-center gap-4     ${showMenu ? 'block sm:flex' : 'hidden sm:flex'}`}>
+            <div className={`absolute   bg-white sm:bg-transparent sm:static right-0 top-16 z-50 w-full sm:w-auto p-5 sm:p-0 shadow-lg sm:shadow-none rounded-md sm:rounded-none flex flex-col-reverse  sm:flex-row ml-auto  items-start sm:items-center gap-4     ${showMenu ? 'block sm:flex' : 'hidden sm:flex'}`}>
                 {users.map(user => (
                     <button
                         key={user.username}
                         onClick={() => onUserChange(user)}
-                        className={`flex items-center gap-2 p-2 rounded-lg ${currentUser.username === user.username ? 'bg-moderateBlue text-white' : 'hover:bg-veryLightGray'
+                        className={`flex items-center justify-between w-full sm:w-auto gap-2 p-2 rounded-lg ${currentUser.username === user.username ? 'bg-moderateBlue text-white' : 'hover:bg-veryLightGray'
                             }`}
                     >
                         <img
@@ -90,7 +91,7 @@ function UserSwitcher({ users, currentUser, onUserChange, onUserEdit }) {
                 </div>
             </div>
             {isEditing && (
-                <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center">
+                <div className="fixed z-50 inset-0 bg-black bg-opacity-50 flex items-center justify-center">
                     <div className="bg-white p-6 rounded-lg max-w-sm">
                         <h2 className="text-darkBlue font-bold text-xl mb-4">Edit User</h2>
                         <div className="flex items-center gap-4 mb-4">

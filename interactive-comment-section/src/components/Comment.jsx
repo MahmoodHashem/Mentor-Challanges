@@ -16,14 +16,41 @@ function Comment({ comment, currentUser, parentId = null, onDelete }) {
     const [replies, setReplies] = useState(comment.replies || [])
     const [showDeleteModal, setShowDeleteModal] = useState(false)
     const isCurrentUser = comment.user.username === currentUser.username
+    const [hasVoted, setHasVoted] = useState(null) // null, 'up', or 'down'
 
+    const handleUpvote = () => {
+        if (hasVoted === 'up') {
+            setScore(s => s - 1)
+            setHasVoted(null)
+        } else {
+            if (hasVoted === 'down') {
+                setScore(s => s + 2) // Remove downvote and add upvote
+            } else {
+                setScore(s => s + 1)
+            }
+            setHasVoted('up')
+        }
+    }
 
+    const handleDownvote = () => {
+        if (hasVoted === 'down') {
+            setScore(s => s + 1)
+            setHasVoted(null)
+        } else {
+            if (hasVoted === 'up') {
+                setScore(s => s - 2) // Remove upvote and add downvote
+            } else {
+                setScore(s => s - 1)
+            }
+            setHasVoted('down')
+        }
+    }
 
     const handleReply = (content) => {
         const newReply = {
             id: Date.now(),
             content,
-            createdAt:  new Date().toISOString(),
+            createdAt: new Date().toISOString(),
             score: 0,
             replyingTo: comment.user.username,
             user: currentUser
@@ -51,15 +78,17 @@ function Comment({ comment, currentUser, parentId = null, onDelete }) {
                 <div className="flex flex-col-reverse sm:flex-row gap-4">
                     <div className="max-h-28 max-w-20 sm:w-10 flex sm:flex-col items-center gap-4 bg-veryLightGray rounded-lg p-2">
                         <button
-                            onClick={() => setScore(s => s + 1)}
-                            className=" text-lightGrayishBlue hover:text-moderateBlue"
+                            onClick={handleUpvote}
+                            className={`text-lightGrayishBlue hover:text-moderateBlue ${hasVoted === 'up' ? 'text-green-500' : ''
+                                }`}
                         >
                             +
                         </button>
                         <span className="text-moderateBlue font-medium">{score}</span>
                         <button
-                            onClick={() => setScore(s => s - 1)}
-                            className="text-lightGrayishBlue hover:text-moderateBlue"
+                            onClick={handleDownvote}
+                            className={`text-lightGrayishBlue hover:text-moderateBlue ${hasVoted === 'down' ? 'text-red-500' : ''
+                                }`}
                         >
                             -
                         </button>

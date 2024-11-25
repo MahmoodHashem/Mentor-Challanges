@@ -103,7 +103,7 @@ function App() {
           onUserChange={handleUserChange}
           onUserEdit={handleUserEdit}
         />
-      <div className="max-w-2xl  mx-auto space-y-4">
+      <div className="max-w-2xl p-5  mx-auto space-y-4">
     
         {comments.map(comment => (
           <Comment 

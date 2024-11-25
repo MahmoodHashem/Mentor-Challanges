@@ -1,7 +1,9 @@
-import { useState } from 'react'
+import { useState, useEffect, useRef } from 'react'
 
 function CommentForm({ currentUser, onSubmit, replyingTo, initialContent = '', submitLabel = 'SEND'  }) {
   const [content, setContent] = useState(initialContent)
+
+  const textareaRef = useRef(null)
 
   const handleSubmit = (e) => {
     e.preventDefault()
@@ -9,6 +11,10 @@ function CommentForm({ currentUser, onSubmit, replyingTo, initialContent = '', s
     onSubmit(content)
     setContent('')
   }
+
+  useEffect(() => {
+    textareaRef.current?.focus()
+  }, [])
 
   return (
     <form onSubmit={handleSubmit} className="bg-white p-4 rounded-lg shadow">
@@ -19,6 +25,7 @@ function CommentForm({ currentUser, onSubmit, replyingTo, initialContent = '', s
           className="w-8 h-8 rounded-full"
         />
         <textarea
+         ref={textareaRef}
           value={content}
           onChange={(e) => setContent(e.target.value)}
           placeholder={replyingTo ? `Reply to @${replyingTo}` : "Add a comment..."}

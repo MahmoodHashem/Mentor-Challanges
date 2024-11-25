@@ -25,7 +25,7 @@ function App() {
 
   return (
     <div className="font-Rubik min-h-screen bg-veryLightGray py-8 px-4">
-      <div className="max-w-2xl mx-auto space-y-4">
+      <div className="max-w-2xl  mx-auto space-y-4">
         {comments.map(comment => (
           <Comment 
             key={comment.id} 

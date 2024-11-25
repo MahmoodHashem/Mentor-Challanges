@@ -9,10 +9,13 @@ import CommentForm from './CommentForm'
 function Comment({ comment, currentUser, parentId = null, onDelete }) {
     const [score, setScore] = useState(comment.score)
     const [isReplying, setIsReplying] = useState(false)
-    
+    const [isEditing, setIsEditing] = useState(false)
+    const [content, setContent] = useState(comment.content)
     const [replies, setReplies] = useState(comment.replies || [])
     const [showDeleteModal, setShowDeleteModal] = useState(false)
     const isCurrentUser = comment.user.username === currentUser.username
+
+
 
     const handleReply = (content) => {
         const newReply = {
@@ -33,11 +36,19 @@ function Comment({ comment, currentUser, parentId = null, onDelete }) {
         setReplies(replies.filter(reply => reply.id !== replyId))
     }
 
+    console.log(parentId)
+
+
+    const handleEdit = (newContent) => {
+        setContent(newContent)
+        setIsEditing(false)
+    }
+
     return (
         <>
-            <div className={`bg-white p-4 rounded-lg shadow ${parentId ? 'ml-8' : ''}`}>
-                <div className="flex gap-4">
-                    <div className="max-h-24 w-10 flex flex-col items-center bg-veryLightGray rounded-lg p-2">
+            <div className={`bg-white relative sm:static p-4 rounded-lg shadow ${parentId ? 'ml-3 sm:ml-8' : ''}`}>
+                <div className="flex flex-col-reverse sm:flex-row gap-4">
+                    <div className="max-h-28 max-w-20 sm:w-10 flex sm:flex-col items-center gap-4 bg-veryLightGray rounded-lg p-2">
                         <button
                             onClick={() => setScore(s => s + 1)}
                             className=" text-lightGrayishBlue hover:text-moderateBlue"
@@ -67,37 +78,55 @@ function Comment({ comment, currentUser, parentId = null, onDelete }) {
                             </span>
                             <span className="text-grayishBlue">{comment.createdAt}</span>
 
-                            {!isCurrentUser && <button onClick={() => setIsReplying(!isReplying)} className='flex items-center gap-2 ml-auto font-bold hover:opacity-55 text-moderateBlue '>
-                                <img src={replyIcon} alt="reply icon" />
-                                Reply
-                            </button>}
-
-
-                            {isCurrentUser && (
-                                <>
-
+                            <div className={` absolute ${isReplying ? "bottom-1/2" : "bottom-6"} right-4 sm:static ml-auto flex items-center gap-2 font-bold`}>
+                                {!isCurrentUser
+                                    &&
                                     <button
-                                        className="flex items-center font-bold gap-2 ml-auto text-moderateBlue hover:opacity-60 cursor-pointer"
-                                    >
-                                        <img src={editIcon} alt="edit Icon" />
-                                        Edit
+                                        onClick={() => setIsReplying(!isReplying)} className='flex items-center gap-2  hover:opacity-55 text-moderateBlue '>
+                                        <img src={replyIcon} alt="reply icon" />
+                                        Reply
                                     </button>
 
-                                    <button
-                                        onClick={() => setShowDeleteModal(true)}
-                                        className="flex items-center font-bold gap-2  text-softRed hover:opacity-60 cursor-pointer">
-                                        <img src={deleteIcon} alt="delete Icon" />
-                                        Delete
-                                    </button>
-                                </>
-                            )}
+                                }
+                                {isCurrentUser && (
+                                    <>
+                                        <button
+                                            onClick={() => setIsEditing(true)}
+                                            className="flex items-center font-bold gap-2 ml-auto text-moderateBlue hover:opacity-60 cursor-pointer"
+                                        >
+                                            <img src={editIcon}
+
+                                                alt="edit Icon" />
+                                            Edit
+                                        </button>
+
+                                        <button
+                                            onClick={() => setShowDeleteModal(true)}
+                                            className="flex items-center font-bold gap-2  text-softRed hover:opacity-60 cursor-pointer">
+                                            <img src={deleteIcon} alt="delete Icon" />
+                                            Delete
+                                        </button>
+
+                                    </>
+                                )}
+                            </div>
                         </div>
-                        <p className="text-grayishBlue">
-                            {comment.replyingTo && (
-                                <span className="text-moderateBlue font-bold">@{comment.replyingTo} </span>
-                            )}
-                            {comment.content}
-                        </p>
+                        {!isEditing ? (
+                            <p className="text-grayishBlue">
+                                {comment.replyingTo && (
+                                    <span className="text-moderateBlue font-bold">@{comment.replyingTo} </span>
+                                )}
+                                {content}
+                            </p>
+                        ) : (
+                            <CommentForm
+                                currentUser={currentUser}
+                                initialContent={content}
+                                onSubmit={handleEdit}
+                                submitLabel="UPDATE"
+                            />
+                        )}
+
                     </div>
                 </div>
 
@@ -112,11 +141,11 @@ function Comment({ comment, currentUser, parentId = null, onDelete }) {
                 )}
             </div>
 
-            <div className='border-l-2 border-gray-300 pl-3 ml-8'>
+            <div className={!parentId ? "border-l-2 ml-3 sm:ml-8" : ""}>
                 {replies.map(reply => (
-                    <div  key={reply.id} className='my-5' >
+                    <div key={reply.id} className='my-5 ' >
                         <Comment
-                           
+
                             comment={reply}
                             currentUser={currentUser}
                             parentId={comment.id}
@@ -130,7 +159,7 @@ function Comment({ comment, currentUser, parentId = null, onDelete }) {
 
 
             {showDeleteModal && (
-                <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center">
+                <div className="fixed z-50 inset-0 bg-black bg-opacity-50 flex items-center justify-center">
                     <div className="bg-white p-6 rounded-lg max-w-sm">
                         <h2 className="text-darkBlue font-bold text-xl mb-4">Delete comment</h2>
                         <p className="text-grayishBlue mb-4">

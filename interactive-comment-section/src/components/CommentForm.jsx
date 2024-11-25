@@ -1,7 +1,7 @@
 import { useState } from 'react'
 
-function CommentForm({ currentUser, onSubmit, replyingTo }) {
-  const [content, setContent] = useState('')
+function CommentForm({ currentUser, onSubmit, replyingTo, initialContent = '', submitLabel = 'SEND'  }) {
+  const [content, setContent] = useState(initialContent)
 
   const handleSubmit = (e) => {
     e.preventDefault()
@@ -28,7 +28,7 @@ function CommentForm({ currentUser, onSubmit, replyingTo }) {
           type="submit"
           className="bg-moderateBlue text-white px-4 py-2 rounded-lg hover:opacity-70"
         >
-          SEND
+          {submitLabel}
         </button>
       </div>
     </form>

@@ -1,3 +1,8 @@
+
+import menu from '../assets/images/icon-menu.png'
+import close from '../assets/images/icon-close.png'
+
+
 import { useState, useEffect, useRef } from 'react'
 
 function UserSwitcher({ users, currentUser, onUserChange, onUserEdit }) {
@@ -6,6 +11,7 @@ function UserSwitcher({ users, currentUser, onUserChange, onUserEdit }) {
     const [newUsername, setNewUsername] = useState('')
     const [showTooltip, setShowTooltip] = useState(true)
     const fileInputRef = useRef(null)
+    const [showMenu, setShowMenu] = useState(false)
 
 
     useEffect(() => {
@@ -39,12 +45,12 @@ function UserSwitcher({ users, currentUser, onUserChange, onUserEdit }) {
     }
 
     return (
-        <nav className="flex items-center  bg-white p-4 rounded-lg shadow mb-4">
+        <nav className="flex relative items-center  bg-white p-4 rounded-lg shadow mb-4">
 
             <div className="lgo text-black font-bold text-xl">Mahmood Hashemi</div>
 
-            <div className="flex ml-auto  items-center gap-4">
-
+            <img src={showMenu ? close : menu} alt="menu icon" className="ml-auto w-7 sm:hidden cursor-pointer" onClick={() => setShowMenu(!showMenu)} />
+            <div className={`absolute   bg-white sm:bg-transparent sm:static right-0 top-16 z-50 w-1/2 sm:w-auto p-5 sm:p-0 shadow-lg sm:shadow-none rounded-md sm:rounded-none flex flex-col-reverse  sm:flex-row ml-auto  items-start sm:items-center gap-4     ${showMenu ? 'block sm:flex' : 'hidden sm:flex'}`}>
                 {users.map(user => (
                     <button
                         key={user.username}
@@ -57,7 +63,7 @@ function UserSwitcher({ users, currentUser, onUserChange, onUserEdit }) {
                             alt={user.username}
                             className="w-8 h-8 rounded-full"
                         />
-                        <span className='hidden lg:block' >{user.username}</span>
+                        <span className={`sm:hidden lg:block`} >{user.username}</span>
                         <button
                             onClick={(e) => {
                                 e.stopPropagation()
@@ -70,6 +76,18 @@ function UserSwitcher({ users, currentUser, onUserChange, onUserEdit }) {
 
                     </button>
                 ))}
+                <div className='relative'>
+                    <button
+                        onMouseEnter={() => setShowTooltip(true)}
+                        onMouseLeave={() => setShowTooltip(false)}
+                        className='sm:ml-5 border bg-gray-700 text-white p-2 rounded-full w-9 h-9 content-center text-center text-sm' >?</button>
+                    {showTooltip && (
+                        <div className="absolute -right-2 bg-darkBlue text-white px-4 py-2 w-40 rounded-lg text-sm">
+                            Click on a user avatar to switch current user
+                            <div className="absolute -top-2 right-0 transform -translate-x-1/2 w-4 h-4 bg-darkBlue rotate-45"></div>
+                        </div>
+                    )}
+                </div>
             </div>
             {isEditing && (
                 <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center">
@@ -119,19 +137,7 @@ function UserSwitcher({ users, currentUser, onUserChange, onUserEdit }) {
                 </div>
             )}
 
-            <div className='relative'>
-                <button
-                    onMouseEnter={() => setShowTooltip(true)}
-                    onMouseLeave={() => setShowTooltip(false)}
-                    className='ml-5 border bg-gray-700 text-white p-2 rounded-full w-9 h-9 content-center text-center text-sm' >?</button>
-                {showTooltip && (
-                    <div className="absolute -right-2 bg-darkBlue text-white px-4 py-2 w-40 rounded-lg text-sm">
-                        Click on a user avatar to switch current user
-                        <div className="absolute -top-2 right-0 transform -translate-x-1/2 w-4 h-4 bg-darkBlue rotate-45"></div>
-                    </div>
-                )}
 
-            </div>
 
         </nav>
     )

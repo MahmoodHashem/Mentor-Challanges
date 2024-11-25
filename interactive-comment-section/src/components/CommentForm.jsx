@@ -19,7 +19,7 @@ function CommentForm({ currentUser, onSubmit, replyingTo, initialContent = '', s
 
   return (
     <form onSubmit={handleSubmit} className="bg-white p-4 rounded-lg shadow">
-      <div className="flex items-start gap-4">
+      <div className="flex flex-col sm:flex-row sm:items-start gap-4">
         <img 
           src={currentUser.image.png} 
           alt={currentUser.username}

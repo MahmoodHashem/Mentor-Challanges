@@ -83,9 +83,9 @@ function UserSwitcher({ users, currentUser, onUserChange, onUserEdit }) {
                         onMouseLeave={() => setShowTooltip(false)}
                         className='sm:ml-5 border bg-gray-700 text-white p-2 rounded-full w-9 h-9 content-center text-center text-sm' >?</button>
                     {showTooltip && (
-                        <div className="absolute -right-2 bg-darkBlue text-white px-4 py-2 w-40 rounded-lg text-sm">
+                        <div className="absolute -right-32 sm:-right-2 bg-darkBlue text-white px-4 py-2 w-40 rounded-lg text-sm">
                             Click on a user avatar to switch current user
-                            <div className="absolute -top-2 right-0 transform -translate-x-1/2 w-4 h-4 bg-darkBlue rotate-45"></div>
+                            <div className="absolute hidden sm:block  -top-2 right-0 transform -translate-x-1/2 w-4 h-4 bg-darkBlue rotate-45"></div>
                         </div>
                     )}
                 </div>

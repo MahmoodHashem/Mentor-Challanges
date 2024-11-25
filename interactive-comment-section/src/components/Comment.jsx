@@ -106,7 +106,7 @@ function Comment({ comment, currentUser, parentId = null, onDelete }) {
                                     <span className="text-white py-1 px-2 text-sm bg-moderateBlue ml-2 rounded-sm">you</span>
                                 )}
                             </span>
-                            <span className="text-grayishBlue">
+                            <span className="text-grayishBlue text-[12px] sm:text-sm">
                                 {formatDistanceToNow(new Date(comment.createdAt), { addSuffix: true })}
                             </span>
 

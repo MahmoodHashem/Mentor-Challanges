@@ -1,6 +1,5 @@
 
 import searchIcon from '../assets/icons/icon-arrow.svg';
-import lodaerIcon from '../assets/icons/icons8-dots-loading.gif'
 
 
 import { useState, useEffect } from 'react';
@@ -64,7 +63,7 @@ const IpTracker = () => {
                             className="bg-black text-white px-6 rounded-r-lg hover:bg-gray-800 transition-colors"
                             disabled={loading}
                         >
-                           {loading ? "searching..." : <img src={lodaerIcon} alt="arrow icon " className="w-3" />}
+                           {loading ? "searching..." : <img src={searchIcon} alt="arrow icon " className="w-3" />}
                           
                         </button>
                     </div>

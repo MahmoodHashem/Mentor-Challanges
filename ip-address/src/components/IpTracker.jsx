@@ -64,7 +64,7 @@ const IpTracker = () => {
                             className="bg-black text-white px-6 rounded-r-lg hover:bg-gray-800 transition-colors"
                             disabled={loading}
                         >
-                            <img src={loading ? lodaerIcon : searchIcon} alt="arrow icon " className="w-3" />
+                           {loading ? "searching..." : <img src={lodaerIcon} alt="arrow icon " className="w-3" />}
                           
                         </button>
                     </div>

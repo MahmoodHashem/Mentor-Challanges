@@ -84,7 +84,34 @@ const IpTracker = () => {
                 </div>
             )}
 
-            {displayData && (
+            {loading ? (
+                // Display the skeleton 
+                <div className="relative">
+                <div className="absolute z-[500] top-24 md:top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white rounded-lg shadow-lg w-11/12 max-w-5xl">
+                    <div className="grid grid-cols-1 md:grid-cols-4 justify-items-center md:justify-items-start text-center md:text-start gap-3 md:gap-8 p-4 md:p-8">
+                        <div className="w-full">
+                            <div className="h-4 bg-gray-200 rounded animate-pulse mb-2"></div>
+                            <div className="h-6 bg-gray-200 rounded animate-pulse w-3/4"></div>
+                        </div>
+                        <div className="w-full">
+                            <div className="h-4 bg-gray-200 rounded animate-pulse mb-2"></div>
+                            <div className="h-6 bg-gray-200 rounded animate-pulse w-3/4"></div>
+                        </div>
+                        <div className="w-full">
+                            <div className="h-4 bg-gray-200 rounded animate-pulse mb-2"></div>
+                            <div className="h-6 bg-gray-200 rounded animate-pulse w-3/4"></div>
+                        </div>
+                        <div className="w-full">
+                            <div className="h-4 bg-gray-200 rounded animate-pulse mb-2"></div>
+                            <div className="h-6 bg-gray-200 rounded animate-pulse w-3/4"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            ) 
+            
+            :
+            displayData && (
                 <div className="relative">
                     <div className="absolute z-[500] top-24 md:top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white rounded-lg shadow-lg w-11/12 max-w-5xl">
                         <div className="grid grid-cols-1 md:grid-cols-4 justify-items-center md:justify-items-start text-center md:text-start gap-3 md:gap-8 p-4 md:p-8">

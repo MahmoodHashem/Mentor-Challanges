@@ -1,7 +1,15 @@
 /* eslint-disable react/prop-types */
+/**
+ * Renders a job card component with information about a job posting.
+ *
+ * @param {Object} props - The component props.
+ * @param {Object} props.job - An object containing job details.
+ * @param {function} props.handleFilterClick - A function to handle filter clicks.
+ * @returns {JSX.Element} - The rendered job card component.
+ */
 const Card = ({ job, handleFilterClick }) => {
     return (
-      <div className="bg-white flex flex-col md:flex-row md:items-center justify-between p-6 rounded-md shadow-md mb-4 border-l-4 border-cyan-500">
+      <div className={`bg-white flex flex-col md:flex-row md:items-center justify-between p-6 rounded-md shadow-md mb-4 ${job.featured ? "border-l-4" : ""}  border-desaturatedDarkCyan`}>
         <div className="flex flex-col md:flex-row items-start md:items-center gap-4 pb-4 md:p-0">
           <img src={job.logo} alt={job.company} className="w-20 h-20" />
           <div className="flex-1">

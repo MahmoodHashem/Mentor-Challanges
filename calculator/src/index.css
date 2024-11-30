@@ -1,68 +1,79 @@
-:root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
-
-body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
-}
-
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-}
-
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-}
-
-@media (prefers-color-scheme: light) {
+@layer base {
   :root {
-    color: #213547;
-    background-color: #ffffff;
+    /* Theme 1 - Default */
+    --main-background: hsl(222, 26%, 31%);
+    --toggle-keypad-background: hsl(223, 31%, 20%);
+    --screen-background: hsl(224, 36%, 15%);
+    
+    --key-background-primary: hsl(225, 21%, 49%);
+    --key-shadow-primary: hsl(224, 28%, 35%);
+    --key-hover-primary: hsl(225, 21%, 59%);
+
+    
+    --key-background-secondary: hsl(6, 63%, 50%);
+    --key-shadow-secondary: hsl(6, 70%, 34%);
+    --key-hover-secondary: hsl(6, 63%, 60%);
+
+    
+    --key-background-tertiary: hsl(30, 25%, 89%);
+    --key-shadow-tertiary: hsl(28, 16%, 65%);
+    --key-hover-tertiary: hsl(30, 25%, 99%);
+
+    
+    --text-primary: hsl(221, 14%, 31%);
+    --text-secondary: hsl(0, 0%, 100%);
   }
-  a:hover {
-    color: #747bff;
+
+  .theme-2 {
+    --main-background: hsl(0, 0%, 90%);
+    --toggle-keypad-background: hsl(0, 5%, 81%);
+    --screen-background: hsl(0, 0%, 93%);
+    
+    --key-background-primary: hsl(185, 42%, 37%);
+    --key-shadow-primary: hsl(185, 58%, 25%);
+    --key-hover-primary: hsl(185, 42%, 47%);
+
+    
+    --key-background-secondary: hsl(25, 98%, 40%);
+    --key-shadow-secondary: hsl(25, 99%, 27%);
+    --key-hover-secondary: hsl(25, 98%, 50%);
+
+    
+    --key-background-tertiary: hsl(45, 7%, 89%);
+    --key-shadow-tertiary: hsl(35, 11%, 61%);
+    --key-hover-tertiary: hsl(0, 0%, 100%);
+
+    
+    --text-primary: hsl(60, 10%, 19%);
+    --text-secondary: hsl(60, 10%, 19%);
   }
-  button {
-    background-color: #f9f9f9;
+
+  .theme-3 {
+    --main-background: hsl(268, 75%, 9%);
+    --toggle-keypad-background: hsl(268, 71%, 12%);
+    --screen-background: hsl(268, 71%, 12%);
+    
+    --key-background-primary: hsl(281, 89%, 26%);
+    --key-shadow-primary: hsl(285, 91%, 52%);
+    --key-hover-primary: hsl(281, 89%, 36%);
+
+    
+    --key-background-secondary: hsl(176, 100%, 44%);
+    --key-shadow-secondary: hsl(177, 92%, 70%);
+    --key-hover-secondary: hsl(176, 100%, 54%);
+
+    
+    --key-background-tertiary: hsl(268, 47%, 21%);
+    --key-shadow-tertiary: hsl(290, 70%, 36%);
+    --key-hover-tertiary: hsl(268, 47%, 31%);
+
+    
+    --text-primary: hsl(52, 100%, 62%);
+    --text-secondary: hsl(52, 100%, 62%);
+    --text-tertiary: hsl(0, 0%, 100%);
   }
 }

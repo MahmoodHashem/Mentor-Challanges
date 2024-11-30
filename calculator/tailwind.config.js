@@ -1,23 +1,39 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: [],
+  content: [
+    "./index.html",
+    "./src/**/*.{js,jsx,ts,tsx}",
+  ],
+  darkMode: 'class',
   theme: {
     extend: {
-
       colors: {
-        "veryDarkDesaturatedBlue-mainbg": "hsl(222, 26%, 31%)",
-        "veryDarkDesaturatedBlue-togglebg": "hsl(223, 31%, 20%)",
-        "veryDarkDesaturatedBlue-screengbg": "hsl(224, 36%, 15%)",
-        "desaturatedDarkBlue-keybg": "hsl(225, 21%, 49%)",
-        "desaturatedDarkBlue-keyshdow": "hsl(224, 28%, 35%)",
-        "red": "hsl(6, 63%, 50%)",
-        "darkRed": "hsl(6, 70%, 34%)", // Key shado
-        "lightGrayishOrange": "hsl(30, 25%, 89%)",// (key background)
-        "grayishOrange": "hsl(28, 16%, 65%)", //(key shadow)
-      }
+        // Theme color tokens
+        mainBackground: 'var(--main-background)',
+        toggleKeypadBackground: 'var(--toggle-keypad-background)',
+        screenBackground: 'var(--screen-background)',
+        
+        keyBackgroundPrimary: 'var(--key-background-primary)',
+        keyShadowPrimary: 'var(--key-shadow-primary)',
+        keyHoverPrimary: 'var(--key-hover-primary)',
 
+        keyBackgroundSecondary: 'var(--key-background-secondary)',
+        keyShadowSecondary: 'var(--key-shadow-secondary)',
+        keyHoverSecondary: 'var(--key-hover-secondary)',
+
+        keyBackgroundTertiary: 'var(--key-background-tertiary)',
+        keyShadowTertiary: 'var(--key-shadow-tertiary)',
+        keyHoverTertiary: 'var(--key-hover-tertiary)',
+
+        textPrimary: 'var(--text-primary)',
+        textSecondary: 'var(--text-secondary)',
+        textTertiary: 'var(--text-tertiary)',
+      }, 
+
+      fontFamily:{
+        'spartan': ['League Spartan', 'sans-serif']
+      }
     },
   },
   plugins: [],
 }
-

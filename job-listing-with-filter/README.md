@@ -32,8 +32,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- [Solution URL](https://github.com/MahmoodHashem/Mentor-Challanges/tree/main/job-listing-with-filter): 
+- [Live Site URL](https://job-listing-green-eight.vercel.app/):
 
 ## My process
 

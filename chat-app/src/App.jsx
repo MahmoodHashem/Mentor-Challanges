@@ -1,34 +1,20 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import Chat from './components/Chat'
+import Description from './components/Description'
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+    <main className="min-h-screen bg-light-grayish-violet font-rubik relative overflow-hidden ">
+      {/* Background Elements */}
+      <div className="absolute top-0 -left-32 md:-left-0 w-[500px] h-[800px] rounded-b-full bg-gradient-primary -translate-x-1/4 -translate-y-1/4"></div>
+      <div className="absolute hidden md:block bottom-0 right-0 w-[500px] h-[700px] rounded-t-full bg-very-light-magenta/10 translate-x-1/4 translate-y-1/4"></div>
+
+    <div className=" container mx-auto p  py-16 flex flex-col md:flex-row items-center justify-center gap-20 px-4 z-50" >
+      <Chat/>
+      <Description/>
+    </div>
+
+      
+    </main>
   )
 }
 

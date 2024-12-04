@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.fade-in {
+  animation: fadeIn 0.3s forwards;
+}
+
+.fade-out {
+    animation: fadeOut 0.3s forwards;
+}
+
+@keyframes fadeIn {
+  0% {
+    transform: translateY(-100%);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(-150%);
+  }
+}

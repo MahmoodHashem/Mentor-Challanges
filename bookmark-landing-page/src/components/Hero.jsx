@@ -11,7 +11,7 @@ const Hero = () => {
           <p className="text-neutral-grayishBlue mb-8 max-w-md mx-auto md:mx-0">
             A clean and simple interface to organize your favourite websites. Open a new browser tab and see your sites load instantly. Try it for free.
           </p>
-          <div className="space-x-4">
+          <div className="flex flex-col md:flex-row items-center gap-4">
             <button className="bg-primary-softBlue text-white px-6 py-3 rounded-md shadow-md hover:bg-white hover:text-primary-softBlue border-2 border-primary-softBlue transition duration-200">
               Get it on Chrome
             </button>

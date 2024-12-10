@@ -50,10 +50,10 @@ const Slider = () => {
                             className="w-full h-full object-cover transition-opacity duration-700"
                         />
                     </picture>
-                    <div className="absolute bottom-0 right-0 lg:-right-[100px] bg-black flex">
+                    <div className="flex  absolute bottom-0 right-0 lg:-right-[110px] bg-black  px-[5px]  ">
                         <button
                             onClick={prevSlide}
-                            className="p-4 md:p-5 hover:bg-primary-veryDarkGray transition-colors"
+                            className="p-4 md:p-5hover:bg-primary-veryDarkGray transition-colors"
                         >
                             <img src="/images/icon-angle-left.svg" alt="previous" className="w-3 md:w-auto" />
                         </button>
